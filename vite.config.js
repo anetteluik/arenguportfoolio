@@ -14,8 +14,8 @@ export default defineConfig({
     }
   },
   build: {
-    base: "/arenguportfoolio",
     outDir: "docs",
     assetsDir: ""
-  }
+  },
+  base: "/arenguportfoolio"
 })
