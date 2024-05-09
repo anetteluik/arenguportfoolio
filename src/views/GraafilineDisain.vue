@@ -1,7 +1,35 @@
 <script setup>
 import OneBoxLayout from "@/components/OneBoxLayout.vue";
-import Footer from "@/components/Footer.vue";
 </script>
+
+<style scoped>
+.popUp {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #D9D9D9;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  top: 0;
+  /*transform: translateX(100%);
+  /* Initially hide the menu off-screen */
+  right: 0;
+}
+
+.popUpText {
+  width: 65%;
+  height: 100%;
+}
+
+.popUpImage {
+  width: 35%;
+  height: 100%;
+  background-color: blue;
+}
+</style>
 
 <template>
   <main>
@@ -13,6 +41,12 @@ import Footer from "@/components/Footer.vue";
         <div class="detailsMoodul">
           <p>Akadeemiline areng</p>
         </div>
+      </div>
+    </div>
+    <div class="popUp">
+      <div class="popUpText">
+      </div>
+      <div class="popUpImage">
       </div>
     </div>
     <div class="mainInfo">
@@ -72,10 +106,5 @@ import Footer from "@/components/Footer.vue";
         </div>
       </div>
     </div>
-    <Footer></Footer>
   </main>
 </template>
-
-<script setup>
-
-</script>

@@ -60,4 +60,13 @@ const props = defineProps(['title', 'text']);
     height: 40%;
     background: linear-gradient(to top, #221517, transparent);
 }
+
+.backg {
+  transition: transform 0.3s ease; /* Transition effect for smooth zoom */
+}
+
+.backg:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
 </style>

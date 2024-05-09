@@ -13,13 +13,17 @@ const props = defineProps(['shown']);
 
 <style scoped>
 .menuToggleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
-  width: 38px;
-  height: 14px;
+  width: 48px;
+  height: 48px;
   right: 0;
   z-index: 20;
   margin-right: 138px;
   margin-top: 72px;
+  cursor: pointer;
 }
 
 .menuToggle {
@@ -28,7 +32,6 @@ const props = defineProps(['shown']);
   width: 38px;
   height: 14px;
   position: fixed;
-  cursor: pointer;
 }
 
 .line {

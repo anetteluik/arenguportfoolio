@@ -56,7 +56,7 @@ import Footer from "@/components/Footer.vue";
         <div class="areng">
           <h3>Akadeemiline areng</h3>
           <div class="sliderPhotos">
-            <div class='flex-container' id="flex-container">
+            <div class='flex-container'>
               <div class='card'>card</div>
               <div class='card'>card</div>
               <div class='card'>card</div>
@@ -75,7 +75,6 @@ import Footer from "@/components/Footer.vue";
         </div>
       </div>
     </div>
-    <Footer></Footer>
   </main>
 </template>
 

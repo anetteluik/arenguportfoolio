@@ -4,6 +4,7 @@ import NavigationMenu from "@/components/NavigationMenu.vue";
 import NavigationMenuButton from "@/components/NavigationMenuButton.vue";
 
 import { ref } from "vue";
+import Footer from './components/Footer.vue';
 
 
 let menuShown = ref(false)
@@ -83,17 +84,6 @@ window.addEventListener('load', () => {
   <NavigationMenu :shown="menuShown"></NavigationMenu>
   <main>
     <RouterView />
+    <Footer></Footer>
   </main>
 </template>
-
-<style>
-
-.lol {
-  position: fixed;
-  width: 100%;
-  height: 20px;
-  background: white;
-  z-index: 1000;
-}
-
-</style>
