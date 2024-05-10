@@ -39,7 +39,7 @@ const props = defineProps(['shown']);
   height: 3px;
   background-color: #EFEDEB;
   position: absolute;
-  transition: all ease 0.3s;
+  transition: all ease-in-out 0.15s;
 }
 
 .menuToggle .line:nth-child(1) {
@@ -58,5 +58,17 @@ const props = defineProps(['shown']);
 .menuToggle.active .line:nth-child(2) {
   transform: rotate(-30deg);
   margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .menuToggleContainer {
+  width: 48px;
+  height: 48px;
+  right: 0;
+  z-index: 20;
+  margin-right: 40px;
+  margin-top: 24px;
+  cursor: pointer;
+}
 }
 </style>

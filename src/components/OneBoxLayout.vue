@@ -30,6 +30,7 @@ const props = defineProps(['title', 'text']);
     left: 40px;
     /* Adjust horizontal position */
     color: #EFEDEB;
+    padding-right: 40px;
 }
 
 .imgText h5 {
@@ -62,11 +63,28 @@ const props = defineProps(['title', 'text']);
 }
 
 .backg {
-  transition: transform 0.3s ease; /* Transition effect for smooth zoom */
+    transition: transform 0.3s ease;
+    /* Transition effect for smooth zoom */
 }
 
 .backg:hover {
-  transform: scale(1.05); /* Zoom effect on hover */
+    transform: scale(1.05);
+    /* Zoom effect on hover */
 }
 
+@media only screen and (max-width: 600px) {
+    .moodulSectionTwo {
+        margin-top: 24px;
+    }
+
+    .imgText {
+        position: absolute;
+        bottom: 24px;
+        /* Adjust vertical position */
+        left: 24px;
+        /* Adjust horizontal position */
+        color: #EFEDEB;
+        padding-right: 16px;
+    }
+}
 </style>

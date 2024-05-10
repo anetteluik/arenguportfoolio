@@ -66,7 +66,7 @@ h1 {
   background-color: #EFEDEB;
   height: fit-content;
   width: 100%;
-  margin-top: 10vw;
+  margin-top: 156px;
 }
 
 .subtitle {
@@ -145,7 +145,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: clamp(60vh, 3vw, 70vh);
   background-color: #61131D;
 }
 
@@ -163,7 +163,6 @@ h3 {
   margin: 0;
   padding: 20px 0 20px 0;
   font-size: clamp(64px, 5vw, 96px);
-  ;
 }
 
 .mainWrapperMoodul {
@@ -190,7 +189,7 @@ h3 {
 .descriptionWrapperMoodul {
   display: flex;
   flex-direction: row;
-  font-size: max(1.2rem, 1.2vw);
+  font-size: clamp(18px, 1.5vw, 20px);
   line-height: 1.5;
   width: 100%;
   justify-content: space-between;
@@ -218,9 +217,142 @@ h3 {
 }
 
 .backg {
-  transition: transform 0.3s ease; /* Transition effect for smooth zoom */
+  transition: transform 0.3s ease;
+  /* Transition effect for smooth zoom */
 }
 
 .moodulSectionTwo:hover .backg {
-  transform: scale(1.05); /* Zoom effect on hover */
+  transform: scale(1.05);
+  /* Zoom effect on hover */
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* For mobile phones: */
+  .moodulSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .mainWrapperMoodul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+  }
+
+  .mainWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+  }
+
+  .descriptionMoodul {
+    width: 100%;
+  }
+
+  .descriptionWrapperMoodul {
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(16px, 1.5vw, 20px);
+    line-height: 1.5;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 24px;
+  }
+
+  .moodulSection {
+    gap: 0px;
+  }
+
+  .moodulTitle h2 {
+    font-size: 48px;
+  }
+
+  .moodulTitle {
+    width: 100%;
+  }
+
+  .jumboMoodul {
+    height: 60vh;
+  }
+
+  .moodulWrapper {
+    margin-top: 40px;
+    margin-bottom: 180px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  /* For tablets: */
+  .moodulSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .mainWrapperMoodul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+  }
+
+  .mainWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+  }
+
+  .descriptionMoodul {
+    width: 100%;
+  }
+
+  .descriptionWrapperMoodul {
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(18px, 1.5vw, 20px);
+    line-height: 1.5;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 24px;
+  }
+
+  .moodulSection {
+    gap: 0px;
+  }
+
+  .moodulTitle h2 {
+    font-size: 56px;
+  }
+
+  .moodulTitle {
+    width: 100%;
+  }
+
+  .jumboMoodul {
+    height: 60vh;
+  }
+
+  .moodulWrapper {
+    margin-top: 40px;
+    margin-bottom: 180px;
+  }
 }

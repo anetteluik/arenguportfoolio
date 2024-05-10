@@ -58,13 +58,16 @@
 }
 
 .infoBox h6 {
-  font-size: clamp(18px, 1.5vw, 24px);
+  font-size: clamp(20px, 1.5vw, 24px);
   margin-bottom: 16px;
 }
 
 .infoBox p {
-  font-size: clamp(14px, 1.5vw, 16px);
+  font-size: 16px;
   margin-bottom: 8px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: #96A8D7;
 }
 
 .infoBoxMe {
@@ -73,7 +76,7 @@
 }
 
 .infoBoxMe h4 {
-  font-size: clamp(32px, 1.5vw, 48px);
+  font-size: clamp(40px, 1.5vw, 48px);
   font-family: 'Magnat';
   margin-bottom: 20px;
 }
@@ -87,5 +90,34 @@
   justify-content: left;
   width: 70%;
   margin-bottom: 32px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 90%;
+  }
+
+  .rights {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 32px;
+    margin-top: 80px;
+    font-size: clamp(14px, 1vw, 16px);
+  }
+
+  .infoBox {
+    margin-bottom: 20px;
+  }
+
+  .infoBoxMe h4 {
+  margin-bottom: 16px;
+}
 }
 </style>

@@ -1,8 +1,10 @@
 <template>
-    <div class="popUp">
-        <div class="popUpText">
-        </div>
-        <div class="popUpImage">
+    <div class="popUpWrapper" :class="{ 'show': shown }">
+        <div class="popUp">
+            <div class="backArrow" @click="$emit('close')"><img src="../assets/img/arrow-back.svg"
+                    alt="Back button arrow icon"></div>
+
+            <slot></slot>
         </div>
     </div>
 </template>
@@ -10,42 +12,64 @@
 <script setup>
 import { defineProps, ref } from 'vue';
 
-function toggleSection(section) {
-    if (currentlyOpenSection.value === section) {
-        currentlyOpenSection.value = null;
-    } else {
-        currentlyOpenSection.value = section
-    }
-}
-
-let allSections = {
-    akadeemilineAreng: "akadeemilineAreng",
-    praktika: "praktika",
-    erialasedTegevused: 'erialasedTegevused'
-}
-
-let currentlyOpenSection = ref(null);
 const props = defineProps(['shown']);
 </script>
 
 <style scoped>
+.popUpWrapper {
+    /* Initial state: hidden off-screen */
+    transform: translateX(100%);
+    transition: transform 1s ease;
+    /* Additional styles for fixed position */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+}
+
+.popUpWrapper.show {
+    transform: translateX(0);
+    transition: transform 1s ease;
+}
+
 .popUp {
     display: flex;
-    flex-direction: column;
-    width: 70vw;
+    flex-direction: row;
+    width: 75vw;
     height: 100vh;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    background-color: #D9D9D9;
+    top: 0;
+    /* Initially hide the menu off-screen */
+    right: 0;
+    z-index: 999 !important;
+    background-color: #EFEDEB;
 }
 
-.popUpText {
-    width: 65%;
-    height: 100%;
+.backArrow {
+    margin: 36px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.popUpImage {
-    width: 35%;
-    height: 100%;
-    background-color: blue;
+@media only screen and (max-width: 600px) {
+    .popUp {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        /* Initially hide the menu off-screen */
+        right: 0;
+        z-index: 999 !important;
+        background-color: #EFEDEB;
+    }
 }
 </style>

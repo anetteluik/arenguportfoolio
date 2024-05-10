@@ -5,7 +5,7 @@
             <img src="../assets/img/arrow-down.svg" alt="Arrow Icon">
         </div>
         <div class="subsection">
-        <ul v-if="currentlyOpenSection === allSections.akadeemilineAreng">
+            <ul v-if="currentlyOpenSection === allSections.akadeemilineAreng">
                 <li>Graafilise disaini alused</li>
                 <li>Kasutajakogemuse analüüs</li>
                 <li>Veebikujundus</li>
@@ -65,6 +65,7 @@ let allSections = {
 
 let currentlyOpenSection = ref(null);
 const props = defineProps(['shown']);
+
 </script>
 
 <style scoped>
@@ -137,5 +138,18 @@ li {
     height: 0.7em;
     width: 0.7em;
     align-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .subsection {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    li {
+        padding: 0 8px 0 8px;
+    }
+
 }
 </style>
