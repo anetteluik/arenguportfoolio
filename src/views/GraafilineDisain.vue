@@ -1,33 +1,74 @@
 <script setup>
 import OneBoxLayout from "@/components/OneBoxLayout.vue";
+import TextButton from "@/components/TextButton.vue";
 </script>
 
 <style scoped>
+.popUpWrapper {
+  /* Initial state: hidden off-screen */
+  /*transform: translateX(100%);
+  transition: transform 0.3s ease;
+  /* Additional styles for fixed position */
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+}
+
 .popUp {
   display: flex;
-  flex-direction: column;
-  width: 70vw;
+  flex-direction: row;
+  width: 75vw;
   height: 100vh;
-  position: fixed;
-  background-color: #D9D9D9;
+  background-color: #e72020;
   align-items: center;
   justify-content: center;
-  z-index: 4;
+  position: fixed;
   top: 0;
   /*transform: translateX(100%);
   /* Initially hide the menu off-screen */
   right: 0;
+  z-index: 999 !important;
 }
 
-.popUpText {
-  width: 65%;
+.popUpTextAndButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
   height: 100%;
+  background-color: aliceblue;
+
 }
 
 .popUpImage {
-  width: 35%;
+  width: 45%;
   height: 100%;
   background-color: blue;
+}
+
+.popUpTextAndButtons .text {
+  font-size: 48px;
+  font-weight: 700;
+  padding: 0 100px 0 120px;
+  margin-bottom: 24px;
+}
+
+.popUpTextAndButtons .textP {
+  font-size: 18px;
+  padding: 0 100px 0 120px;
+  line-height: 28px;
+}
+
+.popUpTextAndButtons img {
+  margin: 36px;
+}
+
+.buttonRe {
+  font-size: 18px;
+  margin: 96px 100px 56px 120px;
 }
 </style>
 
@@ -43,10 +84,37 @@ import OneBoxLayout from "@/components/OneBoxLayout.vue";
         </div>
       </div>
     </div>
-    <div class="popUp">
-      <div class="popUpText">
-      </div>
-      <div class="popUpImage">
+    <div class="popUpWrapper">
+      <div class="popUp">
+        <div class="popUpTextAndButtons">
+          <div class="popUpTextAndButtonsWrapper">
+            <div class="backArrow"><img src="../assets/img/arrow-back.svg" alt="Back button arrow icon"></div>
+            <div class="text">Avasta Tartut</div>
+            <p class="textP">Aasta Tegija võistluse ülesanne oli luua mobiilirakendus nimega "Avasta Tartut", mis
+              võimaldab kasutajatel
+              planeerida nii pere- kui ka kultuurireise. Rakendus pidi sisaldama kaarti, millel on märgitud erinevad
+              vaatamisväärsused, ning pakub kasutajatele sobiva teekonna nende avastamiseks. Antud ülesande täitmiseks
+              oli
+              antud viis tundi ning kasutasin selleks disainitööriista Figma. <br>
+              Aasta Tegija võistlusel osalemine oli minu jaoks ülimalt oluline, sest teadsin, et hindajate hulgas on
+              nimekad ettevõtteid ja isikuid. Võidu saavutamine polnud minu jaoks niivõrd tähtis, vaid ootasin huviga
+              tagasisidet tööle. Olen aja jooksul pidevalt täiendanud oma oskusi kasutajakogemuse ja visuaalse disaini
+              vallas ning tagasi vaadates mõistan, et olin liialt keskendunud visuaalsele poolele ning ei pööranud
+              piisavalt tähelepanu kasutajamugavuse ja ligipääsetavuse olulisusele. <br>
+              Saadud tagasiside aitas mul mõista, et peaksin rohkem rõhku panema kasutajakesksele disainile, mitte
+              ainult
+              visuaalsete elementide täiustamisele. <br>
+              Aasta Tegija võistlusel pälvisin kolmanda koha. <br>
+              Siin on link minu loodud prototüübile ja projekti dokumentatsioonile.</p>
+          </div>
+          <div class="forwardBackButtons">
+            <router-link to="">
+              <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Jargmine</TextButton>
+            </router-link>
+          </div>
+        </div>
+        <div class="popUpImage">
+        </div>
       </div>
     </div>
     <div class="mainInfo">
