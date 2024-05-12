@@ -80,8 +80,8 @@ function toggleMenu() {
 </script>
 
 <template>
-  <NavigationMenuButton :shown="menuShown" @toggle="toggleMenu()"></NavigationMenuButton>
-  <NavigationMenu :shown="menuShown"></NavigationMenu>
+  <NavigationMenuButton :shown="menuShown" @toggle="toggleMenu"></NavigationMenuButton>
+  <NavigationMenu :shown="menuShown" @toggle="toggleMenu"></NavigationMenu>
   <main>
     <RouterView />
     <Footer></Footer>

@@ -6,7 +6,7 @@ import Footer from "@/components/Footer.vue";
 <template>
   <main>
     <div class="jumbo">
-      <div class="mainWrapper">
+      <div class="jumboWrapper">
         <div class="mainTitle">
           <h1>Anette Luik</h1>
         </div>
@@ -36,7 +36,7 @@ import Footer from "@/components/Footer.vue";
               lapsepõlvest. Seega, kui avastasin praeguse eriala, mõtlesin endamisi:
               "Juhhuu, see ongi ju see, mida olen terve elu otsinud".</p>
           </div>
-          <router-link to="/graafilise-disaini-alused">
+          <router-link to="/minust">
             <TextButton :imgType="'upright'" :alt="'Button Icon'">Veel minust</TextButton>
           </router-link>
         </div>

@@ -1,12 +1,14 @@
 <template>
-    <div class="menu" :class="{ 'active': props.shown }">
+    <div class="menu" @click="linkClickHandler" :class="{ 'active': props.shown }">
         <div class="navOption" @click="toggleSection(allSections.akadeemilineAreng)">
-            <div class="option">Akadeemiline areng</div>
+            <div class="optionNotClick">Akadeemiline areng</div>
             <img src="../assets/img/arrow-down.svg" alt="Arrow Icon">
         </div>
         <div class="subsection">
             <ul v-if="currentlyOpenSection === allSections.akadeemilineAreng">
-                <li>Graafilise disaini alused</li>
+                <router-link to="/graafilise-disaini-alused">
+                    <li>Graafilise disaini alused</li>
+                </router-link>
                 <li>Kasutajakogemuse analüüs</li>
                 <li>Veebikujundus</li>
                 <li>Psühholoogia ja suhtlemine</li>
@@ -18,7 +20,7 @@
             </ul>
         </div>
         <div class="navOption" @click="toggleSection(allSections.praktika)">
-            <div class="option">Praktika</div>
+            <div class="optionNotClick">Praktika</div>
             <img src="../assets/img/arrow-down.svg" alt="Arrow Icon">
         </div>
         <div class="subsection">
@@ -28,7 +30,7 @@
             </ul>
         </div>
         <div class="navOption" @click="toggleSection(allSections.erialasedTegevused)">
-            <div class="option">Erialased tegevused</div>
+            <div class="optionNotClick">Erialased tegevused</div>
             <img src="../assets/img/arrow-down.svg" alt="Arrow Icon">
         </div>
         <div class="subsection">
@@ -38,7 +40,9 @@
             </ul>
         </div>
         <div class="navOption">
-            <div class="option">Minust</div>
+            <router-link to="/minust">
+                <div class="option">Minust</div>
+            </router-link>
         </div>
         <div class="navOption">
             <div class="option">Eneserefleksioon</div>
@@ -47,7 +51,11 @@
 </template>
 
 <script setup>
-import { defineProps, ref } from 'vue';
+import { defineProps, ref, watch } from 'vue';
+import { useRouter } from 'vue-router';
+
+const emit = defineEmits(["toggle"])
+
 
 function toggleSection(section) {
     if (currentlyOpenSection.value === section) {
@@ -65,6 +73,13 @@ let allSections = {
 
 let currentlyOpenSection = ref(null);
 const props = defineProps(['shown']);
+
+function linkClickHandler(e) {
+    if (e.target.classList.contains("option") || e.target.nodeName === 'LI') {
+        emit("toggle")
+    }
+    
+}
 
 </script>
 
@@ -116,6 +131,13 @@ li {
 }
 
 .navOption .option {
+    font-family: "Magnat";
+    padding: 32px;
+    color: #EFEDEB;
+    text-transform: uppercase;
+}
+
+.optionNotClick {
     font-family: "Magnat";
     padding: 32px;
     color: #EFEDEB;

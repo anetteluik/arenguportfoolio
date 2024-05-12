@@ -6,25 +6,27 @@
         <p>Arenguportfoolio</p>
         <p>UX/UI nooremdisainer</p>
       </div>
-      <div class="infoBox">
-        <h6>Kontakt</h6>
-        <p>anetteluik.b@gmail.com</p>
-        <p>+372 5352 7343</p>
-      </div>
-      <div class="infoBox">
-        <h6>Menüü</h6>
-        <p>Akadeemiline areng</p>
-        <p>Praktika</p>
-        <p>Erialased tegevused</p>
-        <p>Minust</p>
-        <p>Eneserefleksioon</p>
-      </div>
-      <div class="infoBox">
-        <h6>Leiad mind ka</h6>
-        <p>Behance</p>
-        <p>Dribbble</p>
-        <p>Instagram</p>
-        <p>LinkedIn</p>
+      <div class="infoWrapper">
+        <div class="infoBox">
+          <h6>Kontakt</h6>
+          <p>anetteluik.b@gmail.com</p>
+          <p>+372 5352 7343</p>
+        </div>
+        <div class="infoBox">
+          <h6>Menüü</h6>
+          <p>Akadeemiline areng</p>
+          <p>Praktika</p>
+          <p>Erialased tegevused</p>
+          <p>Minust</p>
+          <p>Eneserefleksioon</p>
+        </div>
+        <div class="infoBox">
+          <h6>Leiad mind ka</h6>
+          <p>Behance</p>
+          <p>Dribbble</p>
+          <p>Instagram</p>
+          <p>LinkedIn</p>
+        </div>
       </div>
     </div>
     <div class="rights">
@@ -52,9 +54,17 @@
   width: 70%;
 }
 
+.infoWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .infoBox {
   margin-top: 80px;
   margin-bottom: 80px;
+  margin: 80px 16px 80px 16px;
 }
 
 .infoBox h6 {
@@ -73,6 +83,8 @@
 .infoBoxMe {
   margin-top: 80px;
   margin-bottom: 20px;
+  margin: 80px 40px 20px 0;
+  width: 40%;
 }
 
 .infoBoxMe h4 {
@@ -93,6 +105,44 @@
   font-size: 14px;
 }
 
+@media only screen and (max-width: 1080px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .infoWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .infoBoxMe {
+    align-self: center;
+    text-align: center;
+  }
+
+
+  .rights {
+    width: 70%;
+    margin-bottom: 32px;
+    margin-top: 80px;
+    font-size: clamp(14px, 1vw, 16px);
+  }
+
+  .infoBox {
+    margin-bottom: 20px;
+  }
+
+  .infoBoxMe h4 {
+    margin-bottom: 16px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .info {
     display: flex;
@@ -100,6 +150,11 @@
     justify-content: space-between;
     text-align: center;
     width: 90%;
+  }
+
+  .infoWrapper {
+    display: flex;
+    flex-direction: column;
   }
 
   .rights {
@@ -116,8 +171,14 @@
     margin-bottom: 20px;
   }
 
-  .infoBoxMe h4 {
-  margin-bottom: 16px;
+.infoBoxMe {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
 }
+
+  .infoBoxMe h4 {
+    margin-bottom: 16px;
+  }
 }
 </style>

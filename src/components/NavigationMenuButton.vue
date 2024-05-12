@@ -60,7 +60,7 @@ const props = defineProps(['shown']);
   margin: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1080px) {
   .menuToggleContainer {
   width: 48px;
   height: 48px;
