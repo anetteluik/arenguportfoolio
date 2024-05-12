@@ -34,6 +34,7 @@
         </div>
     </div>
     <div class="popUpImage">
+        <img src="/src/assets/img/avastatartut.webp" alt="">
     </div>
 </template>
 
@@ -54,8 +55,12 @@ import TextButton from '../TextButton.vue';
 
 .popUpImage {
     width: 45%;
+}
+
+.popUpImage img {
+    width: 100%;
     height: 100%;
-    background-color: blue;
+    object-fit: cover;
 }
 
 .popUpTextAndButtons .text {
@@ -69,14 +74,46 @@ import TextButton from '../TextButton.vue';
 .popUpTextAndButtons .textP {
     font-size: clamp(16px, 3vw, 18px);
     padding: 0 100px 0 120px;
-    line-height: clamp(20px, 2vw, 28px);
+    line-height: 1.5;
 }
-
-
 
 .buttonRe {
     font-size: 18px;
     margin: 96px 100px 56px 120px;
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .popUpTextAndButtons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        height: 100%;
+    }
+
+    .popUpImage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .popUpTextAndButtons .text {
+        font-size: clamp(40px, 1.5vw, 48px);
+        font-weight: 700;
+        padding: 0;
+        margin-bottom: 24px;
+        margin-top: 100px;
+    }
+
+    .popUpTextAndButtons .textP {
+        font-size: clamp(16px, 3vw, 18px);
+        padding: 0;
+    }
+
+    .buttonRe {
+        font-size: 16px;
+        margin: 56px 0 56px 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -84,33 +121,31 @@ import TextButton from '../TextButton.vue';
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 100%;
+        width: 80%;
         height: 100%;
     }
 
     .popUpImage {
         width: 100%;
         height: 100%;
-        background-color: blue;
     }
 
     .popUpTextAndButtons .text {
         font-size: clamp(40px, 1.5vw, 48px);
         font-weight: 700;
-        padding: 0 40px 0 40px;
+        padding: 0;
         margin-bottom: 24px;
         margin-top: 100px;
     }
 
     .popUpTextAndButtons .textP {
         font-size: clamp(16px, 3vw, 18px);
-        padding: 0 40px 0 40px;
-        line-height: clamp(20px, 2vw, 28px);
+        padding: 0;
     }
 
     .buttonRe {
         font-size: 16px;
-        margin: 56px 40px 56px 40px;
+        margin: 56px 0 56px 0;
     }
 }
 </style>

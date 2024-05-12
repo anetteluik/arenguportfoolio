@@ -255,6 +255,14 @@ h3 {
     height: 100%;
   }
 
+  .descriptionWrapper {
+    flex-direction: column;
+  }
+
+  .description {
+    width: 100%;
+  }
+
   .descriptionMoodul {
     width: 100%;
   }
@@ -287,8 +295,40 @@ h3 {
   }
 
   .moodulWrapper {
-    margin-top: 40px;
+    margin-top: 64px;
     margin-bottom: 180px;
+  }
+
+  .descriptionWrapper {
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  a {
+    margin-top: 32px;
+  }
+
+  .aboutSectionPhotos {
+    flex-direction: column;
+    margin-top: 64px;
+    gap: 24px;
+  }
+
+  .aboutPhoto {
+    width: 100%;
+  }
+
+  .arengWrapper {
+    width: 80%;
+    margin-top: 156px;
+  }
+
+  .areng {
+    margin: 0;
+  }
+
+  .areng h3 {
+    margin-bottom: 24px;
   }
 }
 

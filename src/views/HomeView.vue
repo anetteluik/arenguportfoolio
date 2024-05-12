@@ -6,9 +6,6 @@ import Footer from "@/components/Footer.vue";
 <template>
   <main>
     <div class="jumbo">
-      <div class="navigation">
-        x
-      </div>
       <div class="mainWrapper">
         <div class="mainTitle">
           <h1>Anette Luik</h1>

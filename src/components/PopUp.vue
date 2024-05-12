@@ -24,9 +24,10 @@ const props = defineProps(['shown']);
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     z-index: 999;
+    overflow-y: scroll;
 }
 
 .popUpWrapper.show {
@@ -38,8 +39,7 @@ const props = defineProps(['shown']);
     display: flex;
     flex-direction: row;
     width: 75vw;
-    height: 100vh;
-    align-items: center;
+    min-height: 100vh;
     justify-content: center;
     position: fixed;
     top: 0;
@@ -56,20 +56,31 @@ const props = defineProps(['shown']);
     top: 0;
 }
 
+@media only screen and (max-width: 1500px) {
+    .popUp {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+    }
+    
+}
+
 @media only screen and (max-width: 600px) {
     .popUp {
         display: flex;
         flex-direction: column;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
         align-items: center;
         justify-content: center;
         position: fixed;
         top: 0;
         /* Initially hide the menu off-screen */
         right: 0;
-        z-index: 999 !important;
-        background-color: #EFEDEB;
     }
 }
+
 </style>
