@@ -9,14 +9,30 @@
                 <router-link to="/graafilise-disaini-alused">
                     <li>Graafilise disaini alused</li>
                 </router-link>
-                <li>Kasutajakogemuse analüüs</li>
-                <li>Veebikujundus</li>
-                <li>Psühholoogia ja suhtlemine</li>
-                <li>Tootearendus</li>
-                <li>Arvutite riistvara ja võrgud</li>
-                <li>Programmeerimise alused</li>
-                <li>Veebiarendus ja haldus</li>
-                <li>Karjääriplaneerimine ja ettevõtlus</li>
+                <router-link to="/kasutajakogemuse-analuus">
+                    <li>Kasutajakogemuse analüüs</li>
+                </router-link>
+                <router-link to="/veebikujundus">
+                    <li>Veebikujundus</li>
+                </router-link>
+                <router-link to="/psuhholoogia-ja-suhtlemine">
+                    <li>Psühholoogia ja suhtlemine</li>
+                </router-link>
+                <router-link to="/tootearendus">
+                    <li>Tootearendus</li>
+                </router-link>
+                <router-link to="/arvutite-riistvara-ja-vorgud">
+                    <li>Arvutite riistvara ja võrgud</li>
+                </router-link>
+                <router-link to="/programmeerimise-alused">
+                    <li>Programmeerimise alused</li>
+                </router-link>
+                <router-link to="/veebiarendus-ja-haldus">
+                    <li>Veebiarendus ja haldus</li>
+                </router-link>
+                <router-link to="/karjaariplaneerimine-ja-ettevotlus">
+                    <li>Karjääriplaneerimine ja ettevõtlus</li>
+                </router-link>
             </ul>
         </div>
         <div class="navOption" @click="toggleSection(allSections.praktika)">
@@ -25,7 +41,9 @@
         </div>
         <div class="subsection">
             <ul v-if="currentlyOpenSection === allSections.praktika">
-                <li>Tutvumispraktika</li>
+                <router-link to="/tutvumispraktika">
+                    <li>Tutvumispraktika</li>
+                </router-link>
                 <li>Spetsialiseerumispraktika</li>
             </ul>
         </div>
@@ -35,8 +53,12 @@
         </div>
         <div class="subsection">
             <ul v-if="currentlyOpenSection === allSections.erialasedTegevused">
-                <li>Koolitused</li>
-                <li>Iseseisev nokitsemine</li>
+                <router-link to="/koolitused">
+                    <li>Koolitused</li>
+                </router-link>
+                <router-link to="/iseseisev-nokitsemine">
+                    <li>Iseseisev nokitsemine</li>
+                </router-link>
             </ul>
         </div>
         <div class="navOption">
@@ -78,7 +100,7 @@ function linkClickHandler(e) {
     if (e.target.classList.contains("option") || e.target.nodeName === 'LI') {
         emit("toggle")
     }
-    
+
 }
 
 </script>

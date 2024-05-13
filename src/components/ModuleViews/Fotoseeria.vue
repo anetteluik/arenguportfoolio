@@ -1,46 +1,38 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">Avasta Tartut</div>
-            <p class="textP">Aasta Tegija võistluse ülesanne oli luua mobiilirakendus nimega "Avasta Tartut",
-                mis
-                võimaldab kasutajatel
-                planeerida nii pere- kui ka kultuurireise. Rakendus pidi sisaldama kaarti, millel on märgitud
-                erinevad
-                vaatamisväärsused, ning pakub kasutajatele sobiva teekonna nende avastamiseks. Antud ülesande
-                täitmiseks
-                oli
-                antud viis tundi ning kasutasin selleks disainitööriista Figma. <br>
-                Aasta Tegija võistlusel osalemine oli minu jaoks ülimalt oluline, sest teadsin, et hindajate
-                hulgas on
-                nimekad ettevõtteid ja isikuid. Võidu saavutamine polnud minu jaoks niivõrd tähtis, vaid ootasin
-                huviga
-                tagasisidet tööle. Olen aja jooksul pidevalt täiendanud oma oskusi kasutajakogemuse ja visuaalse
-                disaini
-                vallas ning tagasi vaadates mõistan, et olin liialt keskendunud visuaalsele poolele ning ei
-                pööranud
-                piisavalt tähelepanu kasutajamugavuse ja ligipääsetavuse olulisusele. <br>
-                Saadud tagasiside aitas mul mõista, et peaksin rohkem rõhku panema kasutajakesksele disainile,
-                mitte
-                ainult
-                visuaalsete elementide täiustamisele. <br>
-                Aasta Tegija võistlusel pälvisin kolmanda koha. <br>
-                Siin on link minu loodud prototüübile ja projekti dokumentatsioonile.</p>
+            <div class="text">Fotoseeria</div>
+            <p class="textP">Illustratori ja Photoshopi platvormi õppimiseks olid õpetaja poolt ette valmistatud
+                erinevad ülesanded, mis nõudsid mitmesuguste tööriistade kasutamist ja nende funktsiooni õppimist
+                mõlemas keskkonnas.
+                Mooduli käigus omandasin oskusi värvilahenduste tõhusaks ja professionaalseks rakendamiseks - õppisin,
+                millised värvitoonid omavahel harmoneeruvad, tutvusin erinevate värviskeemidega (nt monokroomne,
+                analoogne jne) ning õppisin vältima ebasobivaid värvikombinatsioone ja leidma lahendusi, mis vastavad
+                ligipääsetavuse standarditele. Tüpograafia mängis olulist rolli õppetöös, rõhutades teksti olulisust
+                kasutajasõbralikus disainis. Omandasin oskusi sobivate fontide valimisel, vahekauguste ja joonduste
+                kohandamisel, arvestades kasutajamugavust ja loetavust. Lisaks õppisin rastergraafika töötlemist Adobe
+                Photoshopi abil. Samuti mõistsin, et kuigi Figma on mitmekülgne platvorm, pakub Adobe Illustrator teatud
+                tüüpi kujunduste loomisel rohkem vabadust ja kohandamisvõimalusi. Seetõttu olen püüdnud seda ka oma
+                edasistes töödes rohkem kasutada.</p>
         </div>
         <div class="forwardBackButtons">
+            <router-link to="">
+                <TextButtonBack :imgType="'back'" :alt="'Button Icon'" class="buttonRe">Eelmine</TextButtonBack>
+            </router-link>
             <router-link to="">
                 <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Järgmine</TextButton>
             </router-link>
         </div>
     </div>
     <div class="popUpImage">
-        <img src="/src/assets/img/avastatartut.webp" alt="">
+        <img src="/src/assets/img/fotoseeria.webp" alt="">
     </div>
 </template>
 
 <script setup>
 import { render } from 'vue';
 import TextButton from '../TextButton.vue';
+import TextButtonBack from '../TextButtonBack.vue';
 
 </script>
 
@@ -79,6 +71,12 @@ import TextButton from '../TextButton.vue';
 .buttonRe {
     font-size: 18px;
     margin: 96px 100px 56px 120px;
+}
+
+.forwardBackButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 

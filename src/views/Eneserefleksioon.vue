@@ -21,7 +21,7 @@ import Footer from "@/components/Footer.vue";
                     <h3>Õpingud</h3>
                 </div>
                 <div class="descriptionWrapper">
-                    <div class="description">
+                    <div class="opingudDesc">
                         <p>Minu kodukoht asub pisikeses Keeni külas Valga maakonnas. Enne,
                             kui avastasin UX/UI disaini valdkonna, olin seadnud endale mitmeid
                             erinevaid tööalaseid eesmärke, alustades loomaarsti ja laulja ning
@@ -86,7 +86,7 @@ import Footer from "@/components/Footer.vue";
                     <h3>Kolm Punkti</h3>
                 </div>
                 <div class="descriptionWrapper">
-                    <div class="description">
+                    <div class="opingudDesc">
                         <p>Minu kodukoht asub pisikeses Keeni külas Valga maakonnas. Enne,
                             kui avastasin UX/UI disaini valdkonna, olin seadnud endale mitmeid
                             erinevaid tööalaseid eesmärke, alustades loomaarsti ja laulja ning
@@ -116,7 +116,7 @@ import Footer from "@/components/Footer.vue";
 </template>
 
 <style>
-.description {
+.opingudDesc {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -124,7 +124,7 @@ import Footer from "@/components/Footer.vue";
     width: 100%;
 }
 
-.description p {
+.opingudDesc p {
     width: 100%;
 }
 

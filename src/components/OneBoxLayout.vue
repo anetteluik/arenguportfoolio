@@ -44,6 +44,7 @@ const props = defineProps(['title', 'text']);
     width: 100%;
     height: 60%;
     margin-top: 24px;
+    cursor: pointer;
 }
 
 .moodulTwo {

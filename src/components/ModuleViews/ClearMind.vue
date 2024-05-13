@@ -1,46 +1,38 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">Avasta Tartut</div>
-            <p class="textP">Aasta Tegija võistluse ülesanne oli luua mobiilirakendus nimega "Avasta Tartut",
-                mis
-                võimaldab kasutajatel
-                planeerida nii pere- kui ka kultuurireise. Rakendus pidi sisaldama kaarti, millel on märgitud
-                erinevad
-                vaatamisväärsused, ning pakub kasutajatele sobiva teekonna nende avastamiseks. Antud ülesande
-                täitmiseks
-                oli
-                antud viis tundi ning kasutasin selleks disainitööriista Figma. <br>
-                Aasta Tegija võistlusel osalemine oli minu jaoks ülimalt oluline, sest teadsin, et hindajate
-                hulgas on
-                nimekad ettevõtteid ja isikuid. Võidu saavutamine polnud minu jaoks niivõrd tähtis, vaid ootasin
-                huviga
-                tagasisidet tööle. Olen aja jooksul pidevalt täiendanud oma oskusi kasutajakogemuse ja visuaalse
-                disaini
-                vallas ning tagasi vaadates mõistan, et olin liialt keskendunud visuaalsele poolele ning ei
-                pööranud
-                piisavalt tähelepanu kasutajamugavuse ja ligipääsetavuse olulisusele. <br>
-                Saadud tagasiside aitas mul mõista, et peaksin rohkem rõhku panema kasutajakesksele disainile,
-                mitte
-                ainult
-                visuaalsete elementide täiustamisele. <br>
-                Aasta Tegija võistlusel pälvisin kolmanda koha. <br>
-                Siin on link minu loodud prototüübile ja projekti dokumentatsioonile.</p>
+            <div class="text">Clear Mind</div>
+            <p class="textP">Projekti ülesandeks oli teha koostööd müügiesindajatega (kui kliendiga) ning selgitada
+                välja tooteidee, vajadused, eesmärgid ja ootused lõpptulemusele.
+                Antud ülesande käigus õppisin rakendama kliendikeskset disaini, kohandades disainilahendusi vastavalt
+                kliendi individuaalsetele vajadustele ja eelistustele. Selleks pidasin mitmeid arutelusid kliendiga, et
+                korrektselt mõista nende nõudmisi ning nägemust lõpptulemusest. Tegemist oli mitmekülgse projektiga, kus
+                uurisin erinevaid kujundusvorminguid alates bänneritest ja kaanepiltidest kuni sotsiaalmeedia
+                platvormide (nagu Facebook ja Instagram) postitusteni ning animeeritud sotsiaalmeedia sisuni. Minu
+                kliendi soovide hulka kuulusid logo kujundus, toote etiketi kujundus, Facebooki profiili kujundus ning
+                toote mockup.
+                Projekti käigus arendasin oma loovat mõtlemist ja disainioskusi, kuna iga ülesanne nõudis uut lähenemist
+                ja vaatenurka. Oluline oli arvestada mitte ainult lõppkasutajaga, vaid ka kliendi konkreetsete soovide
+                ja visiooniga.</p>
         </div>
         <div class="forwardBackButtons">
+            <router-link to="">
+                <TextButtonBack :imgType="'back'" :alt="'Button Icon'" class="buttonRe">Eelmine</TextButtonBack>
+            </router-link>
             <router-link to="">
                 <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Järgmine</TextButton>
             </router-link>
         </div>
     </div>
     <div class="popUpImage">
-        <img src="/src/assets/img/avastatartut.webp" alt="">
+        <img src="/src/assets/img/clearmind.webp" alt="">
     </div>
 </template>
 
 <script setup>
 import { render } from 'vue';
 import TextButton from '../TextButton.vue';
+import TextButtonBack from '../TextButtonBack.vue';
 
 </script>
 
@@ -79,6 +71,12 @@ import TextButton from '../TextButton.vue';
 .buttonRe {
     font-size: 18px;
     margin: 96px 100px 56px 120px;
+}
+
+.forwardBackButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 

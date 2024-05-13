@@ -1,46 +1,38 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">Avasta Tartut</div>
-            <p class="textP">Aasta Tegija võistluse ülesanne oli luua mobiilirakendus nimega "Avasta Tartut",
-                mis
-                võimaldab kasutajatel
-                planeerida nii pere- kui ka kultuurireise. Rakendus pidi sisaldama kaarti, millel on märgitud
-                erinevad
-                vaatamisväärsused, ning pakub kasutajatele sobiva teekonna nende avastamiseks. Antud ülesande
-                täitmiseks
-                oli
-                antud viis tundi ning kasutasin selleks disainitööriista Figma. <br>
-                Aasta Tegija võistlusel osalemine oli minu jaoks ülimalt oluline, sest teadsin, et hindajate
-                hulgas on
-                nimekad ettevõtteid ja isikuid. Võidu saavutamine polnud minu jaoks niivõrd tähtis, vaid ootasin
-                huviga
-                tagasisidet tööle. Olen aja jooksul pidevalt täiendanud oma oskusi kasutajakogemuse ja visuaalse
-                disaini
-                vallas ning tagasi vaadates mõistan, et olin liialt keskendunud visuaalsele poolele ning ei
-                pööranud
-                piisavalt tähelepanu kasutajamugavuse ja ligipääsetavuse olulisusele. <br>
-                Saadud tagasiside aitas mul mõista, et peaksin rohkem rõhku panema kasutajakesksele disainile,
-                mitte
-                ainult
-                visuaalsete elementide täiustamisele. <br>
-                Aasta Tegija võistlusel pälvisin kolmanda koha. <br>
-                Siin on link minu loodud prototüübile ja projekti dokumentatsioonile.</p>
+            <div class="text">Rosabella</div>
+            <p class="textP">Ülesanne seisnes uue logo loomises Rosabella iluvõimlemis-rühmale, mis peab olema
+                mitmekülgselt kasutatav erinevates kontekstides, olgu selleks siis must kampsun või roosa särk.
+                Selle projekti käigus õppisin mitmeid erinevaid lähenemisviise logode kujundamisele, alustades
+                negatiivsetest ja värvilistest versioonidest kuni ilma tekstita logomark variantideni. Kõik need
+                aspektid on olulised logode kohandatavuse seisukohast erinevates kasutusolukordades. Üks oluline oskus,
+                mille omandasin, oli mockupide loomine. Projekti raames pidin paigutama Rosabella logod
+                treeningusärkidele ja pusadele, mis nõudis realistlike kujutiste loomist Rosabella poolt antud
+                fotomaterjaliga. Sain esmase kogemuse ka mini-CVI loomisel, kus lisaks logode variatsioonidele ja
+                mockupidele tuli esile tuua ka kasutatud värvikoodid ja fondid. Need teadmised osutusid kasulikuks ka
+                müügiesindajate projektis, kus pidin looma brändi vastavalt klienti nõuetele.
+                Nii-nii äge oli teada saada, et minu logo valiti Rosabella treenerite poolt lemmikuks ning kasutatakse
+                siiani iluvõimlemisrühma riietel ning sotsiaalmeedias profiilipildina. :)</p>
         </div>
         <div class="forwardBackButtons">
+            <router-link to="/avasta-tartut">
+                <TextButtonBack :imgType="'back'" :alt="'Button Icon'" class="buttonRe">Eelmine</TextButtonBack>
+            </router-link>
             <router-link to="">
                 <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Järgmine</TextButton>
             </router-link>
         </div>
     </div>
     <div class="popUpImage">
-        <img src="/src/assets/img/avastatartut.webp" alt="">
+        <img src="/src/assets/img/rosabella.webp" alt="">
     </div>
 </template>
 
 <script setup>
 import { render } from 'vue';
 import TextButton from '../TextButton.vue';
+import TextButtonBack from '../TextButtonBack.vue';
 
 </script>
 
@@ -79,6 +71,12 @@ import TextButton from '../TextButton.vue';
 .buttonRe {
     font-size: 18px;
     margin: 96px 100px 56px 120px;
+}
+
+.forwardBackButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 

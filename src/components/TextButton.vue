@@ -18,7 +18,7 @@ import { defineProps } from 'vue';
 
 // Define the props for the component
 const props = defineProps({
-  imgType: 'upright' | 'right', // Declare img prop
+  imgType: 'upright' | 'right' | 'back', // Declare img prop
   alt: String, // Declare alt prop
   customImgProp: String // Declare customImgProp prop
 });
@@ -29,6 +29,8 @@ function getImageSource(imgType) {
       return "upright-arrow.svg";
     case 'right':
       return "right-arrow.svg";
+    case 'back':
+      return "arrow-back.svg";
     default:
       return "arrow.svg";
   }
