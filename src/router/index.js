@@ -14,8 +14,7 @@ import Karjaariplaneerimine from '@/views/Karjaariplaneerimine.vue'
 import Koolitused from '@/views/Koolitused.vue'
 import Iseseisev from '@/views/Iseseisev.vue'
 import Tutvumispraktika from '@/views/Tutvumispraktika.vue'
-
-
+import Spetsialiseerumispraktika from '@/views/Spetsialiseerumispraktika.vue'
 
 
 const router = createRouter({
@@ -95,6 +94,11 @@ const router = createRouter({
       path: '/tutvumispraktika',
       name: 'tutvumispraktika',
       component: Tutvumispraktika
+    },
+    {
+      path: '/spetsialiseerumispraktika',
+      name: 'spetsialiseerumispraktika',
+      component: Spetsialiseerumispraktika
     },
   ]
 })

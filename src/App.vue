@@ -2,7 +2,6 @@
 import { RouterLink, RouterView } from 'vue-router'
 import NavigationMenu from "@/components/NavigationMenu.vue";
 import NavigationMenuButton from "@/components/NavigationMenuButton.vue";
-
 import { ref } from "vue";
 import Footer from './components/Footer.vue';
 
@@ -75,8 +74,6 @@ function toggleMenu() {
 //   });
 
 // });
-
-
 </script>
 
 <template>

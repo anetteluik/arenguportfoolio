@@ -74,40 +74,40 @@ let currentlyOpenModule = ref(null);
           <div class="moodulSection">
             <OneBoxLayout @click="toggleModule(allModules.avastaTartut)" :title="'Avasta Tartut'"
               :text="'Mobiilirakenduse prototüüp, Figma, Illustrator'">
-              <img class="backg" src="../assets/img/avastatartut.webp" alt="Avasta Tartut mobiilirakenduse mockup">
+              <img img loading="lazy" class="backg" src="../assets/img/avastatartut.webp" alt="Avasta Tartut mobiilirakenduse mockup">
             </OneBoxLayout>
             <OneBoxLayout @click="toggleModule(allModules.rosabella)" :title="'Rosabella'"
               :text="'Logo kujundamine, mockup, Illustrator, Photoshop'">
-              <img class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
+              <img img loading="lazy" class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
             </OneBoxLayout>
           </div>
           <OneBoxLayout @click="toggleModule(allModules.clearMind)" :title="'Clear Mind'"
             :text="'Logo kujundamine, prototüüp, mockup, kliendisuhtlus, Figma, Photoshop'">
-            <img class="backg" src="../assets/img/clearmind.webp" alt="Clear Mind energiajoogi mockup purkidel">
+            <img img loading="lazy" class="backg" src="../assets/img/clearmind.webp" alt="Clear Mind energiajoogi mockup purkidel">
           </OneBoxLayout>
           <div class="moodulSection">
             <OneBoxLayout @click="toggleModule(allModules.illustrator)" :title="'Illustrator ja Photoshop'"
               :text="'Kujundustööd, programmiga tutvumine'">
-              <img class="backg" src="../assets/img/photoshop-luik.webp" alt="Avasta Tartut mobiilirakenduse mockup">
+              <img img loading="lazy" class="backg" src="../assets/img/photoshop-luik.webp" alt="Avasta Tartut mobiilirakenduse mockup">
             </OneBoxLayout>
             <OneBoxLayout @click="toggleModule(allModules.advendihommik)" :title="'Advendihommik ja jõulukaart'"
               :text="'Animatsioonid, kujundustööd, Photoshop, After Effects'">
-              <img class="backg" src="../assets/img/tänukiri.webp" alt="Rosabella logo T-särgil">
+              <img img loading="lazy" class="backg" src="../assets/img/tänukiri.webp" alt="Rosabella logo T-särgil">
             </OneBoxLayout>
           </div>
           <div class="moodulSection">
             <OneBoxLayout @click="toggleModule(allModules.fotoseeria)" :title="'Fotoseeria'"
               :text="'Fotograafia, pilditöötlus, Photoshop'">
-              <img class="backg" src="../assets/img/fotoseeria.webp" alt="Avasta Tartut mobiilirakenduse mockup">
+              <img img loading="lazy" class="backg" src="../assets/img/fotoseeria.webp" alt="Avasta Tartut mobiilirakenduse mockup">
             </OneBoxLayout>
             <OneBoxLayout @click="toggleModule(allModules.vocokaart)" :title="'VOCO õppehoonete kaart'"
               :text="'Animatsioonid, kujundustööd, Figma'">
-              <img class="backg" src="../assets/img/kaart.webp" alt="Rosabella logo T-särgil">
+              <img img loading="lazy" class="backg" src="../assets/img/kaart.webp" alt="Rosabella logo T-särgil">
             </OneBoxLayout>
           </div>
           <OneBoxLayout @click="toggleModule(allModules.visiitkaart)" :title="'NOPE Creative visiitkaart'"
             :text="'Trükiettevalmistus, Illustrator, Figma'">
-            <img class="backg" src="../assets/img/visiitkaart.webp" alt="Clear Mind energiajoogi mockup purkidel">
+            <img img loading="lazy" class="backg" src="../assets/img/visiitkaart.webp" alt="Clear Mind energiajoogi mockup purkidel">
           </OneBoxLayout>
         </div>
       </div>

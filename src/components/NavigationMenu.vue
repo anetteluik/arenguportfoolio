@@ -7,31 +7,31 @@
         <div class="subsection">
             <ul v-if="currentlyOpenSection === allSections.akadeemilineAreng">
                 <router-link to="/graafilise-disaini-alused">
-                    <li>Graafilise disaini alused</li>
+                    <li><p>Graafilise disaini alused</p></li>
                 </router-link>
                 <router-link to="/kasutajakogemuse-analuus">
-                    <li>Kasutajakogemuse analüüs</li>
+                    <li><p>Kasutajakogemuse analüüs</p></li>
                 </router-link>
                 <router-link to="/veebikujundus">
-                    <li>Veebikujundus</li>
+                    <li><p>Veebikujundus</p></li>
                 </router-link>
                 <router-link to="/psuhholoogia-ja-suhtlemine">
-                    <li>Psühholoogia ja suhtlemine</li>
+                    <li><p>Psühholoogia ja suhtlemine</p></li>
                 </router-link>
                 <router-link to="/tootearendus">
-                    <li>Tootearendus</li>
+                    <li><p>Tootearendus</p></li>
                 </router-link>
                 <router-link to="/arvutite-riistvara-ja-vorgud">
-                    <li>Arvutite riistvara ja võrgud</li>
+                    <li><p>Arvutite riistvara ja võrgud</p></li>
                 </router-link>
                 <router-link to="/programmeerimise-alused">
-                    <li>Programmeerimise alused</li>
+                    <li><p>Programmeerimise alused</p></li>
                 </router-link>
                 <router-link to="/veebiarendus-ja-haldus">
-                    <li>Veebiarendus ja haldus</li>
+                    <li><p>Veebiarendus ja haldus</p></li>
                 </router-link>
                 <router-link to="/karjaariplaneerimine-ja-ettevotlus">
-                    <li>Karjääriplaneerimine ja ettevõtlus</li>
+                    <li><p>Karjääriplaneerimine ja ettevõtlus</p></li>
                 </router-link>
             </ul>
         </div>
@@ -42,9 +42,11 @@
         <div class="subsection">
             <ul v-if="currentlyOpenSection === allSections.praktika">
                 <router-link to="/tutvumispraktika">
-                    <li>Tutvumispraktika</li>
+                    <li><p>Tutvumispraktika</p></li>
                 </router-link>
-                <li>Spetsialiseerumispraktika</li>
+                <router-link to="/spetsialiseerumispraktika">
+                    <li><p>Spetsialiseerumispraktika</p></li>
+                </router-link>
             </ul>
         </div>
         <div class="navOption" @click="toggleSection(allSections.erialasedTegevused)">
@@ -54,10 +56,10 @@
         <div class="subsection">
             <ul v-if="currentlyOpenSection === allSections.erialasedTegevused">
                 <router-link to="/koolitused">
-                    <li>Koolitused</li>
+                    <li><p>Koolitused</p></li>
                 </router-link>
                 <router-link to="/iseseisev-nokitsemine">
-                    <li>Iseseisev nokitsemine</li>
+                    <li><p>Iseseisev nokitsemine</p></li>
                 </router-link>
             </ul>
         </div>
@@ -97,7 +99,7 @@ let currentlyOpenSection = ref(null);
 const props = defineProps(['shown']);
 
 function linkClickHandler(e) {
-    if (e.target.classList.contains("option") || e.target.nodeName === 'LI') {
+    if (e.target.classList.contains("option") || e.target.nodeName === 'P') {
         emit("toggle")
     }
 
@@ -128,6 +130,27 @@ ul {
 li {
     padding: 0 28px 0 28px;
     margin-bottom: 40px;
+}
+
+li p {
+    background: linear-gradient(
+            90deg,
+            #61131D 0%,
+            #61131D 50%,
+            rgba(255, 255, 255, 0) 50%,
+            rgba(255, 255, 255, 0) 100%
+    ) 100%;
+    background-size: 210% 210%;
+    transition: background-position 0.5s ease-in-out;
+}
+
+a {
+    color: #EFEDEB;
+}
+
+li p:hover{
+    background-color: #61131D;
+    background-position: 0;
 }
 
 .menu {
@@ -184,15 +207,32 @@ li {
     align-self: center;
 }
 
+@media only screen and (max-width: 1500px) {
+    .subsection {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+    }
+
+    li {
+        padding: 0 24px 0 24px;
+    }
+
+}
+
 @media only screen and (max-width: 600px) {
     .subsection {
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        width: 90vw;
     }
 
     li {
         padding: 0 8px 0 8px;
+    }
+
+    a {
+        margin: 0;
     }
 
 }
