@@ -1,8 +1,3 @@
-<script setup>
-import TextButton from "../components/TextButton.vue"
-import Footer from "@/components/Footer.vue";
-</script>
-
 <template>
   <main>
     <div class="jumbo">
@@ -53,8 +48,10 @@ import Footer from "@/components/Footer.vue";
         <div class="areng">
           <h3>Akadeemiline areng</h3>
           <div class="sliderPhotos">
-            <div class='flex-container'>
-              <div class='card'>card</div>
+            <div class='flex-container' @scroll="sideScroll" @wheel="sideScroll">
+              <div class='card'>
+                <img src="/src/assets/img/avastatartut.webp" alt="">
+              </div>
               <div class='card'>card</div>
               <div class='card'>card</div>
               <div class='card'>card</div>
@@ -75,12 +72,29 @@ import Footer from "@/components/Footer.vue";
   </main>
 </template>
 
-<style>
-.stupid {
-  width: 600px;
-  height: 200px;
-  background-color: antiquewhite;
+<script setup>
+import TextButton from "../components/TextButton.vue"
+
+function sideScroll(event) {
+  event.preventDefault();
+  const scrollableElement = event.target.closest('.flex-container')
+  let change = event.deltaY;
+  let speed = 1;
+  let scroll = change * speed;
+  let reachedTheLeftSideOfSidescroll = scrollableElement.scrollLeft == 0
+  let isTryingToScrollUp = scroll < 0
+  let reachedTheRightSideOfSidescroll = scrollableElement.scrollLeft + scrollableElement.clientWidth >= scrollableElement.scrollWidth
+  let isTryingToScrollDown = scroll > 0
+  if (reachedTheLeftSideOfSidescroll && isTryingToScrollUp
+  || reachedTheRightSideOfSidescroll && isTryingToScrollDown) { 
+      window.scrollBy(0, scroll * 0.2); // 0.2 makes the scroll slower
+  } else {
+    scrollableElement.scrollBy(scroll, 0);
+  }
 }
+</script>
+
+<style>
 
 .sliderCardsWrapper {
   max-width: 100%;
@@ -91,26 +105,45 @@ import Footer from "@/components/Footer.vue";
 }
 
 .sliderPhotos {
-			padding: 10px;
-			overflow-y: hidden;
-			width: 100%;
-			height: 100%;
-		}
+  padding: 10px;
+  overflow-y: hidden;
+  width: 100%;
+}
 
-		.flex-container {
-			overflow-x: scroll;
-			height: calc(100% + 17px);
-			padding-bottom: 17px;
-			display: flex;
-			flex-wrap: nowrap;
-      gap: 8px;
-		}
+.flex-container {
+  overflow-x: scroll; 
+  padding-bottom: 17px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
 
-		.card {
-			flex: 3 0 33%;
-			height: 100%;
-			display: inline-block;
-      background-color: blueviolet;
-		}
+/* width */
+.flex-container::-webkit-scrollbar {
+  height: 12px;
+}
+
+/* Track */
+.flex-container::-webkit-scrollbar-track {
+  background: #CEAAAE;
+}
+
+/* Handle */
+.flex-container::-webkit-scrollbar-thumb {
+  background: #61131D;
+}
+
+.flex-container::-webkit-scrollbar-thumb:hover {
+  background: #831a28;
+}
+
+.card {
+  flex: 3 0 33%;
+  min-height: 400px;
+  min-width: 300px;
+  display: inline-block;
+  background-color: blueviolet;
+}
+
 
 </style>

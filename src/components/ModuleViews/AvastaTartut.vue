@@ -33,14 +33,32 @@
             </router-link>
         </div>
     </div>
-    <div class="popUpImage">
-        <img src="/src/assets/img/avastatartut.webp" alt="">
+    <div class="popupImagesSectionWrapper">
+        <div class="popUpImages" ref="popUpImages">
+            <img v-for="image in images" :src="image" alt="Illustration">
+        </div>
+        <div class="imagesNavigator">
+            <div v-for="i, index in images" class="images-nav-dot-block" @click="navigateToImage(index)">
+                <div class="nav-dot"></div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
-import { render } from 'vue';
+import { onMounted, render, markRaw, ref } from 'vue';
 import TextButton from '../TextButton.vue';
+import imgAvastaTartut from '@/assets/img/avastatartut.webp';
+import imgClearMind from '@/assets/img/clearmind.webp';
+import imgFotoseeria from '@/assets/img/fotoseeria.webp';
+
+const popUpImages = ref(null)
+
+const images = [imgAvastaTartut, imgClearMind, imgFotoseeria]
+
+function navigateToImage(index) {
+    popUpImages.value.scrollTo({left: popUpImages.value.offsetWidth * index, behaviour: 'smooth'});
+}
 
 </script>
 
@@ -50,16 +68,61 @@ import TextButton from '../TextButton.vue';
     flex-direction: column;
     justify-content: space-between;
     width: 55%;
+    overflow-y: scroll;
+    max-height: 100vh;
 }
 
-.popUpImage {
+.popUpTextAndButtons::-webkit-scrollbar {
+    background: transparent;
+    width: 0;
+}
+
+.popupImagesSectionWrapper {
+    position: relative;
     width: 45%;
 }
 
-.popUpImage img {
-    width: 100%;
-    height: 100%;
+.popUpImages {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    height: 100vh;
+    top: 0;
+    transition: all 1s ease;
+    scroll-behavior: smooth;
+}
+
+.popUpImages ::-webkit-scrollbar {
+    display: none;
+}
+
+.popUpImages img {
     object-fit: cover;
+}
+
+.imagesNavigator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    margin-top: -100px;
+}
+
+.imagesNavigator .images-nav-dot-block {
+    padding: 12px;
+}
+
+.imagesNavigator .nav-dot {
+    width: 20px;
+    height: auto;
+    aspect-ratio: 1;
+    background: white;
+    border-radius: 50%;
+    outline: 2px solid black;
+}
+
+.imagesNavigator .nav-dot:hover {
+    background: #60121c;
 }
 
 .popUpTextAndButtons .text {
@@ -91,7 +154,7 @@ import TextButton from '../TextButton.vue';
         height: 100%;
     }
 
-    .popUpImage {
+    .popUpImages img {
         width: 100%;
         height: 100%;
     }
@@ -124,7 +187,7 @@ import TextButton from '../TextButton.vue';
         height: 100%;
     }
 
-    .popUpImage {
+    .popUpImages {
         width: 100%;
         height: 100%;
     }

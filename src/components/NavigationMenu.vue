@@ -148,7 +148,8 @@ a {
     color: #EFEDEB;
 }
 
-li p:hover{
+li p:hover,
+.router-link-active li p {
     background: linear-gradient(
             90deg,
             #61131D 0%,
