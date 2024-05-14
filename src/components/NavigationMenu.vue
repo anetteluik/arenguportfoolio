@@ -141,7 +141,7 @@ li p {
             rgba(255, 255, 255, 0) 100%
     ) 100%;
     background-size: 210% 210%;
-    transition: background-position 0.5s ease-in-out;
+    transition: background-position 0.3s ease-in-out;
 }
 
 a {
@@ -149,7 +149,11 @@ a {
 }
 
 li p:hover{
-    background-color: #61131D;
+    background: linear-gradient(
+            90deg,
+            #61131D 0%,
+            #61131D 100%,
+    ) 100%;
     background-position: 0;
 }
 
