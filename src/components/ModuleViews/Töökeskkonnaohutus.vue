@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="popUpImage">
-        <img src="/src/assets/img/rosabella.webp" alt="">
+        <img src="/src/assets/img/office.webp" alt="">
     </div>
 </template>
 
