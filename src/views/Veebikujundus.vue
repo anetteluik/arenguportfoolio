@@ -76,29 +76,29 @@ let currentlyOpenModule = ref(null);
                     <div class="moodulSection">
                         <OneBoxLayout @click="toggleModule(allModules.animatsioonid)" :title="'Animatsioonid'"
                             :text="'GIF, cinemagraph, 3D graafika animeerimine, Adobe After Effects'">
-                            <img class="backg" src="../assets/img/avastatartut.webp"
+                            <img class="backg" src="../assets/img/puma.gif"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
                         <OneBoxLayout @click="toggleModule(allModules.htmljacss)" :title="'HTML ja CSS'"
                             :text="'Veebilehe koodimine nullist, HTML5, semantilised elemendid, Bootstrap 4'">
-                            <img class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
+                            <img class="backg" src="../assets/img/bootstrap.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
                     <OneBoxLayout @click="toggleModule(allModules.disainikavamdamine)" :title="'Disaini kavandamine ja prototüüpimine'"
                         :text="'Figmaga tutvumine, WCAG standardid ja tasemed, kasutajakogemuse modelleerimise mudelid'">
-                        <img class="backg" src="../assets/img/clearmind.webp"
+                        <img class="backg" src="../assets/img/kavandamine.webp"
                             alt="Clear Mind energiajoogi mockup purkidel">
                     </OneBoxLayout>
                     <div class="moodulSection">
                         <OneBoxLayout @click="toggleModule(allModules.veebitehnoloogiad)" :title="'Veebitehnoloogiad ja kujundusvahendid'"
                             :text="'Kasutajakogemuse analüüsi meetodid, UX terminoloogia'">
-                            <img class="backg" src="../assets/img/photoshop-luik.webp"
+                            <img class="backg" src="../assets/img/veebitehnoloogiad.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
                         <OneBoxLayout @click="toggleModule(allModules.visandiloomine)"
                             :title="'Visandi loomine ja struktuurikavand'"
                             :text="'Isotüübi meetod, piktogrammid, ligatuurid ja monogrammid'">
-                            <img class="backg" src="../assets/img/tänukiri.webp" alt="Rosabella logo T-särgil">
+                            <img class="backg" src="../assets/img/visand.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
                 </div>

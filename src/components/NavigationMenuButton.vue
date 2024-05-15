@@ -1,5 +1,6 @@
 <template>
-  <div class="menuToggleContainer" @click='$emit("toggle")'>
+  <div class="menuToggleContainer" :class="{'active': shown}" 
+  @click='$emit("toggle")'>
     <div class="menuToggle" :class="{'active': shown}">
         <div class="line"></div>
         <div class="line"></div>
@@ -24,6 +25,13 @@ const props = defineProps(['shown']);
   margin-right: 138px;
   margin-top: 72px;
   cursor: pointer;
+  background-color: #61131D;
+  transition: background-color 0.5s ease 0.3s;
+}
+
+.menuToggleContainer.active {
+  background-color: transparent;
+  transition: background-color 0s ease 0s;
 }
 
 .menuToggle {

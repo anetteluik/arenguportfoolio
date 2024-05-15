@@ -1,23 +1,23 @@
 <script setup>
-import AvastaTartut from "@/components/ModuleViews/AvastaTartut.vue";
-import Rosabella from "@/components/ModuleViews/Rosabella.vue";
-import ClearMind from "@/components/ModuleViews/ClearMind.vue";
-import Illustrator from "@/components/ModuleViews/Illustrator.vue";
-import Advendihommik from "@/components/ModuleViews/Advendihommik.vue";
-import Fotoseeria from "@/components/ModuleViews/Fotoseeria.vue";
-import VOCOKaart from "@/components/ModuleViews/VOCOKaart.vue";
+import Suhtlemisõpetus from "@/components/ModuleViews/Suhtlemisõpetus.vue";
+import Asjaajamine from "@/components/ModuleViews/Asjaajamine.vue";
+import KarjääriplaneerimiseAlused from "@/components/ModuleViews/KarjääriplaneerimiseAlused.vue";
+import Töökeskkonnaohutus from "@/components/ModuleViews/Töökeskkonnaohutus.vue";
+import EttevõtluseAlused from "@/components/ModuleViews/EttevõtluseAlused.vue";
+import MajanduseAlused from "@/components/ModuleViews/MajanduseAlused.vue";
+import ÕiguslikudAlused from "@/components/ModuleViews/ÕiguslikudAlused.vue";
 import Visiitkaart from "@/components/ModuleViews/Visiitkaart.vue";
 import OneBoxLayout from "@/components/OneBoxLayout.vue";
 import PopUp from "@/components/PopUp.vue";
 import { computed, ref, markRaw } from 'vue';
 let allModules = {
-    avastaTartut: markRaw(AvastaTartut),
-    rosabella: markRaw(Rosabella),
-    clearMind: markRaw(ClearMind),
-    illustrator: markRaw(Illustrator),
-    advendihommik: markRaw(Advendihommik),
-    fotoseeria: markRaw(Fotoseeria),
-    vocokaart: markRaw(VOCOKaart),
+    suhtlemisopetus: markRaw(Suhtlemisõpetus),
+    asjaajamine: markRaw(Asjaajamine),
+    karjaariplaneerimine: markRaw(KarjääriplaneerimiseAlused),
+    tookeskkonnaohutus: markRaw(Töökeskkonnaohutus),
+    ettevotlusealused: markRaw(EttevõtluseAlused),
+    majandus: markRaw(MajanduseAlused),
+    oiguslik: markRaw(ÕiguslikudAlused),
     visiitkaart: markRaw(Visiitkaart),
     adobe: 'adobe',
 };
@@ -63,62 +63,56 @@ let currentlyOpenModule = ref(null);
                 </div>
                 <div class="descriptionWrapperMoodul">
                     <div class="descriptionMoodul">
-                        <p>Suhtlemisõpetuses keskendsin tiimitööle ja konfliktide lahendamisele. Samuti õppisin, kuidas
-                            toime tulla keeruliste klientidega, mis on praktiline teave tulevikutööks.
-                            Asjaajamise aluste kursusel omandasin oskused dokumentatsiooni haldamiseks ja suhtlemiseks
-                            klientidega.
-                            Karjääriplaneerimise alused kursusel sain parema ülevaate UX/UI ametist ja võimalustest
-                            tööturul. Samuti tutvusin kursuse jooksul tööstusega ning muude sarnaste
-                            karjäärivõimalustega.
-                            Töökeskkonnaohutuses õppisin ergonoomilistest ja tervislikest töötingimustest, mis on eriti
-                            oluline UX/UI disaineri tüüpiliselt istuva töö tõttu.
-                            Ettevõtluse alused andsid mulle arusaama ärimaailmast ja võimaldas mul oma oskusi kasutada
-                            innovatsiooni ja äriarenduse valdkonnas.
-                            Majanduse aluste kursusel omandasin teadmisi majanduslikest põhimõtetest, mis mõjutavad
-                            projekte ja kliente ning võimaldavad mul turuolukorda paremini analüüsida.
-                            Töötamise õiguslike aluste käigus õppisin töölepingutest, nende lõpetamisest ja rahalistest
+                        <p>Omandasin teadmisi konfliktide lahendamiseks ja keeruliste klientidega suhtlemiseks. Sain
+                            põhjalikuma ülevaate UX/UI valdkonnast ja sellest, kuidas see kajastub tööturul.
+                            Töökeskkonna ohutuse kursusel tutvusin ergonoomiliste ja tervislike töötingimustega, mis on
+                            olulised, arvestades UX/UI disainerite (tüüpiliselt) istuvat tööd. Ettevõtluse alustest
+                            õppisin äriprotsessidest ja kuidas oma oskusi innovaatiliselt ära kasutada, eriti
+                            äriarenduse kontekstis. Õppisin majanduslikest põhimõtetest ning nende mõjust projektidele
+                            ja klientidele, samuti kuidas turuolukorda näitajate abil paremini analüüsida. Lisaks sain
+                            ülevaate töölepingutest, nende lõpetamisest, töötaja ja tööandja õigustest ning rahalistest
                             aspektidest töösuhetes.</p>
                     </div>
                 </div>
                 <div class="moodulWrapper">
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.avastaTartut)" :title="'Avasta Tartut'"
-                            :text="'Mobiilirakenduse prototüüp, Figma, Illustrator'">
-                            <img class="backg" src="../assets/img/avastatartut.webp"
+                        <OneBoxLayout @click="toggleModule(allModules.suhtlemisopetus)" :title="'Suhtlemisõpetus'"
+                            :text="'Meeskonnatöö, konfliktide lahendamine, keerukate klientidega suhtlemine'">
+                            <img class="backg" src="../assets/img/brain.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.rosabella)" :title="'Rosabella'"
-                            :text="'Logo kujundamine, mockup, Illustrator, Photoshop'">
-                            <img class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
+                        <OneBoxLayout @click="toggleModule(allModules.asjaajamine)" :title="'Asjaajamise alused'"
+                            :text="'Ametlikud dokumendid, CV, motivatsioonikiri, digiallkirjastamine'">
+                            <img class="backg" src="../assets/img/digidoc.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
-                    <OneBoxLayout @click="toggleModule(allModules.clearMind)" :title="'Clear Mind'"
-                        :text="'Logo kujundamine, prototüüp, mockup, kliendisuhtlus, Figma, Photoshop'">
-                        <img class="backg" src="../assets/img/clearmind.webp"
+                    <OneBoxLayout @click="toggleModule(allModules.karjaariplaneerimine)" :title="'Karjääriplaneerimise alused'"
+                        :text="'Tööpakkumised UX/UI disaineritele, kooliga tutvumine, õppekäik BitWebi'">
+                        <img class="backg" src="../assets/img/bitweb.webp"
                             alt="Clear Mind energiajoogi mockup purkidel">
                     </OneBoxLayout>
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.illustrator)" :title="'Illustrator ja Photoshop'"
-                            :text="'Kujundustööd, programmiga tutvumine'">
-                            <img class="backg" src="../assets/img/photoshop-luik.webp"
+                        <OneBoxLayout @click="toggleModule(allModules.tookeskkonnaohutus)" :title="'Töökeskkonnaohutus'"
+                            :text="'Riskianalüüs, ohumärgid töökeskkonnas, ergonoomia'">
+                            <img class="backg" src="../assets/img/office.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.advendihommik)"
-                            :title="'Advendihommik ja jõulukaart'"
-                            :text="'Animatsioonid, kujundustööd, Photoshop, After Effects'">
-                            <img class="backg" src="../assets/img/tänukiri.webp" alt="Rosabella logo T-särgil">
+                        <OneBoxLayout @click="toggleModule(allModules.ettevotlusealused)"
+                            :title="'Ettevõtluse alused'"
+                            :text="'Äriideed, ettevõtte loomise protsess, Häkaton'">
+                            <img class="backg" src="../assets/img/hakaton.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.illustrator)" :title="'Illustrator ja Photoshop'"
-                            :text="'Kujundustööd, programmiga tutvumine'">
-                            <img class="backg" src="../assets/img/photoshop-luik.webp"
+                        <OneBoxLayout @click="toggleModule(allModules.majandus)" :title="'Majanduse alused'"
+                            :text="'Riigi roll majanduses, Eesti maksusüsteem, raharinglus'">
+                            <img class="backg" src="../assets/img/piggy.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.advendihommik)"
-                            :title="'Advendihommik ja jõulukaart'"
-                            :text="'Animatsioonid, kujundustööd, Photoshop, After Effects'">
-                            <img class="backg" src="../assets/img/tänukiri.webp" alt="Rosabella logo T-särgil">
+                        <OneBoxLayout @click="toggleModule(allModules.oiguslik)"
+                            :title="'Töötamise õiguslikud alused'"
+                            :text="'Töölepingud, töösuhted, rahalised aspektid töötamisel'">
+                            <img class="backg" src="../assets/img/contract.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
                 </div>

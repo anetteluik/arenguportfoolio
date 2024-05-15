@@ -1,7 +1,7 @@
 <script setup>
-import AvastaTartut from "@/components/ModuleViews/AvastaTartut.vue";
-import Rosabella from "@/components/ModuleViews/Rosabella.vue";
-import ClearMind from "@/components/ModuleViews/ClearMind.vue";
+import Reklaamipsühholoogia from "@/components/ModuleViews/Reklaamipsühholoogia.vue";
+import SuhtlemiseAnalüüs from "@/components/ModuleViews/SuhtlemiseAnalüüs.vue";
+import SuhtlemiseAlused from "@/components/ModuleViews/SuhtlemiseAlused.vue";
 import Illustrator from "@/components/ModuleViews/Illustrator.vue";
 import Advendihommik from "@/components/ModuleViews/Advendihommik.vue";
 import Fotoseeria from "@/components/ModuleViews/Fotoseeria.vue";
@@ -11,9 +11,9 @@ import OneBoxLayout from "@/components/OneBoxLayout.vue";
 import PopUp from "@/components/PopUp.vue";
 import { computed, ref, markRaw } from 'vue';
 let allModules = {
-    avastaTartut: markRaw(AvastaTartut),
-    rosabella: markRaw(Rosabella),
-    clearMind: markRaw(ClearMind),
+    reklaamipsuhholoogia: markRaw(Reklaamipsühholoogia),
+    suhtlemiseanaluus: markRaw(SuhtlemiseAnalüüs),
+    suhtlemisealused: markRaw(SuhtlemiseAlused),
     illustrator: markRaw(Illustrator),
     advendihommik: markRaw(Advendihommik),
     fotoseeria: markRaw(Fotoseeria),
@@ -63,32 +63,34 @@ let currentlyOpenModule = ref(null);
                 </div>
                 <div class="descriptionWrapperMoodul">
                     <div class="descriptionMoodul">
-                        <p>Psühholoogia ja suhtlemise kursuse käigus omandasin teadmised reklaami õiguslikest ja
-                            eetilistest nõuetest ning kuidas kultuurilised tegurid mõjutavad reklaami tajumist. Samuti
-                            sain praktilisi oskusi, analüüsides erinevaid veebireklaame ja esitledes saadud tulemusi.
-                            Suhtlemise psühholoogiline analüüs tutvustas mulle effektiivse suhtluse psühholoogiat,
-                            neuroturundust ja isiksuseomaduste mõju suhtlemisele. Lisaks avardasin enesekehtestamise ja
-                            aktiivse kuulamise oskusi ning omandasin teadmisi erivajaduste, manipulatsiooni ennetamise
-                            ja mõjutamise tehnikate kohta. Kokkuvõttes arenesin nende kursuste käigus nii analüüsimis-
-                            kui ka suhtlusoskustes ning sain olulisi teadmisi nii erialase kui isikliku elu kontekstis.
+                        <p>Psühholoogia ja suhtlemise kursuse raames õppisin reklaami õiguslikke ja eetilisi aspekte
+                            ning kuidas kultuurilised mõjutajad võivad kujundada reklaamide tajumist. Uurisin erinevaid
+                            veebireklaame, analüüsisin nende tagamõtteid ja mõjutusviise ning esitlesin neid
+                            kursusejuhendajale. Õppisin tundma neuroturunduse põhimõtteid ning sain teada, kuidas
+                            isiksuseomadused mõjutavad suhtlust ja vastastikust mõistmist. Harjutasin tunnis õpitud
+                            enesekehtestamise viise ja aktiivset kuulamist ning õppisin erivajaduste, manipulatsiooni
+                            ennetamise ja mõjutamise tehnikate kohta. Kokkuvõttes arendasin nende kursuste käigus oma
+                            analüüsi- ja suhtlusoskusi ning omandasin väärtuslikke teadmisi, mida saan kasutada nii
+                            professionaalses kui ka isiklikus elus.
                         </p>
                     </div>
                 </div>
                 <div class="moodulWrapper">
-                    <OneBoxLayout @click="toggleModule(allModules.clearMind)" :title="'Clear Mind'"
-                        :text="'Logo kujundamine, prototüüp, mockup, kliendisuhtlus, Figma, Photoshop'">
-                        <img class="backg" src="../assets/img/clearmind.webp"
+                    <OneBoxLayout @click="toggleModule(allModules.reklaamipsuhholoogia)" :title="'Reklaamipsühholoogia'"
+                        :text="'Reklaami- ja meediaseadus, reklaamide analüüs ja esitlemine'">
+                        <img class="backg" src="../assets/img/Spotify.webp"
                             alt="Clear Mind energiajoogi mockup purkidel">
                     </OneBoxLayout>
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.avastaTartut)" :title="'Avasta Tartut'"
-                            :text="'Mobiilirakenduse prototüüp, Figma, Illustrator'">
-                            <img class="backg" src="../assets/img/avastatartut.webp"
+                        <OneBoxLayout @click="toggleModule(allModules.suhtlemiseanaluus)"
+                            :title="'Suhtlemise psühholoogiline analüüs'"
+                            :text="'Konfliktide lahendamine, neuroturundus'">
+                            <img class="backg" src="../assets/img/brain.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.rosabella)" :title="'Rosabella'"
-                            :text="'Logo kujundamine, mockup, Illustrator, Photoshop'">
-                            <img class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
+                        <OneBoxLayout @click="toggleModule(allModules.suhtlemisealused)" :title="'Suhtlemise alused'"
+                            :text="'Enesekehtestamine, valetamise roll takistusena, manipulatsioon'">
+                            <img class="backg" src="../assets/img/brain.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
                 </div>

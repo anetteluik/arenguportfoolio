@@ -63,23 +63,21 @@ let currentlyOpenModule = ref(null);
                 </div>
                 <div class="descriptionWrapperMoodul">
                     <div class="descriptionMoodul">
-                        <p>Psühholoogia ja suhtlemise kursuse käigus omandasin teadmised reklaami õiguslikest ja
-                            eetilistest nõuetest ning kuidas kultuurilised tegurid mõjutavad reklaami tajumist. Samuti
-                            sain praktilisi oskusi, analüüsides erinevaid veebireklaame ja esitledes saadud tulemusi.
-                            Suhtlemise psühholoogiline analüüs tutvustas mulle effektiivse suhtluse psühholoogiat,
-                            neuroturundust ja isiksuseomaduste mõju suhtlemisele. Lisaks avardasin enesekehtestamise ja
-                            aktiivse kuulamise oskusi ning omandasin teadmisi erivajaduste, manipulatsiooni ennetamise
-                            ja mõjutamise tehnikate kohta. Kokkuvõttes arenesin nende kursuste käigus nii analüüsimis-
-                            kui ka suhtlusoskustes ning sain olulisi teadmisi nii erialase kui isikliku elu kontekstis.
+                        <p>Mooduli raames käisin läbi kogu tootearenduse protsessi - esialgse idee valideerimisest kuni
+                            hinna kujunemiseni. Tootearenduse ideest kujunes välja ka reaalne toode, mida
+                            kursusekaaslastega erinevatel müügiüritustel pakkusime. Protsess oli täis väljakutseid, kuid
+                            samas õpetlik ja arendav. Näiteks olin unustanud trükiettevalmistuse olulised reeglid ning
+                            ei kasutanud küünalde siltide loomisel õigeid juhiseid. Õnneks oli trükikoda väga abivalmis
+                            ja aitas mind failide korrigeerimisel. Praegu on meie küünlaprojekt pausil, kuna keskendume
+                            projektidele, mis on otseselt seotud UX/UI valdkonnaga. Allpool on näha infograafik, mis
+                            annab kokkuvõtte Tootearendusekursusel läbitud protsessist.
                         </p>
                     </div>
                 </div>
-                <div class="moodulWrapper">
-                    <OneBoxLayout @click="toggleModule(allModules.clearMind)" :title="'Clear Mind'"
-                        :text="'Logo kujundamine, prototüüp, mockup, kliendisuhtlus, Figma, Photoshop'">
-                        <img class="backg" src="../assets/img/clearmind.webp"
-                            alt="Clear Mind energiajoogi mockup purkidel">
-                    </OneBoxLayout>
+                <div class="moodulWrapperToode">
+                    <div class="tootearendus">
+                        <img src="/src/assets/img/tootearendus.webp" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,5 +99,27 @@ let currentlyOpenModule = ref(null);
 .backdrop.shown {
     opacity: 0.5;
     pointer-events: all;
+}
+
+.tootearendus {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 100px;
+}
+
+.tootearendus img {
+    object-fit: contain;
+}
+
+.moodulWrapperToode {
+  margin-top: 80px;
+  margin-bottom: 208px;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+    .tootearendus {
+        margin-bottom: 0px;
+    }
 }
 </style>

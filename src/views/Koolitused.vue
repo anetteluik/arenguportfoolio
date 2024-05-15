@@ -1,8 +1,8 @@
 <script setup>
-import AvastaTartut from "@/components/ModuleViews/AvastaTartut.vue";
-import Rosabella from "@/components/ModuleViews/Rosabella.vue";
-import ClearMind from "@/components/ModuleViews/ClearMind.vue";
-import Illustrator from "@/components/ModuleViews/Illustrator.vue";
+import Veebikoolitused from "@/components/ModuleViews/Veebikoolitused.vue";
+import Õppekäigud from "@/components/ModuleViews/Õppekäigud.vue";
+import Külalislektorid from "@/components/ModuleViews/Külalislektorid.vue";
+import ÜritusedKonverentsid from "@/components/ModuleViews/ÜritusedKonverentsid.vue";
 import Advendihommik from "@/components/ModuleViews/Advendihommik.vue";
 import Fotoseeria from "@/components/ModuleViews/Fotoseeria.vue";
 import VOCOKaart from "@/components/ModuleViews/VOCOKaart.vue";
@@ -11,10 +11,10 @@ import OneBoxLayout from "@/components/OneBoxLayout.vue";
 import PopUp from "@/components/PopUp.vue";
 import { computed, ref, markRaw } from 'vue';
 let allModules = {
-    avastaTartut: markRaw(AvastaTartut),
-    rosabella: markRaw(Rosabella),
-    clearMind: markRaw(ClearMind),
-    illustrator: markRaw(Illustrator),
+    veebikoolitused: markRaw(Veebikoolitused),
+    oppekaigud: markRaw(Õppekäigud),
+    lektorid: markRaw(Külalislektorid),
+    konverents: markRaw(ÜritusedKonverentsid),
     advendihommik: markRaw(Advendihommik),
     fotoseeria: markRaw(Fotoseeria),
     vocokaart: markRaw(VOCOKaart),
@@ -55,42 +55,27 @@ let currentlyOpenModule = ref(null);
         </PopUp>
         <div class="mainInfo">
             <div class="mainWrapper">
-                <div class="title">
-                    <h3>Tagasivaade</h3>
-                </div>
-                <div class="descriptionWrapperMoodul">
-                    <div class="descriptionMoodul">
-                        <p>Frillice projekti raames õppisin meeskonnatööd, tähtaegadest kinnipidamist ning
-                            kasutajauuringute korrektse planeerimise ja läbiviimise tähtsust. Iseseisvalt uurisin
-                            mitmeid kasutajakogemuse uurimise meetodeid, sealhulgas küsitluste loomist, intervjuude
-                            läbiviimist ja andmete analüüsimist. Kasutajakeskse disaini põhimõtted rõhutasid lihtsuse ja
-                            kasutajasõbralikkuse tähtsust disainiprotsessis ning prototüüpide olulisust kasutatavuse
-                            parandamisel. Kokkuvõttes aitas see moodul mul arendada oskusi rohkem UX valdkonnas,
-                            sealhulgas kasutajauuringute läbiviimist, kasutatavuse testimist, kasutajakeskse disaini
-                            põhimõtteid ning analüütilisi oskusi.</p>
-                    </div>
-                </div>
-                <div class="moodulWrapper">
+                <div id="koolitused" class="moodulWrapper">
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.avastaTartut)" :title="'Avasta Tartut'"
-                            :text="'Mobiilirakenduse prototüüp, Figma, Illustrator'">
+                        <OneBoxLayout @click="toggleModule(allModules.veebikoolitused)" :title="'Veebikoolitused'"
+                            :text="''">
                             <img class="backg" src="../assets/img/avastatartut.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.rosabella)" :title="'Rosabella'"
-                            :text="'Logo kujundamine, mockup, Illustrator, Photoshop'">
+                        <OneBoxLayout @click="toggleModule(allModules.oppekaigud)" :title="'Õppekäigud'"
+                            :text="''">
                             <img class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.illustrator)" :title="'Illustrator ja Photoshop'"
-                            :text="'Kujundustööd, programmiga tutvumine'">
+                        <OneBoxLayout @click="toggleModule(allModules.lektorid)" :title="'Külalislektorite loengud'"
+                            :text="''">
                             <img class="backg" src="../assets/img/photoshop-luik.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.advendihommik)"
-                            :title="'Advendihommik ja jõulukaart'"
-                            :text="'Animatsioonid, kujundustööd, Photoshop, After Effects'">
+                        <OneBoxLayout @click="toggleModule(allModules.konverents)"
+                            :title="'Üritused ja konverentsid'"
+                            :text="''">
                             <img class="backg" src="../assets/img/tänukiri.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
@@ -115,5 +100,9 @@ let currentlyOpenModule = ref(null);
 .backdrop.shown {
     opacity: 0.5;
     pointer-events: all;
+}
+
+#koolitused {
+    margin-top: 0px;
 }
 </style>

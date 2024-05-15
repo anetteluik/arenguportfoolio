@@ -23,41 +23,38 @@ import TextButton from "../components/TextButton.vue"
                 </div>
                 <div class="descriptionWrapper">
                     <div class="description">
-                        <p>Minu kodukoht asub pisikeses Keeni külas Valga maakonnas. Enne,
-                            kui avastasin UX/UI disaini valdkonna, olin seadnud endale mitmeid
-                            erinevaid tööalaseid eesmärke, alustades loomaarsti ja laulja ning
-                            lõpetades automaalri erialaga. Ent nagu elu ikka, kulgeb see oma rada
-                            pidi ning täiesti juhuslikult sattusin niimoodi tutvuma UX/UI disaini
-                            valdkonnaga. Tagasi vaadates sain aru, et enamik seatud eesmärkidest
-                            hõlmasid loovust ning nutikust, mis on olnud mulle südamelähedased alates
-                            lapsepõlvest. Seega, kui avastasin praeguse eriala, mõtlesin endamisi:
-                            "Juhhuu, see ongi ju see, mida olen terve elu otsinud".</p>
+                        <p>Praktika eesmärgiks seadsin arendada enda suhtlus- ja esitlusoskust, kuna tundsin, et selles
+                            vallas on minu oskused veidi nõrgad. Tahtsin ületada oma hirme ja võin julgusega öelda, et
+                            suutsin selle saavutada. Kuigi ma ei pruugi kunagi olla kõige osavam esitleja, olen siiski
+                            uhke oma edusammude üle. Olen märganud, et suudan end palju selgemini ja enesekindlamalt
+                            väljendada ning enam ei tekita mulle halvavat hirmu olukorrad, kus pean näiteks klientidele
+                            tulemusi esitlema.
+                            Lisaks soovisin praktika käigus arendada oma analüütilisi oskusi UX/UI disainis. Tundsin, et
+                            koolis õpitu jäi veidi pinnapealseks, seega võtsin praktika ajal eesmärgiks iseseisvalt
+                            õppida juurde uuringute läbiviimise, meetodite kasutamise, küsimustike koostamise jms kohta.
+                            Kuna praktika käigus oli vaja koostada ja läbi viia mitmeid uuringuid ja intervjuusid, olen
+                            rõõmus, et ennast nende oskustega pisut ette valmistasin. Muidugi, nagu ikka, õppisin ka
+                            praktiliste kogemuste kaudu, sest reaalses elus tuleb ette olukordi, mida teooriast ette ei
+                            aimagi.
+                        </p>
                     </div>
                 </div>
                 <div class="aboutSectionPhotos">
                     <div class="aboutPhoto">
-                        <img src="../assets/img/profile.jpg" alt="Profile Picture">
+                        <img src="../assets/img/hopp.webp" alt="Profile Picture">
                     </div>
                     <div class="aboutPhoto">
-                        <img src="../assets/img/profile.jpg" alt="Profile Picture">
+                        <img src="../assets/img/hopp2.webp" alt="Profile Picture">
                     </div>
                 </div>
                 <div class="kohtWrapper">
                     <div class="koht">
                         <h3>Praktikakoht</h3>
-                        <p>Minu kodukoht asub pisikeses Keeni külas Valga maakonnas. Enne, kui avastasin UX/UI disaini
-                            valdkonna, olin seadnud endale mitmeid erinevaid tööalaseid eesmärke, alustades loomaarsti
-                            ja
-                            laulja ning lõpetades automaalri erialaga. Ent nagu elu ikka, kulgeb see oma rada pidi ning
-                            täiesti juhuslikult sattusin niimoodi tutvuma UX/UI disaini valdkonnaga.</p>
-                    </div>
-                </div>
-                <div class="aboutSectionPhotos">
-                    <div class="aboutPhoto">
-                        <img src="../assets/img/profile.jpg" alt="Profile Picture">
-                    </div>
-                    <div class="aboutPhoto">
-                        <img src="../assets/img/profile.jpg" alt="Profile Picture">
+                        <p>Praktika sooritasin ettevõttes Loomemajanduskeskus (edaspidi LMK). LMK eesmärk on elavdada
+                            loomemajanduslikku teadlikkust, kiirendada ettevõtluskasvu ning toetada innovaatiliste ja
+                            kõrge lisandväärtusega loomemajandusettevõtete teket Tartus ja Lõuna-Eestis. Ettevõte on
+                            pühendunud looma keskkonda, kus loomingulised ideed saavad õitseda ning ettevõtjad saavad
+                            vajalikku toetust oma ettevõtmiste arendamiseks</p>
                     </div>
                 </div>
                 <div class="tegevused">
@@ -66,26 +63,27 @@ import TextButton from "../components/TextButton.vue"
                     </div>
                     <div class="tegevusedDescWrapper">
                         <div class="tegevusedDesc">
-                            <p>Minu kodukoht asub pisikeses Keeni külas Valga maakonnas. Enne,
-                                kui avastasin UX/UI disaini valdkonna, olin seadnud endale mitmeid
-                                erinevaid tööalaseid eesmärke, alustades loomaarsti ja laulja ning
-                                lõpetades automaalri erialaga. Ent nagu elu ikka, kulgeb see oma rada
-                                pidi ning täiesti juhuslikult sattusin niimoodi tutvuma UX/UI disaini
-                                valdkonnaga. Tagasi vaadates sain aru, et enamik seatud eesmärkidest
-                                hõlmasid loovust ning nutikust, mis on olnud mulle südamelähedased alates
-                                lapsepõlvest. Seega, kui avastasin praeguse eriala, mõtlesin endamisi:
-                                "Juhhuu, see ongi ju see, mida olen terve elu otsinud".</p>
+                            <p>Praktikal osalesid mina, Kerli Pajusaar ning Ursula Muts. Üks esimesi ülesandeid oli läbi
+                                viia ärianalüüs koos Loomemajanduskeskuse tegevjuhi ja füüsilise poe töötajatega. Selle
+                                protsessi käigus koostasin põhjaliku küsimustiku, viisin läbi struktureeritud intervjuud
+                                ning analüüsisin kogutud andmeid ettevõtte eesmärkide, olemuse ja vajaduste paremaks
+                                mõistmiseks. Teostasime nii kvalitatiivseid kui ka kvantitatiivseid uuringuid,
+                                sealhulgas küsitlusi, intervjuusid, hallway-teste, card sorting ning fookusgrupi
+                                uuringuid. Need uurimismeetodid olid olulised, et mõista kasutajate käitumist, eelistusi
+                                ja murekohti.Minu kanda oli veebisaidi wireframe'i loomine, visuaalse identiteedi
+                                tagamine ning navigatsiooni kujundamine. See protsess aitas mul arendada oskusi, kuidas
+                                muuta uurimistulemused visuaalseteks ja funktsionaalseteks elementideks.</p>
                         </div>
                         <div class="tegevusedDesc">
-                            <p>Minu kodukoht asub pisikeses Keeni külas Valga maakonnas. Enne,
-                                kui avastasin UX/UI disaini valdkonna, olin seadnud endale mitmeid
-                                erinevaid tööalaseid eesmärke, alustades loomaarsti ja laulja ning
-                                lõpetades automaalri erialaga. Ent nagu elu ikka, kulgeb see oma rada
-                                pidi ning täiesti juhuslikult sattusin niimoodi tutvuma UX/UI disaini
-                                valdkonnaga. Tagasi vaadates sain aru, et enamik seatud eesmärkidest
-                                hõlmasid loovust ning nutikust, mis on olnud mulle südamelähedased alates
-                                lapsepõlvest. Seega, kui avastasin praeguse eriala, mõtlesin endamisi:
-                                "Juhhuu, see ongi ju see, mida olen terve elu otsinud".</p>
+                            <p>Koostasime
+                                low-fi, mid-fi ning hi-fi prototüübid veebipoest. Selle protsessi õppisin
+                                rakendama disainimõtlemist, kasutajasõbralike liideste loomist ja visuaalset hierarhiat.
+                                Uuringutulemuste ja disainilahenduste esitamine kliendile parandas minu suhtlemisoskust
+                                ja esinemisjulgust. Õppisin efektiivselt suhtlema, kuulama tagasisidet ning reageerima
+                                professionaalselt klientide küsimustele ja muredele. Samuti hindan kõrgelt suhtlemist
+                                meeskonnaliikmetega, sest pidev avatud suhtlus aitas ennetada väljakutseid, mis võivad
+                                muidu tekkida ebapiisava suhtluse tõttu. See oskus on olnud mulle väärtuslik nii
+                                professionaalses kui ka isiklikus plaanis.</p>
                         </div>
                     </div>
                 </div>
@@ -173,6 +171,10 @@ import TextButton from "../components/TextButton.vue"
     margin-right: 24px;
 }
 
+.tegevusedDesc {
+    max-width: 650px;
+}
+
 .tegevusedWrapper {
     margin-top: 100px;
 }
@@ -247,6 +249,10 @@ import TextButton from "../components/TextButton.vue"
 
     .koht {
         width: 90%;
+    }
+
+    .tegevusedDesc {
+        max-width: none;
     }
 }
 

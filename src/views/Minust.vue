@@ -62,18 +62,19 @@ import Footer from "@/components/Footer.vue";
                     <h3>Oskuste hindamine</h3>
                 </div>
                 <div class="descriptionWrapper">
-                    <div class="description">
+                    <div id="hindamine" class="description">
                         <p>Disainivaldkond areneb pidevalt ja sellega koos ka minu oskused. Nagu Albert Einstein ütles,
                             õppimine on elukestev teekond, mis tähenadb, et minu oskused pidevalt täienevad ja
                             kohanduvad valkonna nõuete kohaselt. Selle asemel, et hinnata oma teadmisi
-                            traditsiooniliselt 5-palli süsteemis või sarnasel skaalal, leian, et on mõistlikum tuua
-                            välja programmid ja vahendid, mida mul hetkeseisuga igapäevatöös vaja läheb ja kui tihti ma
-                            neid kasutan.</p>
+                            traditsiooniliselt 5-palli süsteemis või sarnasel skaalal, toon välja programmid ja
+                            vahendid, mida ma hetkel igapäevatöös kasutan ning kui sageli neid rakendan.</p>
                     </div>
                 </div>
                 <div class="oskusedImage">
-                    <img class="oskusedDesktop" src="/src/assets/img/oskused.svg" alt="Tabel, mis indikeerib erinevate programmide oskustaset">
-                    <img class="oskusedTel" src="/src/assets/img/oskused-tel.svg" alt="Tabel, mis indikeerib erinevate programmide oskustaset">
+                    <img class="oskusedDesktop" src="/src/assets/img/oskused.svg"
+                        alt="Tabel, mis indikeerib erinevate programmide oskustaset">
+                    <img class="oskusedTel" src="/src/assets/img/oskused-tel.svg"
+                        alt="Tabel, mis indikeerib erinevate programmide oskustaset">
                 </div>
             </div>
         </div>
@@ -87,6 +88,10 @@ import Footer from "@/components/Footer.vue";
 
 .highlight {
     background-color: #C2CFF2;
+}
+
+#hindamine {
+    margin-bottom: 40px;
 }
 
 .oskusedImage img {

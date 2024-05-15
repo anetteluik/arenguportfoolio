@@ -1,24 +1,14 @@
 <script setup>
-import AvastaTartut from "@/components/ModuleViews/AvastaTartut.vue";
-import Rosabella from "@/components/ModuleViews/Rosabella.vue";
-import ClearMind from "@/components/ModuleViews/ClearMind.vue";
-import Illustrator from "@/components/ModuleViews/Illustrator.vue";
-import Advendihommik from "@/components/ModuleViews/Advendihommik.vue";
-import Fotoseeria from "@/components/ModuleViews/Fotoseeria.vue";
-import VOCOKaart from "@/components/ModuleViews/VOCOKaart.vue";
-import Visiitkaart from "@/components/ModuleViews/Visiitkaart.vue";
+import ProgrammeerimiseA from "@/components/ModuleViews/ProgrammeerimiseA.vue";
+import OOP from "@/components/ModuleViews/OOP.vue";
+import ErialaneMatemaatika from "@/components/ModuleViews/ErialaneMatemaatika.vue";
 import OneBoxLayout from "@/components/OneBoxLayout.vue";
 import PopUp from "@/components/PopUp.vue";
 import { computed, ref, markRaw } from 'vue';
 let allModules = {
-    avastaTartut: markRaw(AvastaTartut),
-    rosabella: markRaw(Rosabella),
-    clearMind: markRaw(ClearMind),
-    illustrator: markRaw(Illustrator),
-    advendihommik: markRaw(Advendihommik),
-    fotoseeria: markRaw(Fotoseeria),
-    vocokaart: markRaw(VOCOKaart),
-    visiitkaart: markRaw(Visiitkaart),
+    programmeerimisealused: markRaw(ProgrammeerimiseA),
+    oop: markRaw(OOP),
+    matemaatika: markRaw(ErialaneMatemaatika),
     adobe: 'adobe',
 };
 
@@ -63,29 +53,29 @@ let currentlyOpenModule = ref(null);
                 </div>
                 <div class="descriptionWrapperMoodul">
                     <div class="descriptionMoodul">
-                        <p>Programmeerimise aluste ja objektorienteeritud programmeerimise moodulites omandasin olulisi
-                            oskusi seoses keeruliste probleemide lahendamise, Git'i kasutamise, keerukate seoste vahel
-                            navigeerimise ning TypeScript'i ja API-dega töötamistest. Lisaks sain praktilise kogemuse
-                            rakenduste loomisel, sealhulgas DOM haldamisel ja andmete manipuleerimisel. Erialane
-                            matemaatika tugevdas minu andmete töötlemise oskusi ja matemaatilist arusaamist ning
-                            võimaldas mul arendada oma analüüsi- ning uurimismeetodeid.</p>
+                        <p>Programmeerimise aluste ja objektorienteeritud programmeerimise moodulites õppisin kasutama
+                            Git'i, navigeerima ja lahendama keerukaid seoseid ning töötama TypeScript'i ja API-dega.
+                            Lisaks sain praktilise kogemuse rakenduste loomisel, sealhulgas DOM haldamisel ja andmete
+                            manipuleerimisel. Erialane matemaatika tugevdas minu andmete töötlemise oskusi ja
+                            matemaatilist arusaamist ning võimaldas mul arendada oma analüüsi- ning uurimismeetodeid.
+                        </p>
                     </div>
                 </div>
                 <div class="moodulWrapper">
-                    <OneBoxLayout @click="toggleModule(allModules.clearMind)" :title="'Clear Mind'"
-                        :text="'Logo kujundamine, prototüüp, mockup, kliendisuhtlus, Figma, Photoshop'">
-                        <img class="backg" src="../assets/img/clearmind.webp"
+                    <OneBoxLayout @click="toggleModule(allModules.programmeerimisealused)" :title="'Programmeerimise alused'"
+                        :text="'Probleemide süsteemne lahendamine, Git ja Github'">
+                        <img class="backg" src="../assets/img/github.webp"
                             alt="Clear Mind energiajoogi mockup purkidel">
                     </OneBoxLayout>
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.avastaTartut)" :title="'Avasta Tartut'"
-                            :text="'Mobiilirakenduse prototüüp, Figma, Illustrator'">
-                            <img class="backg" src="../assets/img/avastatartut.webp"
+                        <OneBoxLayout @click="toggleModule(allModules.oop)" :title="'Objektorienteeritud programmeerimine'"
+                            :text="'TypeScript, objektmudelid, API, DOM elemendid'">
+                            <img class="backg" src="../assets/img/typescript.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.rosabella)" :title="'Rosabella'"
-                            :text="'Logo kujundamine, mockup, Illustrator, Photoshop'">
-                            <img class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
+                        <OneBoxLayout @click="toggleModule(allModules.matemaatika)" :title="'Erialane matemaatika'"
+                            :text="'Matemaatiline analüüs, küsimustiku koostamine, risttabelid, tunnused'">
+                            <img class="backg" src="../assets/img/matemaatika.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
                 </div>

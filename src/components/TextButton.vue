@@ -54,6 +54,7 @@ function getImageSource(imgType) {
   padding-right: 8px;
   margin: 0;
   white-space: nowrap;
+  color: #221517;
 }
 
 .button img {

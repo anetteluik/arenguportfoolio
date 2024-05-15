@@ -77,6 +77,7 @@ function toggleMenu() {
 </script>
 
 <template>
+  <router-link id="backToHome" to="/"><img src="/src/assets/img/logo.svg" alt=""></router-link>
   <NavigationMenuButton :shown="menuShown" @toggle="toggleMenu"></NavigationMenuButton>
   <NavigationMenu :shown="menuShown" @toggle="toggleMenu"></NavigationMenu>
   <main>
@@ -84,3 +85,27 @@ function toggleMenu() {
     <Footer></Footer>
   </main>
 </template>
+
+<style scoped>
+#backToHome {
+  position: absolute;
+  top: 72px;
+  left: 138px;
+  cursor: pointer;
+}
+
+.router-link-active#backToHome {
+  display: none;
+}
+
+@media only screen and (max-width: 1080px) {
+  #backToHome {
+  left: 40px;
+  height: 24px;
+  padding: 12px 0 12px 0;
+  top: 24px;
+  cursor: pointer;
+}
+}
+
+</style>

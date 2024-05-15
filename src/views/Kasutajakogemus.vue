@@ -4,9 +4,6 @@ import GoogleAnalytics from "@/components/ModuleViews/GoogleAnalytics.vue";
 import KasutajakogemuseAlused from "@/components/ModuleViews/KasutajakogemuseAlused.vue";
 import KasutusmugavusSihtrühm from "@/components/ModuleViews/KasutusmugavusSihtrühm.vue";
 import Prototüüpimine from "@/components/ModuleViews/Prototüüpimine.vue";
-import Fotoseeria from "@/components/ModuleViews/Fotoseeria.vue";
-import VOCOKaart from "@/components/ModuleViews/VOCOKaart.vue";
-import Visiitkaart from "@/components/ModuleViews/Visiitkaart.vue";
 import OneBoxLayout from "@/components/OneBoxLayout.vue";
 import PopUp from "@/components/PopUp.vue";
 import { computed, ref, markRaw } from 'vue';
@@ -60,43 +57,38 @@ let currentlyOpenModule = ref(null);
                 </div>
                 <div class="descriptionWrapperMoodul">
                     <div class="descriptionMoodul">
-                        <p>Frillice projekti raames õppisin töötama meeskonnas, arendasin ajaplaneerimist, et
-                            tähtaegadest kinni pidada ning õppisin koostama ja läbi viima kasutajauuringuid. Iseseisvalt
-                            uurisin mitmeid kasutajakogemuse uurimise meetodeid, sealhulgas kvantitatiivsete ja
-                            kvalitatiivsete küsitluste loomist, kuidas koostada küsimusi vastajat suunamata jne. Samuti
-                            uurisin intervjuude läbiviimise ja andmete analüüsimise põhimõtteid. Kasutajakeskse disaini
-                            reeglid rõhutasid lihtsuse ja kasutajasõbralikkuse tähtsust disainiprotsessis ning
-                            prototüüpide olulisust kasutatavuse parandamisel. Mooduli tulemusena arendasin oluliselt oma
-                            oskusi UX valdkonnas, sealhulgas kasutajauuringute korraldamist, kasutatavuse testimist,
-                            kasutajakeskse disaini põhimõtteid ning analüütilisi võimeid.
+                        <p>Õppisin erinevate IT-süsteemide riistvarade, operatsioonisüsteemide ning arvutivõrkude aluste
+                            kohta. Praktiliste ülesannete ja rühmatööde kaudu sain kogemuse riistvara konfiguratsioonide
+                            lahendamisel ning tarkvara installimise ja haldamise osas. Lisaks omandasin teadmised
+                            infoturbest (krüpteerimine, autentimine, autoriseerimine, võrguturbe meetodid). Õppisin,
+                            kuidas kaitsta infosüsteeme ja andmeid (nt DDoS rünnakul) erinevate turvameetmete kaudu ning
+                            kuidas reageerida potentsiaalsetele turvarikkumistele.
                         </p>
                     </div>
                 </div>
                 <div class="moodulWrapper">
                     <OneBoxLayout @click="toggleModule(allModules.frillice)" :title="'Frillice'"
                         :text="'Küsimustiku koostamine, kasutajakogemuse uurimine, persoona'">
-                        <img class="backg" src="../assets/img/clearmind.webp"
-                            alt="Frillice esitluse avakuva">
+                        <img class="backg" src="../assets/img/frillice.webp" alt="Frillice esitluse avakuva Macbookil">
                     </OneBoxLayout>
                     <div class="moodulSection">
                         <OneBoxLayout @click="toggleModule(allModules.google)" :title="'Google Analytics'"
                             :text="'Keskkonnaga tutvumine'">
-                            <img class="backg" src="../assets/img/ga4.webp"
-                                alt="Google Analytics logo mustal taustal">
+                            <img class="backg" src="../assets/img/ga4.webp" alt="Google Analytics logo mustal taustal">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.kasutajakogemuse)" :title="'Kasutajakogemuse analüüsi alused'"
+                        <OneBoxLayout @click="toggleModule(allModules.kasutajakogemuse)"
+                            :title="'Kasutajakogemuse analüüsi alused'"
                             :text="'Kasutatavuse testimise teooria, valim, intervjuutehnikad'">
                             <img class="backg" src="../assets/img/iglu-loeng1.webp" alt="Kompositsioon Iglu loengust">
                         </OneBoxLayout>
                     </div>
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.kasutusmugavus)" :title="'Kasutusmugavus ja sihtrühm'"
+                        <OneBoxLayout @click="toggleModule(allModules.kasutusmugavus)"
+                            :title="'Kasutusmugavus ja sihtrühm'"
                             :text="'Kasutajakeskse disaini põhitõed, prototüüpide teooria'">
-                            <img class="backg" src="../assets/img/iglu-loeng2.webp"
-                                alt="Kompositsioon Iglu loengust">
+                            <img class="backg" src="../assets/img/iglu-loeng2.webp" alt="Kompositsioon Iglu loengust">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.prototüüpimine)"
-                            :title="'Prototüüpimine'"
+                        <OneBoxLayout @click="toggleModule(allModules.prototüüpimine)" :title="'Prototüüpimine'"
                             :text="'Prototüüpide eelised, tüüpilised vead, värske pilk'">
                             <img class="backg" src="../assets/img/iglu-loeng3.webp" alt="Kompositsioon Iglu loengust">
                         </OneBoxLayout>

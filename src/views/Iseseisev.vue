@@ -1,6 +1,6 @@
 <script setup>
-import AvastaTartut from "@/components/ModuleViews/AvastaTartut.vue";
-import Rosabella from "@/components/ModuleViews/Rosabella.vue";
+import Triskel from "@/components/ModuleViews/Triskel.vue";
+import Hubert from "@/components/ModuleViews/Hubert.vue";
 import ClearMind from "@/components/ModuleViews/ClearMind.vue";
 import Illustrator from "@/components/ModuleViews/Illustrator.vue";
 import Advendihommik from "@/components/ModuleViews/Advendihommik.vue";
@@ -11,8 +11,8 @@ import OneBoxLayout from "@/components/OneBoxLayout.vue";
 import PopUp from "@/components/PopUp.vue";
 import { computed, ref, markRaw } from 'vue';
 let allModules = {
-    avastaTartut: markRaw(AvastaTartut),
-    rosabella: markRaw(Rosabella),
+    triskel: markRaw(Triskel),
+    hubert: markRaw(Hubert),
     clearMind: markRaw(ClearMind),
     illustrator: markRaw(Illustrator),
     advendihommik: markRaw(Advendihommik),
@@ -60,48 +60,41 @@ let currentlyOpenModule = ref(null);
                 </div>
                 <div class="descriptionWrapperMoodul">
                     <div class="descriptionMoodul">
-                        <p>Veebiarenduse ja halduse moodulis arendasin teadmisi veebisaidi haldamisest, SEO-dest ja
-                            pistikprogrammidest ning e-kaubanduse integreerimisest veebilehele. Versioonihalduse ja
-                            GitHubiga tutvumisel õppisin repositooriumide loomise kohta, koodi branchidest ning nende
-                            olulisusest. Samuti uurisin tarkvaraarenduse põhimõtteid, metoodikaid, projektiplaani
-                            koostamist, ning erinevaid sisuhaldusüsteeme (näiteks WordPress, WebFlow, Wix ning
-                            SquareSpace).</p>
+                        <p>Siit leiad kollektsiooni projektidest, mis on loodud väljaspool akadeemilisi kursuseid.
+                            Võrreldes oma varasemate töödega kõige uuematega, olen märganud kasvu ja arengut ning iga
+                            projekt on olnud võimalus õppida ja rakendada uusi teadmisi ja oskusi. Täna panustan
+                            tugevamalt kasutajasõbralikkusele ja visuaalsele harmooniale. Olen õppinud mõistma
+                            kasutajate ja klientide vajadusi ning ootusi ja kohandanud oma lähenemist vastavalt.</p>
                     </div>
                 </div>
                 <div class="moodulWrapper">
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.avastaTartut)" :title="'Avasta Tartut'"
-                            :text="'Mobiilirakenduse prototüüp, Figma, Illustrator'">
-                            <img class="backg" src="../assets/img/avastatartut.webp"
+                        <OneBoxLayout @click="toggleModule(allModules.triskel)" :title="'Triskel'"
+                            :text="'Plakati kujundus, etenduse kava kujundus, Figma'">
+                            <img class="backg" src="../assets/img/triskel.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.rosabella)" :title="'Rosabella'"
-                            :text="'Logo kujundamine, mockup, Illustrator, Photoshop'">
-                            <img class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
+                        <OneBoxLayout @click="toggleModule(allModules.hubert)" :title="'Hubert'"
+                            :text="'Facebooki kaanefoto kujundamine, Figma'">
+                            <img class="backg" src="../assets/img/hubert.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
-                    <OneBoxLayout @click="toggleModule(allModules.clearMind)" :title="'Clear Mind'"
-                        :text="'Logo kujundamine, prototüüp, mockup, kliendisuhtlus, Figma, Photoshop'">
-                        <img class="backg" src="../assets/img/clearmind.webp"
+                    <OneBoxLayout :title="'R-Heroic'"
+                        :text="'Veebilehe responsive prototüüp, Figma'">
+                        <img class="backg" src="../assets/img/tulekuls.webp"
                             alt="Clear Mind energiajoogi mockup purkidel">
                     </OneBoxLayout>
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.illustrator)" :title="'Illustrator ja Photoshop'"
-                            :text="'Kujundustööd, programmiga tutvumine'">
-                            <img class="backg" src="../assets/img/photoshop-luik.webp"
+                        <OneBoxLayout :title="'RumVessel'"
+                            :text="'Logo kujundamine, kliendisuhtlus, Figma'">
+                            <img class="backg" src="../assets/img/tulekulv.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.advendihommik)"
-                            :title="'Advendihommik ja jõulukaart'"
-                            :text="'Animatsioonid, kujundustööd, Photoshop, After Effects'">
-                            <img class="backg" src="../assets/img/tänukiri.webp" alt="Rosabella logo T-särgil">
+                        <OneBoxLayout :title="'Petcity Grooming'"
+                            :text="'Ühe lehe re-design, Figma, personaalne projekt'">
+                            <img class="backg" src="../assets/img/tulekulv.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
-                    <OneBoxLayout @click="toggleModule(allModules.visiitkaart)" :title="'NOPE Creative visiitkaart'"
-                        :text="'Trükiettevalmistus, Illustrator, Figma'">
-                        <img class="backg" src="../assets/img/visiitkaart.webp"
-                            alt="Clear Mind energiajoogi mockup purkidel">
-                    </OneBoxLayout>
                 </div>
             </div>
         </div>

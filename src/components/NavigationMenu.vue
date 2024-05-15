@@ -7,31 +7,49 @@
         <div class="subsection">
             <ul v-if="currentlyOpenSection === allSections.akadeemilineAreng">
                 <router-link to="/graafilise-disaini-alused">
-                    <li><p>Graafilise disaini alused</p></li>
+                    <li>
+                        <p>Graafilise disaini alused</p>
+                    </li>
                 </router-link>
                 <router-link to="/kasutajakogemuse-analuus">
-                    <li><p>Kasutajakogemuse analüüs</p></li>
+                    <li>
+                        <p>Kasutajakogemuse analüüs</p>
+                    </li>
                 </router-link>
                 <router-link to="/veebikujundus">
-                    <li><p>Veebikujundus</p></li>
+                    <li>
+                        <p>Veebikujundus</p>
+                    </li>
                 </router-link>
                 <router-link to="/psuhholoogia-ja-suhtlemine">
-                    <li><p>Psühholoogia ja suhtlemine</p></li>
+                    <li>
+                        <p>Psühholoogia ja suhtlemine</p>
+                    </li>
                 </router-link>
                 <router-link to="/tootearendus">
-                    <li><p>Tootearendus</p></li>
+                    <li>
+                        <p>Tootearendus</p>
+                    </li>
                 </router-link>
                 <router-link to="/arvutite-riistvara-ja-vorgud">
-                    <li><p>Arvutite riistvara ja võrgud</p></li>
+                    <li>
+                        <p>Arvutite riistvara ja võrgud</p>
+                    </li>
                 </router-link>
                 <router-link to="/programmeerimise-alused">
-                    <li><p>Programmeerimise alused</p></li>
+                    <li>
+                        <p>Programmeerimise alused</p>
+                    </li>
                 </router-link>
                 <router-link to="/veebiarendus-ja-haldus">
-                    <li><p>Veebiarendus ja haldus</p></li>
+                    <li>
+                        <p>Veebiarendus ja haldus</p>
+                    </li>
                 </router-link>
                 <router-link to="/karjaariplaneerimine-ja-ettevotlus">
-                    <li><p>Karjääriplaneerimine ja ettevõtlus</p></li>
+                    <li>
+                        <p>Karjääriplaneerimine ja ettevõtlus</p>
+                    </li>
                 </router-link>
             </ul>
         </div>
@@ -42,10 +60,14 @@
         <div class="subsection">
             <ul v-if="currentlyOpenSection === allSections.praktika">
                 <router-link to="/tutvumispraktika">
-                    <li><p>Tutvumispraktika</p></li>
+                    <li>
+                        <p>Tutvumispraktika</p>
+                    </li>
                 </router-link>
                 <router-link to="/spetsialiseerumispraktika">
-                    <li><p>Spetsialiseerumispraktika</p></li>
+                    <li>
+                        <p>Spetsialiseerumispraktika</p>
+                    </li>
                 </router-link>
             </ul>
         </div>
@@ -56,20 +78,34 @@
         <div class="subsection">
             <ul v-if="currentlyOpenSection === allSections.erialasedTegevused">
                 <router-link to="/koolitused">
-                    <li><p>Koolitused</p></li>
+                    <li>
+                        <p>Koolitused</p>
+                    </li>
                 </router-link>
                 <router-link to="/iseseisev-nokitsemine">
-                    <li><p>Iseseisev nokitsemine</p></li>
+                    <li>
+                        <p>Iseseisev nokitsemine</p>
+                    </li>
                 </router-link>
             </ul>
         </div>
         <div class="navOption">
             <router-link to="/minust">
-                <div class="option">Minust</div>
+                <div class="option">
+                    <span class="text-wrapper">
+                        Minust
+                    </span>
+                </div>
             </router-link>
         </div>
         <div class="navOption">
-            <div class="option">Eneserefleksioon</div>
+            <router-link to="/eneserefleksioon">
+                <div class="option">
+                    <span class="text-wrapper">
+                        Eneserefleksioon
+                    </span>
+                </div>
+            </router-link>
         </div>
     </div>
 </template>
@@ -99,7 +135,9 @@ let currentlyOpenSection = ref(null);
 const props = defineProps(['shown']);
 
 function linkClickHandler(e) {
-    if (e.target.classList.contains("option") || e.target.nodeName === 'P') {
+    if (e.target.classList.contains("option") 
+    || e.target.classList.contains("text-wrapper")
+    || e.target.nodeName === 'P') {
         emit("toggle")
     }
 
@@ -133,13 +171,11 @@ li {
 }
 
 li p {
-    background: linear-gradient(
-            90deg,
+    background: linear-gradient(90deg,
             #61131D 0%,
             #61131D 50%,
             rgba(255, 255, 255, 0) 50%,
-            rgba(255, 255, 255, 0) 100%
-    ) 100%;
+            rgba(255, 255, 255, 0) 100%) 100%;
     background-size: 210% 210%;
     transition: background-position 0.3s ease-in-out;
 }
@@ -150,12 +186,15 @@ a {
 
 li p:hover,
 .router-link-active li p {
-    background: linear-gradient(
-            90deg,
+    background: linear-gradient(90deg,
             #61131D 0%,
             #61131D 100%,
-    ) 100%;
+        ) 100%;
     background-position: 0;
+}
+
+.router-link-active .option .text-wrapper {
+    background-color: #61131D;
 }
 
 .menu {

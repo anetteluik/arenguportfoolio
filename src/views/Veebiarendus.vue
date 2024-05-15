@@ -1,22 +1,22 @@
 <script setup>
-import AvastaTartut from "@/components/ModuleViews/AvastaTartut.vue";
-import Rosabella from "@/components/ModuleViews/Rosabella.vue";
-import ClearMind from "@/components/ModuleViews/ClearMind.vue";
-import Illustrator from "@/components/ModuleViews/Illustrator.vue";
-import Advendihommik from "@/components/ModuleViews/Advendihommik.vue";
-import Fotoseeria from "@/components/ModuleViews/Fotoseeria.vue";
+import Sisuhaldussüsteemid from "@/components/ModuleViews/Sisuhaldussüsteemid.vue";
+import Versioonihaldus from "@/components/ModuleViews/Versioonihaldus.vue";
+import ABTestimine from "@/components/ModuleViews/ABTestimine.vue";
+import VahenditePrototüüp from "@/components/ModuleViews/VahenditePrototüüp.vue";
+import SissejuhatusTarkvaraarendusse from "@/components/ModuleViews/SissejuhatusTarkvaraarendusse.vue";
+import Veebihaldus from "@/components/ModuleViews/Veebihaldus.vue";
 import VOCOKaart from "@/components/ModuleViews/VOCOKaart.vue";
 import Visiitkaart from "@/components/ModuleViews/Visiitkaart.vue";
 import OneBoxLayout from "@/components/OneBoxLayout.vue";
 import PopUp from "@/components/PopUp.vue";
 import { computed, ref, markRaw } from 'vue';
 let allModules = {
-    avastaTartut: markRaw(AvastaTartut),
-    rosabella: markRaw(Rosabella),
-    clearMind: markRaw(ClearMind),
-    illustrator: markRaw(Illustrator),
-    advendihommik: markRaw(Advendihommik),
-    fotoseeria: markRaw(Fotoseeria),
+    sisuhaldus: markRaw(Sisuhaldussüsteemid),
+    versioonihaldus: markRaw(Versioonihaldus),
+    abtestimine: markRaw(ABTestimine),
+    vahenditekasutaminep: markRaw(VahenditePrototüüp),
+    sissejuhatus: markRaw(SissejuhatusTarkvaraarendusse),
+    veebihaldus: markRaw(Veebihaldus),
     vocokaart: markRaw(VOCOKaart),
     visiitkaart: markRaw(Visiitkaart),
     adobe: 'adobe',
@@ -73,36 +73,36 @@ let currentlyOpenModule = ref(null);
                 </div>
                 <div class="moodulWrapper">
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.avastaTartut)" :title="'Avasta Tartut'"
-                            :text="'Mobiilirakenduse prototüüp, Figma, Illustrator'">
-                            <img class="backg" src="../assets/img/avastatartut.webp"
+                        <OneBoxLayout @click="toggleModule(allModules.sisuhaldus)" :title="'Sisuhaldussüsteemid'"
+                            :text="'GA4, SEO, Wordpressis veebilehtede loomine'">
+                            <img class="backg" src="../assets/img/ga4.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.rosabella)" :title="'Rosabella'"
-                            :text="'Logo kujundamine, mockup, Illustrator, Photoshop'">
-                            <img class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
+                        <OneBoxLayout @click="toggleModule(allModules.versioonihaldus)" :title="'Versioonihaldus'"
+                            :text="'Github, repositooriumid, koodiharud'">
+                            <img class="backg" src="../assets/img/github.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
-                    <OneBoxLayout @click="toggleModule(allModules.clearMind)" :title="'Clear Mind'"
-                        :text="'Logo kujundamine, prototüüp, mockup, kliendisuhtlus, Figma, Photoshop'">
-                        <img class="backg" src="../assets/img/clearmind.webp"
+                    <OneBoxLayout @click="toggleModule(allModules.abtestimine)" :title="'A/B testimine'"
+                        :text="'GA4, A/B testimine, Wordpress'">
+                        <img class="backg" src="../assets/img/ab.webp"
                             alt="Clear Mind energiajoogi mockup purkidel">
                     </OneBoxLayout>
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.illustrator)" :title="'Illustrator ja Photoshop'"
-                            :text="'Kujundustööd, programmiga tutvumine'">
-                            <img class="backg" src="../assets/img/photoshop-luik.webp"
+                        <OneBoxLayout @click="toggleModule(allModules.vahenditekasutaminep)" :title="'Vahendite kasutamine prototüüpimiseks, arendusraamistikud'"
+                            :text="'Vue, prototüüpimine'">
+                            <img class="backg" src="../assets/img/vue.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.advendihommik)"
-                            :title="'Advendihommik ja jõulukaart'"
-                            :text="'Animatsioonid, kujundustööd, Photoshop, After Effects'">
-                            <img class="backg" src="../assets/img/tänukiri.webp" alt="Rosabella logo T-särgil">
+                        <OneBoxLayout @click="toggleModule(allModules.sissejuhatus)"
+                            :title="'Sissejuhatus tarkvaraarendusse'"
+                            :text="'Tarkvaraarenduse metoodikad, projektiplaani koostamine, projektide ebaõnnestumise põhjused'">
+                            <img class="backg" src="../assets/img/tarkvaraarendus.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
-                    <OneBoxLayout @click="toggleModule(allModules.visiitkaart)" :title="'NOPE Creative visiitkaart'"
-                        :text="'Trükiettevalmistus, Illustrator, Figma'">
-                        <img class="backg" src="../assets/img/visiitkaart.webp"
+                    <OneBoxLayout @click="toggleModule(allModules.veebihaldus)" :title="'Veebihaldus'"
+                        :text="'LAMP stack, serverite tüübid'">
+                        <img class="backg" src="../assets/img/linux.webp"
                             alt="Clear Mind energiajoogi mockup purkidel">
                     </OneBoxLayout>
                 </div>

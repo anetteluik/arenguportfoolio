@@ -125,8 +125,9 @@ h3 {
 }
 
 .aboutPhoto img {
-  height: 100%;
+  height: auto;
   width: 100%;
+  aspect-ratio: 4/3;
 }
 
 .arengWrapper {
@@ -159,7 +160,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: clamp(60vh, 3vw, 70vh);
+  height: 70vh;
   background-color: #61131D;
 }
 
@@ -186,6 +187,7 @@ h3 {
   justify-content: space-between;
   width: 70%;
   height: 100%;
+  margin-top: 80px;
 }
 
 .detailsMoodul {
@@ -363,6 +365,7 @@ h3 {
 
   .description {
     width: 100%;
+    margin-bottom: 32px;
   }
 
   .descriptionMoodul {
@@ -404,10 +407,6 @@ h3 {
   .descriptionWrapper {
     align-items: flex-start;
     margin: 0;
-  }
-
-  a {
-    margin-top: 32px;
   }
 
   .aboutSectionPhotos {

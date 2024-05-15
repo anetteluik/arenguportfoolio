@@ -37,7 +37,7 @@
 <script setup>
 import { onMounted, render, markRaw, ref } from 'vue';
 import TextButton from '../TextButton.vue';
-import imgAvastaTartut from '@/assets/img/avastatartut.webp';
+import imgAvastaTartut from '@/assets/img/frillice.webp';
 import imgClearMind from '@/assets/img/clearmind.webp';
 import imgFotoseeria from '@/assets/img/fotoseeria.webp';
 

@@ -1,24 +1,14 @@
 <script setup>
-import AvastaTartut from "@/components/ModuleViews/AvastaTartut.vue";
-import Rosabella from "@/components/ModuleViews/Rosabella.vue";
-import ClearMind from "@/components/ModuleViews/ClearMind.vue";
-import Illustrator from "@/components/ModuleViews/Illustrator.vue";
-import Advendihommik from "@/components/ModuleViews/Advendihommik.vue";
-import Fotoseeria from "@/components/ModuleViews/Fotoseeria.vue";
-import VOCOKaart from "@/components/ModuleViews/VOCOKaart.vue";
-import Visiitkaart from "@/components/ModuleViews/Visiitkaart.vue";
+import ITSüsteemideRiistvara from "@/components/ModuleViews/ITSüsteemideRiistvara.vue";
+import Operatsioonisüsteemid from "@/components/ModuleViews/Operatsioonisüsteemid.vue";
+import Infoturve from "@/components/ModuleViews/Infoturve.vue";
 import OneBoxLayout from "@/components/OneBoxLayout.vue";
 import PopUp from "@/components/PopUp.vue";
 import { computed, ref, markRaw } from 'vue';
 let allModules = {
-    avastaTartut: markRaw(AvastaTartut),
-    rosabella: markRaw(Rosabella),
-    clearMind: markRaw(ClearMind),
-    illustrator: markRaw(Illustrator),
-    advendihommik: markRaw(Advendihommik),
-    fotoseeria: markRaw(Fotoseeria),
-    vocokaart: markRaw(VOCOKaart),
-    visiitkaart: markRaw(Visiitkaart),
+    riistvara: markRaw(ITSüsteemideRiistvara),
+    opsusteemid: markRaw(Operatsioonisüsteemid),
+    infoturve: markRaw(Infoturve),
     adobe: 'adobe',
 };
 
@@ -64,29 +54,29 @@ let currentlyOpenModule = ref(null);
                 <div class="descriptionWrapperMoodul">
                     <div class="descriptionMoodul">
                         <p>Õppisin erinevate IT-süsteemide riistvarade, operatsioonisüsteemide ning arvutivõrkude aluste
-                            kohta. Praktiliste ülesannete ja rühmatööde kaudu sain kogemusi riistvara konfiguratsioonide
+                            kohta. Praktiliste ülesannete ja rühmatööde kaudu sain kogemuse riistvara konfiguratsioonide
                             lahendamisel ning tarkvara installimise ja haldamise osas. Lisaks omandasin teadmised
                             infoturbest (krüpteerimine, autentimine, autoriseerimine, võrguturbe meetodid). Õppisin,
-                            kuidas kaitsta infosüsteeme ja andmeid (nt DDoS rünnakus) erinevate turvameetmete kaudu ning
-                            kuidas reageerida potentsiaalsetele turvarikkumistele</p>
+                            kuidas kaitsta infosüsteeme ja andmeid (nt DDoS rünnakul) erinevate turvameetmete kaudu ning
+                            kuidas reageerida potentsiaalsetele turvarikkumistele.</p>
                     </div>
                 </div>
                 <div class="moodulWrapper">
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.avastaTartut)" :title="'Avasta Tartut'"
-                            :text="'Mobiilirakenduse prototüüp, Figma, Illustrator'">
-                            <img class="backg" src="../assets/img/avastatartut.webp"
+                        <OneBoxLayout @click="toggleModule(allModules.riistvara)" :title="'IT-süsteemide riistvara'"
+                            :text="'Riistvarasüsteemide kasutamine, arvuti ja selle komponendid, programmide miinimum- ja soovituslikud nõuded'">
+                            <img class="backg" src="../assets/img/it.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.rosabella)" :title="'Rosabella'"
-                            :text="'Logo kujundamine, mockup, Illustrator, Photoshop'">
-                            <img class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
+                        <OneBoxLayout @click="toggleModule(allModules.opsusteemid)" :title="'Operatsioonisüsteemid'"
+                            :text="'Tarkvarade installimine ja haldamine, operatsioonisüsteemide paigaldamine, VMWare'">
+                            <img class="backg" src="../assets/img/opsysteem.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
-                    <OneBoxLayout @click="toggleModule(allModules.clearMind)" :title="'Clear Mind'"
-                        :text="'Logo kujundamine, prototüüp, mockup, kliendisuhtlus, Figma, Photoshop'">
-                        <img class="backg" src="../assets/img/clearmind.webp"
-                            alt="Clear Mind energiajoogi mockup purkidel">
+                    <OneBoxLayout @click="toggleModule(allModules.infoturve)" :title="'Infoturbe ja arvutivõrkude alused'"
+                        :text="'Apache veebiserver, kasuta õiguste seadistused, veebiründed ja nende eest kaitse'">
+                        <img class="backg" src="../assets/img/apache.webp"
+                            alt="Clear Mind energiajoogi mockup purkidel"> 
                     </OneBoxLayout>
                 </div>
             </div>
