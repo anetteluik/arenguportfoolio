@@ -1,22 +1,24 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">NOPE Creative visiitkaart</div>
-            <p class="textP">Selle ülesande eesmärk oli tutvuda trükiste kujundamise nõuetega. Pidin looma Adobe
-                Illustratoris visiitkaardi eesmise ja tagumise poole disaini vabalt valitud ettevõttele. Visiitkaart
-                pidi sisaldama ettevõtte nime, tegevusala, asukohta ning kontaktandmeid. Otsustasin oma visiitkaardile
-                lisada ka QR-koodi, mis suunab skännija otse ettevõtte veebilehele.
-                Valisin ettevõtteks NOPE loovstuudio. Kasutasin DevTooli NOPE veebilehel kasutatud värvikoodide ja
-                tüpograafia valikute leidmiseks, et säilitada ettevõtte visiitkaardi disainis CVI järjepidevust.
-
-                Õppisin, et trükifailidel on väga oluline määrata täpsed mõõtmed, bleed ja värvirežiim. Lisaks peavad
-                kõik tähed olema curved või outlined, kuna trükikojal ei pruugi olla neid fonte, mida disainis kasutan,
-                ja vastasel juhul need asendatakse mingi muu fondiga. Kui neid nõudeid eirata, ei pruugi füüsiline toode
-                vastata digitaalselt ette nähtud disainile.
+            <div class="text">HTML ja CSS</div>
+            <p class="textP">Selle kursuse jooksul õppisin veebilehe struktuuri põhialuseid, nagu joondus, pealkirjad,
+                grupeerimine jne. Kursuse raames pidin läbima Udemy koolitusi, mis keskendusid HTML ja CSSi õpetamisele.
+                HTML osas õppisin veebilehtede loomist nullist, struktuuri loomist erinevate komponentide abil, koodi
+                fotode lisamist, listide loomist. CSS-is õppisin veebilehtede kujundamist fontidest värvideni ning sain
+                teada, kuidas erinevad attribuudid mõjutavad komponentide asetust ja joondusi.
+                Kasutasin saadud teadmisi, et luua mitmeleheline veebileht. See projekt hõlmas ülesandeid, nagu
+                navigatsioonimenüüde kujundamine HTML-i ja CSS-i abil, failisüsteemi ühendused, vormide loomine ning
+                HTML5 semantiliste siltide kasutamine veebilehe struktuuri parendamiseks. Samuti õppisin põgusalt SASS-i
+                kasutamisest.
+                Tutvusin erinevate validatoritega, nagu W3C HTML validator ja BeautifyTools CSS validatorURL, mis
+                kontrollivad koodi kvaliteeti ning vastavust veebilehe standarditele. Tutvusin ka Bootstrap
+                raamistikuga. Udemy kursustel, sain selgeks, kuidas Bootstrap 4 kiirendab kaasaegsete ja jätkusuutlike
+                veebisaitide loomist.
             </p>
         </div>
         <div class="forwardBackButtons">
-            <router-link to="">
+            <router-link to="/avasta-tartut">
                 <TextButtonBack :imgType="'back'" :alt="'Button Icon'" class="buttonRe">Eelmine</TextButtonBack>
             </router-link>
             <router-link to="">
@@ -25,7 +27,7 @@
         </div>
     </div>
     <div class="popUpImage">
-        <img src="/src/assets/img/visiitkaart.webp" alt="">
+        <img src="/src/assets/img/rosabella.webp" alt="">
     </div>
 </template>
 

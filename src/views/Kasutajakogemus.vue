@@ -1,9 +1,9 @@
 <script setup>
-import AvastaTartut from "@/components/ModuleViews/AvastaTartut.vue";
-import Rosabella from "@/components/ModuleViews/Rosabella.vue";
-import ClearMind from "@/components/ModuleViews/ClearMind.vue";
-import Illustrator from "@/components/ModuleViews/Illustrator.vue";
-import Advendihommik from "@/components/ModuleViews/Advendihommik.vue";
+import Frillice from "@/components/ModuleViews/Frillice.vue";
+import GoogleAnalytics from "@/components/ModuleViews/GoogleAnalytics.vue";
+import KasutajakogemuseAlused from "@/components/ModuleViews/KasutajakogemuseAlused.vue";
+import KasutusmugavusSihtrühm from "@/components/ModuleViews/KasutusmugavusSihtrühm.vue";
+import Prototüüpimine from "@/components/ModuleViews/Prototüüpimine.vue";
 import Fotoseeria from "@/components/ModuleViews/Fotoseeria.vue";
 import VOCOKaart from "@/components/ModuleViews/VOCOKaart.vue";
 import Visiitkaart from "@/components/ModuleViews/Visiitkaart.vue";
@@ -11,14 +11,11 @@ import OneBoxLayout from "@/components/OneBoxLayout.vue";
 import PopUp from "@/components/PopUp.vue";
 import { computed, ref, markRaw } from 'vue';
 let allModules = {
-    avastaTartut: markRaw(AvastaTartut),
-    rosabella: markRaw(Rosabella),
-    clearMind: markRaw(ClearMind),
-    illustrator: markRaw(Illustrator),
-    advendihommik: markRaw(Advendihommik),
-    fotoseeria: markRaw(Fotoseeria),
-    vocokaart: markRaw(VOCOKaart),
-    visiitkaart: markRaw(Visiitkaart),
+    frillice: markRaw(Frillice),
+    google: markRaw(GoogleAnalytics),
+    kasutajakogemuse: markRaw(KasutajakogemuseAlused),
+    kasutusmugavus: markRaw(KasutusmugavusSihtrühm),
+    prototüüpimine: markRaw(Prototüüpimine),
     adobe: 'adobe',
 };
 
@@ -63,43 +60,45 @@ let currentlyOpenModule = ref(null);
                 </div>
                 <div class="descriptionWrapperMoodul">
                     <div class="descriptionMoodul">
-                        <p>Frillice projekti raames õppisin meeskonnatööd, tähtaegadest kinnipidamist ning
-                            kasutajauuringute korrektse planeerimise ja läbiviimise tähtsust. Iseseisvalt uurisin
-                            mitmeid kasutajakogemuse uurimise meetodeid, sealhulgas küsitluste loomist, intervjuude
-                            läbiviimist ja andmete analüüsimist. Kasutajakeskse disaini põhimõtted rõhutasid lihtsuse ja
-                            kasutajasõbralikkuse tähtsust disainiprotsessis ning prototüüpide olulisust kasutatavuse
-                            parandamisel. Kokkuvõttes aitas see moodul mul arendada oskusi rohkem UX valdkonnas,
-                            sealhulgas kasutajauuringute läbiviimist, kasutatavuse testimist, kasutajakeskse disaini
-                            põhimõtteid ning analüütilisi oskusi.</p>
+                        <p>Frillice projekti raames õppisin töötama meeskonnas, arendasin ajaplaneerimist, et
+                            tähtaegadest kinni pidada ning õppisin koostama ja läbi viima kasutajauuringuid. Iseseisvalt
+                            uurisin mitmeid kasutajakogemuse uurimise meetodeid, sealhulgas kvantitatiivsete ja
+                            kvalitatiivsete küsitluste loomist, kuidas koostada küsimusi vastajat suunamata jne. Samuti
+                            uurisin intervjuude läbiviimise ja andmete analüüsimise põhimõtteid. Kasutajakeskse disaini
+                            reeglid rõhutasid lihtsuse ja kasutajasõbralikkuse tähtsust disainiprotsessis ning
+                            prototüüpide olulisust kasutatavuse parandamisel. Mooduli tulemusena arendasin oluliselt oma
+                            oskusi UX valdkonnas, sealhulgas kasutajauuringute korraldamist, kasutatavuse testimist,
+                            kasutajakeskse disaini põhimõtteid ning analüütilisi võimeid.
+                        </p>
                     </div>
                 </div>
                 <div class="moodulWrapper">
-                    <OneBoxLayout @click="toggleModule(allModules.clearMind)" :title="'Clear Mind'"
-                        :text="'Logo kujundamine, prototüüp, mockup, kliendisuhtlus, Figma, Photoshop'">
+                    <OneBoxLayout @click="toggleModule(allModules.frillice)" :title="'Frillice'"
+                        :text="'Küsimustiku koostamine, kasutajakogemuse uurimine, persoona'">
                         <img class="backg" src="../assets/img/clearmind.webp"
-                            alt="Clear Mind energiajoogi mockup purkidel">
+                            alt="Frillice esitluse avakuva">
                     </OneBoxLayout>
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.avastaTartut)" :title="'Avasta Tartut'"
-                            :text="'Mobiilirakenduse prototüüp, Figma, Illustrator'">
-                            <img class="backg" src="../assets/img/avastatartut.webp"
-                                alt="Avasta Tartut mobiilirakenduse mockup">
+                        <OneBoxLayout @click="toggleModule(allModules.google)" :title="'Google Analytics'"
+                            :text="'Keskkonnaga tutvumine'">
+                            <img class="backg" src="../assets/img/ga4.webp"
+                                alt="Google Analytics logo mustal taustal">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.rosabella)" :title="'Rosabella'"
-                            :text="'Logo kujundamine, mockup, Illustrator, Photoshop'">
-                            <img class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
+                        <OneBoxLayout @click="toggleModule(allModules.kasutajakogemuse)" :title="'Kasutajakogemuse analüüsi alused'"
+                            :text="'Kasutatavuse testimise teooria, valim, intervjuutehnikad'">
+                            <img class="backg" src="../assets/img/iglu-loeng1.webp" alt="Kompositsioon Iglu loengust">
                         </OneBoxLayout>
                     </div>
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.illustrator)" :title="'Illustrator ja Photoshop'"
-                            :text="'Kujundustööd, programmiga tutvumine'">
-                            <img class="backg" src="../assets/img/photoshop-luik.webp"
-                                alt="Avasta Tartut mobiilirakenduse mockup">
+                        <OneBoxLayout @click="toggleModule(allModules.kasutusmugavus)" :title="'Kasutusmugavus ja sihtrühm'"
+                            :text="'Kasutajakeskse disaini põhitõed, prototüüpide teooria'">
+                            <img class="backg" src="../assets/img/iglu-loeng2.webp"
+                                alt="Kompositsioon Iglu loengust">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.advendihommik)"
-                            :title="'Advendihommik ja jõulukaart'"
-                            :text="'Animatsioonid, kujundustööd, Photoshop, After Effects'">
-                            <img class="backg" src="../assets/img/tänukiri.webp" alt="Rosabella logo T-särgil">
+                        <OneBoxLayout @click="toggleModule(allModules.prototüüpimine)"
+                            :title="'Prototüüpimine'"
+                            :text="'Prototüüpide eelised, tüüpilised vead, värske pilk'">
+                            <img class="backg" src="../assets/img/iglu-loeng3.webp" alt="Kompositsioon Iglu loengust">
                         </OneBoxLayout>
                     </div>
                 </div>

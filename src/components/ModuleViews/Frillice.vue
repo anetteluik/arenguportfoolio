@@ -1,24 +1,20 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">Avasta Tartut</div>
-            <p class="textP">Aasta Tegija võistluse ülesandeks oli luua mobiilirakendus nimega "Avasta Tartut", mis
-                võimaldab kasutajatel planeerida nii pere- kui ka kultuurireise. Rakendus pidi sisaldama kaarti, kus on
-                märgitud erinevad vaatamisväärsused ning pakkuma kasutajatele mugavat teekonda nende avastamiseks. Antud
-                ülesande täitmiseks oli aega viis tundi ning kasutasin selleks disainitööriista Figma, rakenduse logo
-                loomiseks Adobe Illustratorit.
-
-                Osalemine Aasta Tegija võistlusel oli minu jaoks eriti oluline, sest teadsin, et saan väärtuslikku
-                tagasisidet UX/UI valdkonna professionaalidelt. Võidu saavutamine polnud mu peamine eesmärk; pigem
-                soovisin õppida, kuidas oma oskusi erialaselt täiustada ning millele peaksin tulevikus rohkem rõhku
-                panema. Tagasiside aitas mul märgata oma nõrkusi ning sain aru, et keskendusin liigselt disainile ja
-                lahedatele animatsioonidele, kuid jätsin tagaplaanile kasutajamugavuse ning märkamata jäid mõned
-                olulised loogikavead struktuuris. Tänu tagasisidele olen teadlikum ning olen proovinud edaspidi
-                keskenduda rohkem kasutajakesksele disainile.
-
-                Aasta Tegija võistlusel saavutasin kolmanda koha.
-
-                Allpool on link minu loodud prototüübile ja projekti dokumentatsioonile.</p>
+            <div class="text">Frillice</div>
+            <p class="textP">Frillice oli grupitööna ette nähtud projekt, kus osales terve KD22 klass. Ülesanded jaotati
+                võrdselt nelja grupi vahel. Minu grupp vastutas uuringu küsimuste koostamise, sobiva küsitluskeskkonna
+                leidmise ning küsitluse läbiviimise eest. Küsimustikukeskkonna valimisel oli kaks varianti - Google
+                Forms või Forms.app. Teised platvormid olid kas tasulised või teatud hetkest muutusid tasuliseks
+                (näiteks 7 päeva prooviperiood või vastata sai ainult 20 inimest). Valisime Forms.app platvormi, sest
+                see pakkus rohkem võimalusi küsimuste järjekorra loogika osas ning küsitluse enda visuaali loomisel.
+                Küsimustiku koostamiseks õppisin iseseisvalt erinevaid kasutajakogemuse uurimise meetodeid (UXR),
+                korrektsete ja suunamata küsimuste koostamist ning andmete analüüsimist. Osalesin esmaste persoonade
+                loomisel, mis tuginesid meie grupi poolt loodud ning analüüsitud uuringuandmetele. Samuti palus kursuse
+                juhataja mind appi lõpuesitluse disainimises, mis esitati hiljem Frillice ettevõtte asutajale.
+                Kokkuvõttes õpetas Frillice projekt mulle meeskonnatöö olulisust, tähtaegadest kinnipidamist ning
+                arendas kasutajakogemuse analüütilist ja uurimuslikku poolt.
+            </p>
         </div>
         <div class="forwardBackButtons">
             <router-link to="">

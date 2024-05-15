@@ -63,18 +63,22 @@ let currentlyOpenModule = ref(null);
         </div>
         <div class="descriptionWrapperMoodul">
           <div class="descriptionMoodul">
-            <p>Omandasin laia oskustepagasi graafilise disaini valdkonnas, töötades programmidega nagu ArtRage, Krita,
-              Adobe Photoshop ja Adobe Illustrator, õppides maalimistehnikaid, pilditöötlust ning vektorgraafika
-              loomist. Lisaks tutvusin trükidisaini, brändingupõhimõtete, värviteooria, tüpograafia, logo kujundamise ja
-              mockupide loomisega. Õppisin disainimaterjale klientide vajadustele kohandama, suheldes efektiivselt ja
-              arendades meeskonnatööoskusi. </p>
+            <p>Mooduli raames õppisin tundma ja kasutama erinevaid programme, nagu ArtRage, Krita, Adobe Photoshop ja
+              Illustrator. Põhilised omandatud oskused tarkvaradega katsetamisest olid erinevad maalimistehnikad,
+              pilditöötlus (peamiselt Photoshopis) ja vektorgraafika loomine. Lisaks õppisin trükidisaini ja
+              -ettevalmistuse põhimõtteid, brändingu loomist ja selle disainis kasutamise reegleid, värviteooriat,
+              tüpograafia eripärasid ning vastavalt kontekstile nende korrektset rakendamist. Mõned projektid
+              võimaldasid mul kogeda ka reaalset kliendisuhtlust - klientide vajaduste ja ootuste arvestamist
+              disainiprotsessis, enda seisukohtade selgitamist ning selget ja konkreetset suhtlust kliendiga, et tagada
+              sujuv infovahetus.</p>
           </div>
         </div>
         <div class="moodulWrapper">
           <div class="moodulSection">
             <OneBoxLayout @click="toggleModule(allModules.avastaTartut)" :title="'Avasta Tartut'"
-              :text="'Mobiilirakenduse prototüüp, Figma, Illustrator'">
-              <img img loading="lazy" class="backg" src="../assets/img/avastatartut.webp" alt="Avasta Tartut mobiilirakenduse mockup">
+              :text="'Mobiilirakenduse protoüüp, logo kujundamine, Figma, Illustrator'">
+              <img img loading="lazy" class="backg" src="../assets/img/avastatartut.webp"
+                alt="Avasta Tartut mobiilirakenduse mockup">
             </OneBoxLayout>
             <OneBoxLayout @click="toggleModule(allModules.rosabella)" :title="'Rosabella'"
               :text="'Logo kujundamine, mockup, Illustrator, Photoshop'">
@@ -83,22 +87,25 @@ let currentlyOpenModule = ref(null);
           </div>
           <OneBoxLayout @click="toggleModule(allModules.clearMind)" :title="'Clear Mind'"
             :text="'Logo kujundamine, prototüüp, mockup, kliendisuhtlus, Figma, Photoshop'">
-            <img img loading="lazy" class="backg" src="../assets/img/clearmind.webp" alt="Clear Mind energiajoogi mockup purkidel">
+            <img img loading="lazy" class="backg" src="../assets/img/clearmind.webp"
+              alt="Clear Mind energiajoogi mockup purkidel">
           </OneBoxLayout>
           <div class="moodulSection">
             <OneBoxLayout @click="toggleModule(allModules.illustrator)" :title="'Illustrator ja Photoshop'"
               :text="'Kujundustööd, programmiga tutvumine'">
-              <img img loading="lazy" class="backg" src="../assets/img/photoshop-luik.webp" alt="Avasta Tartut mobiilirakenduse mockup">
+              <img img loading="lazy" class="backg" src="../assets/img/photoshop-luik.webp"
+                alt="Avasta Tartut mobiilirakenduse mockup">
             </OneBoxLayout>
             <OneBoxLayout @click="toggleModule(allModules.advendihommik)" :title="'Advendihommik ja jõulukaart'"
-              :text="'Animatsioonid, kujundustööd, Photoshop, After Effects'">
+              :text="'Animatsioonid, kujundustööd, trükiettevalmistus, Illustrator, Photoshop, After Effects'">
               <img img loading="lazy" class="backg" src="../assets/img/tänukiri.webp" alt="Rosabella logo T-särgil">
             </OneBoxLayout>
           </div>
           <div class="moodulSection">
             <OneBoxLayout @click="toggleModule(allModules.fotoseeria)" :title="'Fotoseeria'"
               :text="'Fotograafia, pilditöötlus, Photoshop'">
-              <img img loading="lazy" class="backg" src="../assets/img/fotoseeria.webp" alt="Avasta Tartut mobiilirakenduse mockup">
+              <img img loading="lazy" class="backg" src="../assets/img/fotoseeria.webp"
+                alt="Avasta Tartut mobiilirakenduse mockup">
             </OneBoxLayout>
             <OneBoxLayout @click="toggleModule(allModules.vocokaart)" :title="'VOCO õppehoonete kaart'"
               :text="'Animatsioonid, kujundustööd, Figma'">
@@ -107,7 +114,8 @@ let currentlyOpenModule = ref(null);
           </div>
           <OneBoxLayout @click="toggleModule(allModules.visiitkaart)" :title="'NOPE Creative visiitkaart'"
             :text="'Trükiettevalmistus, Illustrator, Figma'">
-            <img img loading="lazy" class="backg" src="../assets/img/visiitkaart.webp" alt="Clear Mind energiajoogi mockup purkidel">
+            <img img loading="lazy" class="backg" src="../assets/img/visiitkaart.webp"
+              alt="Clear Mind energiajoogi mockup purkidel">
           </OneBoxLayout>
         </div>
       </div>

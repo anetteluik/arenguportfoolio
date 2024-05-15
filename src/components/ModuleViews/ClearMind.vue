@@ -2,18 +2,21 @@
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
             <div class="text">Clear Mind</div>
-            <p class="textP">Projekti ülesandeks oli teha koostööd müügiesindajatega (kui kliendiga) ning selgitada
-                välja tooteidee, vajadused, eesmärgid ja ootused lõpptulemusele.
+            <p class="textP">Projekti ülesandeks oli kliendiga koostööd tehes välja selgitada teenuse/tooteidee,
+                vajadused, eesmärgid ja ootused lõpptulemusele. Minu kliendi soov oli saada oma ideele logo, Facebooki
+                konto eelvaate mockup (profiilipilt ning kaanefoto kujundus) ning tootedisain (etiketi ja purgi kujundus
+                ning selle kujutamine mockupil). Logo kujundamiseks kasutasin Illustratorit, mockupide jaoks Photoshopi
+                ning esitluse ja muude visuaalide loomiseks keskkonda Figma.
                 Antud ülesande käigus õppisin rakendama kliendikeskset disaini, kohandades disainilahendusi vastavalt
                 kliendi individuaalsetele vajadustele ja eelistustele. Selleks pidasin mitmeid arutelusid kliendiga, et
-                korrektselt mõista nende nõudmisi ning nägemust lõpptulemusest. Tegemist oli mitmekülgse projektiga, kus
-                uurisin erinevaid kujundusvorminguid alates bänneritest ja kaanepiltidest kuni sotsiaalmeedia
-                platvormide (nagu Facebook ja Instagram) postitusteni ning animeeritud sotsiaalmeedia sisuni. Minu
-                kliendi soovide hulka kuulusid logo kujundus, toote etiketi kujundus, Facebooki profiili kujundus ning
-                toote mockup.
-                Projekti käigus arendasin oma loovat mõtlemist ja disainioskusi, kuna iga ülesanne nõudis uut lähenemist
-                ja vaatenurka. Oluline oli arvestada mitte ainult lõppkasutajaga, vaid ka kliendi konkreetsete soovide
-                ja visiooniga.</p>
+                korrektselt mõista nõudeid ning nägemust lõpptulemusest. Tegemist oli mitmekülgse projektiga, kus
+                uurisin erinevaid kujundusvorminguid alates tootedisainist kuni sotsiaalmeedia platvormide (nagu
+                Facebook ja Instagram) postitusteni ning animeeritud sotsiaalmeedia sisuni (viimaseni kahjuks ei
+                jõudnudki). Oluline oli arvestada lisaks kliendi konkreetsete soovide ja visioonidele ka lisaks
+                lõppkasutajaga.
+                Arvan, et projekt oli edukas, sest suhtlus kliendiga oli sujuv, klient oli lõpptulemusega väga rahul
+                ning sain kogeda väga reaalset kliendiga koostöö olukorda, mis ka tulevikus kindlasti ette tuleb.
+            </p>
         </div>
         <div class="forwardBackButtons">
             <router-link to="">

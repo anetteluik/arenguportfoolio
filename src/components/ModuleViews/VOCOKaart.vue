@@ -1,19 +1,19 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">Fotoseeria</div>
-            <p class="textP">Illustratori ja Photoshopi platvormi õppimiseks olid õpetaja poolt ette valmistatud
-                erinevad ülesanded, mis nõudsid mitmesuguste tööriistade kasutamist ja nende funktsiooni õppimist
-                mõlemas keskkonnas.
-                Mooduli käigus omandasin oskusi värvilahenduste tõhusaks ja professionaalseks rakendamiseks - õppisin,
-                millised värvitoonid omavahel harmoneeruvad, tutvusin erinevate värviskeemidega (nt monokroomne,
-                analoogne jne) ning õppisin vältima ebasobivaid värvikombinatsioone ja leidma lahendusi, mis vastavad
-                ligipääsetavuse standarditele. Tüpograafia mängis olulist rolli õppetöös, rõhutades teksti olulisust
-                kasutajasõbralikus disainis. Omandasin oskusi sobivate fontide valimisel, vahekauguste ja joonduste
-                kohandamisel, arvestades kasutajamugavust ja loetavust. Lisaks õppisin rastergraafika töötlemist Adobe
-                Photoshopi abil. Samuti mõistsin, et kuigi Figma on mitmekülgne platvorm, pakub Adobe Illustrator teatud
-                tüüpi kujunduste loomisel rohkem vabadust ja kohandamisvõimalusi. Seetõttu olen püüdnud seda ka oma
-                edasistes töödes rohkem kasutada.</p>
+            <div class="text">VOCO õppehoonete kaart</div>
+            <p class="textP">Ülesandeks oli luua illustreeritud ja interaktiivne kaardi prototüüp, mis näitab VOCO
+                õppehoonete asukohti (Kopli 1, Põllu 11) ning lubab pop-up akende kaudu saada hoonete kohta
+                lisainformatsiooni. Kahjuks sain ülesandest esialgu natuke valesti aru - lõin kaks eraldi kaarti (Kopli
+                kaardi ja Põllu kaardi), kui tegelikult pidin need kujutama ühel kaardil ning lisainformatsioonina pidid
+                avanema asukohatäpsustused. Minu prototüüp sisaldas eraldi Kopli ja Põllu kaarte ning
+                lisainformatsioonina näidati hoopis sissepääsude asukohti.
+                Prototüübi ja illustratsioonide (aluskaart, 3D efektiga hooned) loomiseks kasutasin Figmat.
+                Selle ülesande käigus õppisin andmete lihtsustatud visualiseerimist. Näiteks kasutasin parklate
+                tähistamiseks sinist värvi ja suuremate alade puhul, kuhu mahtus, tähte "P", kuna see on tüüpiline viis
+                parklate tähistamiseks. Hoonete erinevad värvid aitasid kasutajal kaardil selgelt eristada eri hoonete
+                asukohti. Lisaks sain harjutada interaktiivsuste lisamist ja animatsioonide loomist Figmas.
+            </p>
         </div>
         <div class="forwardBackButtons">
             <router-link to="">

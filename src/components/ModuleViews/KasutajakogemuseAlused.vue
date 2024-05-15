@@ -1,22 +1,22 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">NOPE Creative visiitkaart</div>
-            <p class="textP">Selle ülesande eesmärk oli tutvuda trükiste kujundamise nõuetega. Pidin looma Adobe
-                Illustratoris visiitkaardi eesmise ja tagumise poole disaini vabalt valitud ettevõttele. Visiitkaart
-                pidi sisaldama ettevõtte nime, tegevusala, asukohta ning kontaktandmeid. Otsustasin oma visiitkaardile
-                lisada ka QR-koodi, mis suunab skännija otse ettevõtte veebilehele.
-                Valisin ettevõtteks NOPE loovstuudio. Kasutasin DevTooli NOPE veebilehel kasutatud värvikoodide ja
-                tüpograafia valikute leidmiseks, et säilitada ettevõtte visiitkaardi disainis CVI järjepidevust.
-
-                Õppisin, et trükifailidel on väga oluline määrata täpsed mõõtmed, bleed ja värvirežiim. Lisaks peavad
-                kõik tähed olema curved või outlined, kuna trükikojal ei pruugi olla neid fonte, mida disainis kasutan,
-                ja vastasel juhul need asendatakse mingi muu fondiga. Kui neid nõudeid eirata, ei pruugi füüsiline toode
-                vastata digitaalselt ette nähtud disainile.
+            <div class="text">Kasutajakogemuse analüüsi alused</div>
+            <p class="textP">Iglu esimene loeng andis ülevaate kasutatavuse testimise tugevustest ja piirangutest.
+                Kasutatavuse testimise plussid on loomulikult seotud kasutajakogemuse parandamisega. Samuti võib
+                testimise käigus ilmneda varjatud probleeme, millele poleks muidu tähelepanu pööratud, ning varajase
+                kasutatavuse testimise abil on võimalik juba varakult saada aimu kasutajate emotsioonidest toote/teenuse
+                suhtes. Kasutatavuse testimisega kaasnevad ka piirangud, eriti seoses testimise ettevalmistamise
+                pikaajalise protsessiga ning riskiga valida vale sihtgrupp, mis võib moonutada vastuste usaldusväärsust.
+                Loengu käigus sain teada, et tüüpiline kasutatavuse testimise valimi suurus koosneb tavaliselt 5-6
+                inimesest. Lisaks tutvustati erinevaid intervjuutehnikaid ja rõhutati küsimuste korrektse koostamise
+                tähtsust (küsimused ei tohiks olla suunavad ning peaksid vältima ühe-sõna-vastustele viivaid küsimusi,
+                näiteks “kas” küsimused). Samuti on oluline säilitada neutraalne seisukoht küsitlemise ajal ning
+                eelistada märkmete tegemiseks pigem märkmikku (või veelgi parem, salvestada vestlus).
             </p>
         </div>
         <div class="forwardBackButtons">
-            <router-link to="">
+            <router-link to="/avasta-tartut">
                 <TextButtonBack :imgType="'back'" :alt="'Button Icon'" class="buttonRe">Eelmine</TextButtonBack>
             </router-link>
             <router-link to="">
@@ -25,7 +25,7 @@
         </div>
     </div>
     <div class="popUpImage">
-        <img src="/src/assets/img/visiitkaart.webp" alt="">
+        <img src="/src/assets/img/rosabella.webp" alt="">
     </div>
 </template>
 

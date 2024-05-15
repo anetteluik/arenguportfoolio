@@ -1,19 +1,20 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">Illustrator ja Photoshop</div>
-            <p class="textP">Illustratori ja Photoshopi platvormi õppimiseks olid õpetaja poolt ette valmistatud
-                erinevad ülesanded, mis nõudsid mitmesuguste tööriistade kasutamist ja nende funktsiooni õppimist
-                mõlemas keskkonnas.
-                Mooduli käigus omandasin oskusi värvilahenduste tõhusaks ja professionaalseks rakendamiseks - õppisin,
-                millised värvitoonid omavahel harmoneeruvad, tutvusin erinevate värviskeemidega (nt monokroomne,
-                analoogne jne) ning õppisin vältima ebasobivaid värvikombinatsioone ja leidma lahendusi, mis vastavad
-                ligipääsetavuse standarditele. Tüpograafia mängis olulist rolli õppetöös, rõhutades teksti olulisust
-                kasutajasõbralikus disainis. Omandasin oskusi sobivate fontide valimisel, vahekauguste ja joonduste
-                kohandamisel, arvestades kasutajamugavust ja loetavust. Lisaks õppisin rastergraafika töötlemist Adobe
-                Photoshopi abil. Samuti mõistsin, et kuigi Figma on mitmekülgne platvorm, pakub Adobe Illustrator teatud
-                tüüpi kujunduste loomisel rohkem vabadust ja kohandamisvõimalusi. Seetõttu olen püüdnud seda ka oma
-                edasistes töödes rohkem kasutada.</p>
+            <div class="text">Advendihommik ja jõulukaart</div>
+            <p class="textP">Nendes ülesannetes sain kogemuse trükikujunduse, video monteerimise, töötluse ja
+                animeerimise vallas.
+
+                Advendihommiku ülesanne oli kujundada Adobe Illustratoris tänukiri Variku kooli algklassiõpilasele A5
+                formaadis kõrge resolutsiooniga (300 ppi), et säiliks kujunduse kvaliteet väljatrükil. Lisaks oli
+                oluline järgida brändieeskirju. Näiteks ei tohtinud ma oma tänukirja kujunduses kasutada VOCO logo (mis
+                oli algselt plaanis), kuna see ei vastanud kooli tänukirja blanketi nõuetele. Animeeritud jõulukaardi
+                loomisel sain ülevaate erinevate meediumivormingute eelistest ja piirangutest. Näiteks, kuigi GIF-id on
+                lihtsamad, jäävad nad helita ja nende pikkus on eelistatult alla 15 sekundi, samas pakuvad videod rohkem
+                võimalusi, kuid nõuavad rohkem aega ja on mahukamad. Sain katsetada kaadrianimatsioonidega ning
+                maskimist videos, kuid pidin ka kasutama palju abi internetist, et viia ellu oma videoideed täpselt
+                sellisena, nagu ette kujutasin.
+            </p>
         </div>
         <div class="forwardBackButtons">
             <router-link to="">

@@ -1,22 +1,18 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">NOPE Creative visiitkaart</div>
-            <p class="textP">Selle ülesande eesmärk oli tutvuda trükiste kujundamise nõuetega. Pidin looma Adobe
-                Illustratoris visiitkaardi eesmise ja tagumise poole disaini vabalt valitud ettevõttele. Visiitkaart
-                pidi sisaldama ettevõtte nime, tegevusala, asukohta ning kontaktandmeid. Otsustasin oma visiitkaardile
-                lisada ka QR-koodi, mis suunab skännija otse ettevõtte veebilehele.
-                Valisin ettevõtteks NOPE loovstuudio. Kasutasin DevTooli NOPE veebilehel kasutatud värvikoodide ja
-                tüpograafia valikute leidmiseks, et säilitada ettevõtte visiitkaardi disainis CVI järjepidevust.
-
-                Õppisin, et trükifailidel on väga oluline määrata täpsed mõõtmed, bleed ja värvirežiim. Lisaks peavad
-                kõik tähed olema curved või outlined, kuna trükikojal ei pruugi olla neid fonte, mida disainis kasutan,
-                ja vastasel juhul need asendatakse mingi muu fondiga. Kui neid nõudeid eirata, ei pruugi füüsiline toode
-                vastata digitaalselt ette nähtud disainile.
+            <div class="text">Visandi loomine ja struktuurikavand</div>
+            <p class="textP">Õppisin tundma Otto Neurathi ja tema Isotüübi meetodit kvantitatiivse teabe esitamiseks
+                lihtsate, kergesti mõistetavate ikoonide abil. Läbisin erinevaid piktogrammi kujundamise ülesandeid, mis
+                arendas mu oskusi kontseptsioonide ja ideede visuaalseks esitamiseks.
+                Õppisin kahe tähe ligatuuride loomist ja erinevate monogrammide visandamist. Kuna aine oli lõimitud nii
+                sisuhaldusüsteemide kui projektihalduse kursusega, tegelesime e-portfoolioga seoses ka kavandite,
+                wireframeide ja projekti kavandamisega. Harjutasin struktureeritud ja visuaalselt esitlust oma tulevase
+                e-portfoolio jaoks looma.
             </p>
         </div>
         <div class="forwardBackButtons">
-            <router-link to="">
+            <router-link to="/avasta-tartut">
                 <TextButtonBack :imgType="'back'" :alt="'Button Icon'" class="buttonRe">Eelmine</TextButtonBack>
             </router-link>
             <router-link to="">
@@ -25,7 +21,7 @@
         </div>
     </div>
     <div class="popUpImage">
-        <img src="/src/assets/img/visiitkaart.webp" alt="">
+        <img src="/src/assets/img/rosabella.webp" alt="">
     </div>
 </template>
 

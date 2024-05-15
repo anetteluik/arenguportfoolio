@@ -2,18 +2,23 @@
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
             <div class="text">Fotoseeria</div>
-            <p class="textP">Illustratori ja Photoshopi platvormi õppimiseks olid õpetaja poolt ette valmistatud
-                erinevad ülesanded, mis nõudsid mitmesuguste tööriistade kasutamist ja nende funktsiooni õppimist
-                mõlemas keskkonnas.
-                Mooduli käigus omandasin oskusi värvilahenduste tõhusaks ja professionaalseks rakendamiseks - õppisin,
-                millised värvitoonid omavahel harmoneeruvad, tutvusin erinevate värviskeemidega (nt monokroomne,
-                analoogne jne) ning õppisin vältima ebasobivaid värvikombinatsioone ja leidma lahendusi, mis vastavad
-                ligipääsetavuse standarditele. Tüpograafia mängis olulist rolli õppetöös, rõhutades teksti olulisust
-                kasutajasõbralikus disainis. Omandasin oskusi sobivate fontide valimisel, vahekauguste ja joonduste
-                kohandamisel, arvestades kasutajamugavust ja loetavust. Lisaks õppisin rastergraafika töötlemist Adobe
-                Photoshopi abil. Samuti mõistsin, et kuigi Figma on mitmekülgne platvorm, pakub Adobe Illustrator teatud
-                tüüpi kujunduste loomisel rohkem vabadust ja kohandamisvõimalusi. Seetõttu olen püüdnud seda ka oma
-                edasistes töödes rohkem kasutada.</p>
+            <p class="textP">Ülesande eesmärk oli luua 3-4 fotost koosnev fotoseeria, mille keskmes on ühendav lugu.
+                Minu töö lugu oli väljendada inimese käe võimu - kuidas värvikirevad metsad on muutunud hallideks ja
+                tuhmideks linnadeks. Kõigis loodud fotoseeriates oli ühine põhimõte: käsi puul, käest on läbi näha
+                linna.
+                Fotode jäädvustamiseks kasutasin oma mobiiltelefoni Oneplus 9 Pro ning järeltöötluseks programmi Adobe
+                Photoshop.
+                Selle ülesande käigus õppisin, kui oluline on fotograafias valida õige kompositsioon. Näiteks kasutasin
+                linnafotodel kolmandiku reeglit ja püüdsin teha fotosid nii, et järeltöötluses oleks võimalik neid
+                vajadusel suurendada. Uurisin erinevaid järeltöötluse tehnikaid, nagu mustvalgeks muutmine, kontrasti ja
+                valguse manipuleerimine ning erinevate filtrite kasutamine. Mõistsin, kuidas järeltöötlus võib
+                märgatavalt muuta foto visuaalset mõju ning see aitas mul palju efektiivsemalt edasi anda sõnumit
+                "värvikire mets, hall ja tuim linn". Õppevideotest leidsin erinevaid põhimõtteid ja tehnikaid
+                fotograafias ning sain inspiratsiooni oma fotoseeria loomiseks. Näiteks soovitati fotograafia põhimõtete
+                osas jäädvustada palju-palju pilte, et hiljem valida parimad, vältides olukorda, kus kolmest fotost
+                kõige parem foto jääb näiteks uduseks. Lisaks tutvusin tehniliste aspektidega, nagu kaamera eraldusvõime
+                seadistamine ja formaadi (portree, maastik) valimine.
+            </p>
         </div>
         <div class="forwardBackButtons">
             <router-link to="">

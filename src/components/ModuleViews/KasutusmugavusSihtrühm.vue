@@ -1,22 +1,22 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">NOPE Creative visiitkaart</div>
-            <p class="textP">Selle ülesande eesmärk oli tutvuda trükiste kujundamise nõuetega. Pidin looma Adobe
-                Illustratoris visiitkaardi eesmise ja tagumise poole disaini vabalt valitud ettevõttele. Visiitkaart
-                pidi sisaldama ettevõtte nime, tegevusala, asukohta ning kontaktandmeid. Otsustasin oma visiitkaardile
-                lisada ka QR-koodi, mis suunab skännija otse ettevõtte veebilehele.
-                Valisin ettevõtteks NOPE loovstuudio. Kasutasin DevTooli NOPE veebilehel kasutatud värvikoodide ja
-                tüpograafia valikute leidmiseks, et säilitada ettevõtte visiitkaardi disainis CVI järjepidevust.
+            <div class="text">Kasutusmugavus ja sihtrühm</div>
+            <p class="textP">Iglu teises loengus õppisin kasutajakeskse disaini põhitõdesid, mis paneb kasutaja
+                disainiprotsessi keskmesse. See tähendab kasutaja vajaduste ja käitumise esiletõstmist disainiprotsessi
+                kõikides etappides. Rõhutati lihtsuse ja kasutajasõbralikkuse tähtsust, sest liigselt keerukad liidesed
+                võivad segadust ja frustratsiooni tekitada. Samuti rõhutati prototüüpide olulisust. Need võimaldavad
+                testida ja täiustada disainikontseptsioone enne nende täielikku väljatöötamist ning aitavad avastada
+                kasutatavuse probleeme juba disainiprotsessi varajases staadiumis.
 
-                Õppisin, et trükifailidel on väga oluline määrata täpsed mõõtmed, bleed ja värvirežiim. Lisaks peavad
-                kõik tähed olema curved või outlined, kuna trükikojal ei pruugi olla neid fonte, mida disainis kasutan,
-                ja vastasel juhul need asendatakse mingi muu fondiga. Kui neid nõudeid eirata, ei pruugi füüsiline toode
-                vastata digitaalselt ette nähtud disainile.
+                Lisaks sain aru sihtgrupi vajadustest, motivatsioonidest ja väljakutsetest ning kuidas neid teadmisi
+                rakendada disainilahendustes. Õppisin, kui oluline on kohandada disaini vastavalt konkreetsetele
+                kasutajagruppidele sihtgrupi sees. Erinevatel kasutajatel võivad olla erinevad nõudmised ja disain peaks
+                arvestama nende erinevate vajadustega.
             </p>
         </div>
         <div class="forwardBackButtons">
-            <router-link to="">
+            <router-link to="/avasta-tartut">
                 <TextButtonBack :imgType="'back'" :alt="'Button Icon'" class="buttonRe">Eelmine</TextButtonBack>
             </router-link>
             <router-link to="">
@@ -25,7 +25,7 @@
         </div>
     </div>
     <div class="popUpImage">
-        <img src="/src/assets/img/visiitkaart.webp" alt="">
+        <img src="/src/assets/img/rosabella.webp" alt="">
     </div>
 </template>
 

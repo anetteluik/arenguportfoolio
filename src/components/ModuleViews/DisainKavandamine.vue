@@ -1,22 +1,23 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">NOPE Creative visiitkaart</div>
-            <p class="textP">Selle ülesande eesmärk oli tutvuda trükiste kujundamise nõuetega. Pidin looma Adobe
-                Illustratoris visiitkaardi eesmise ja tagumise poole disaini vabalt valitud ettevõttele. Visiitkaart
-                pidi sisaldama ettevõtte nime, tegevusala, asukohta ning kontaktandmeid. Otsustasin oma visiitkaardile
-                lisada ka QR-koodi, mis suunab skännija otse ettevõtte veebilehele.
-                Valisin ettevõtteks NOPE loovstuudio. Kasutasin DevTooli NOPE veebilehel kasutatud värvikoodide ja
-                tüpograafia valikute leidmiseks, et säilitada ettevõtte visiitkaardi disainis CVI järjepidevust.
-
-                Õppisin, et trükifailidel on väga oluline määrata täpsed mõõtmed, bleed ja värvirežiim. Lisaks peavad
-                kõik tähed olema curved või outlined, kuna trükikojal ei pruugi olla neid fonte, mida disainis kasutan,
-                ja vastasel juhul need asendatakse mingi muu fondiga. Kui neid nõudeid eirata, ei pruugi füüsiline toode
-                vastata digitaalselt ette nähtud disainile.
+            <div class="text">Disaini kavandamine ja prototüüpimine</div>
+            <p class="textP">Kursuse käigus tutvusin kurikuulsa Steve Krugi raamatuga "Don’t Make Me Think". Raamatust
+                pidin välja tooma 10 põhikontseptsiooni ning nende kohta koostama põhjaliku selgitava dokumendi. See
+                ülesanne mitte ainult ei aitanud mul süvendada oma arusaamist, vaid ka kinnistas omandatud teadmisi.
+                Kursuse raames tutvusin esmakordselt ka Figma platvormiga. Läbisin koolituse nimega Figma ABC, kus
+                õpetati platvormil navigeerimist, funktsionaalsusi ning selle abil kasutajaliidese disaini loomist. Sain
+                põhjaliku ülevaate kasutajakogemuse erinevatest aspektidest, sealhulgas leitavus, ligipääsetavus,
+                kasutatavus ja usaldusväärsus. Tutvusin erinevate kasutajakogemuse modelleerimise mudelitega, nagu
+                Honeycomb mudel, Bridge mudel ja kasutajakogemuse redel.
+                Kõige olulisemad teadmised, mida sellest kursusest kaasa võtan, on seotud veebilehtede WCAG
+                standarditega ja nende erinevate tasemetega (A, AA, AAA). Õppisin, kuidas muuta veebisisu
+                ligipääsetavaks ka puuetega inimestele ning kasutasin erinevaid pluginaid ja tööriistu standardite
+                kontrollimiseks ja tagamiseks.
             </p>
         </div>
         <div class="forwardBackButtons">
-            <router-link to="">
+            <router-link to="/avasta-tartut">
                 <TextButtonBack :imgType="'back'" :alt="'Button Icon'" class="buttonRe">Eelmine</TextButtonBack>
             </router-link>
             <router-link to="">
@@ -25,7 +26,7 @@
         </div>
     </div>
     <div class="popUpImage">
-        <img src="/src/assets/img/visiitkaart.webp" alt="">
+        <img src="/src/assets/img/rosabella.webp" alt="">
     </div>
 </template>
 

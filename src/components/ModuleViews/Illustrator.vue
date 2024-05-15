@@ -2,18 +2,19 @@
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
             <div class="text">Illustrator ja Photoshop</div>
-            <p class="textP">Illustratori ja Photoshopi platvormi õppimiseks olid õpetaja poolt ette valmistatud
-                erinevad ülesanded, mis nõudsid mitmesuguste tööriistade kasutamist ja nende funktsiooni õppimist
-                mõlemas keskkonnas.
-                Mooduli käigus omandasin oskusi värvilahenduste tõhusaks ja professionaalseks rakendamiseks - õppisin,
-                millised värvitoonid omavahel harmoneeruvad, tutvusin erinevate värviskeemidega (nt monokroomne,
-                analoogne jne) ning õppisin vältima ebasobivaid värvikombinatsioone ja leidma lahendusi, mis vastavad
-                ligipääsetavuse standarditele. Tüpograafia mängis olulist rolli õppetöös, rõhutades teksti olulisust
-                kasutajasõbralikus disainis. Omandasin oskusi sobivate fontide valimisel, vahekauguste ja joonduste
-                kohandamisel, arvestades kasutajamugavust ja loetavust. Lisaks õppisin rastergraafika töötlemist Adobe
-                Photoshopi abil. Samuti mõistsin, et kuigi Figma on mitmekülgne platvorm, pakub Adobe Illustrator teatud
-                tüüpi kujunduste loomisel rohkem vabadust ja kohandamisvõimalusi. Seetõttu olen püüdnud seda ka oma
-                edasistes töödes rohkem kasutada.</p>
+            <p class="textP">Illustratori ja Photoshopi platvormi õppimiseks valmistas õpetaja ette mitmesuguseid
+                ülesandeid, mis eeldasid erinevate tööriistade kasutamist ja nende funktsioonide tundmaõppimist mõlemas
+                keskkonnas. Kursuse vältel õppisin, millised värvitoonid omavahel sobivad, tutvusin erinevate
+                värviskeemidega (monokroomne, analoogne jne) ning õppisin testima, millised on ebasobivad
+                värvikombinatsioonid ligipääsetavuse standardite kohaselt. Tüpograafia mängis õppetöös olulist rolli,
+                rõhutades teksti tähtsust kasutajasõbralikus disainis. Õppisin valima fondi vastavalt selle
+                kasutusotstarbele (näiteks ei ole mõistlik kasutada display fonti sisutekstina ;) ), kohandama
+                vahekaugusi ja joondusi, arvestades kasutajamugavust ja loetavust. Lisaks õppisin rastergraafika
+                töötlemist ja loomist Adobe Photoshopi abil.
+                Sain aru, et kuigi Figma on mitmekülgne platvorm, pakub Adobe Illustrator teatud tüüpi kujunduste
+                loomisel rohkem vabadust ja kohandamisvõimalusi. Seetõttu olen püüdnud Figmat kasutada rohkem
+                prototüüpide loomiseks ning illustratsioone luua eelistatavalt Illustratoris.
+            </p>
         </div>
         <div class="forwardBackButtons">
             <router-link to="">

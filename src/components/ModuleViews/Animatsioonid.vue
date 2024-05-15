@@ -1,24 +1,21 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">Avasta Tartut</div>
-            <p class="textP">Aasta Tegija võistluse ülesandeks oli luua mobiilirakendus nimega "Avasta Tartut", mis
-                võimaldab kasutajatel planeerida nii pere- kui ka kultuurireise. Rakendus pidi sisaldama kaarti, kus on
-                märgitud erinevad vaatamisväärsused ning pakkuma kasutajatele mugavat teekonda nende avastamiseks. Antud
-                ülesande täitmiseks oli aega viis tundi ning kasutasin selleks disainitööriista Figma, rakenduse logo
-                loomiseks Adobe Illustratorit.
-
-                Osalemine Aasta Tegija võistlusel oli minu jaoks eriti oluline, sest teadsin, et saan väärtuslikku
-                tagasisidet UX/UI valdkonna professionaalidelt. Võidu saavutamine polnud mu peamine eesmärk; pigem
-                soovisin õppida, kuidas oma oskusi erialaselt täiustada ning millele peaksin tulevikus rohkem rõhku
-                panema. Tagasiside aitas mul märgata oma nõrkusi ning sain aru, et keskendusin liigselt disainile ja
-                lahedatele animatsioonidele, kuid jätsin tagaplaanile kasutajamugavuse ning märkamata jäid mõned
-                olulised loogikavead struktuuris. Tänu tagasisidele olen teadlikum ning olen proovinud edaspidi
-                keskenduda rohkem kasutajakesksele disainile.
-
-                Aasta Tegija võistlusel saavutasin kolmanda koha.
-
-                Allpool on link minu loodud prototüübile ja projekti dokumentatsioonile.</p>
+            <div class="text">Animatsioonid</div>
+            <p class="textP">Kuigi Animatsioonide kursuse maht kogu mooduli vältel oli pigem tagasihoidlik, oli see minu
+                absoluutne lemmik. Sain selgeks cinemagraphide olemuse, nende mitmekülgsed kasutusalad ning erinevused
+                GIF-idest. Tutvusin ka Microsoft Research Cliplets programmiga, kus pidin looma enda cinemagraphi.
+                Cinemagraph on omapärane kombinatsioon liikumatust pildist ja liikuvas vormis videost, kus suurem osa
+                stseenist püsib paigal ning liigub ainult üksik element. Minu loomingus oli paigalseisev element veekogu
+                ääres seisev puma, ning liikuvaks osaks oli puma saba. Cinemagraphi pumast saab vaadata siit.
+                Lisaks avardus minu huvi Adobe After Effects programmi vastu, mida õppisin läbi erinevate õppevideote.
+                Õppisin, kuidas animeerida 3D-graafikat ning üheks ülesandeks oli leida YouTube'ist juhend, mis näitaks
+                samm-sammult animatsiooni loomist ning seda siis ise järele teha. Võtsin ette üsna keerulise video, kuid
+                animatsiooni loomise käigus sain aru, et see polegi tegelikult nii keeruline. Selle töö käigus leidsin
+                armastuse liikuva graafika vastu ning kui aeg ja võimalused lubavad, soovin selles vallas veelgi edasi
+                õppida.
+                Minu loodud animatsiooni saab vaadata siit.
+            </p>
         </div>
         <div class="forwardBackButtons">
             <router-link to="">

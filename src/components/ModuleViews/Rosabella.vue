@@ -2,18 +2,21 @@
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
             <div class="text">Rosabella</div>
-            <p class="textP">Ülesanne seisnes uue logo loomises Rosabella iluvõimlemis-rühmale, mis peab olema
-                mitmekülgselt kasutatav erinevates kontekstides, olgu selleks siis must kampsun või roosa särk.
-                Selle projekti käigus õppisin mitmeid erinevaid lähenemisviise logode kujundamisele, alustades
-                negatiivsetest ja värvilistest versioonidest kuni ilma tekstita logomark variantideni. Kõik need
-                aspektid on olulised logode kohandatavuse seisukohast erinevates kasutusolukordades. Üks oluline oskus,
-                mille omandasin, oli mockupide loomine. Projekti raames pidin paigutama Rosabella logod
-                treeningusärkidele ja pusadele, mis nõudis realistlike kujutiste loomist Rosabella poolt antud
-                fotomaterjaliga. Sain esmase kogemuse ka mini-CVI loomisel, kus lisaks logode variatsioonidele ja
-                mockupidele tuli esile tuua ka kasutatud värvikoodid ja fondid. Need teadmised osutusid kasulikuks ka
-                müügiesindajate projektis, kus pidin looma brändi vastavalt klienti nõuetele.
-                Nii-nii äge oli teada saada, et minu logo valiti Rosabella treenerite poolt lemmikuks ning kasutatakse
-                siiani iluvõimlemisrühma riietel ning sotsiaalmeedias profiilipildina. :)</p>
+            <p class="textP">Ülesanne seisnes uue logo loomises Rosabella iluvõimlemisrühmale. Logo pidi olema
+                paindlikult kasutatav erinevates olukordades, sobides nii mustale pusale kui ka roosale trennisärgile.
+                Projekti käigus õppisin nägema erinevaid lähenemisviise logole - logo, mis toimis koos tekstiga ja ka
+                eraldi logomargina. Lõin logo jaoks erinevad värvilahendusi - roosa (põhilogo), valge (tumedale
+                taustale) ning must (sobib heledamatele tasutadele). Tüpograafia valikul pöörasin tähelepanu kirja
+                paksusele ja suurusele, et printimisel riietele säiliks joonte selgus ja teravus. Kõik need aspektid on
+                olulised logode kohandatavuse seisukohast erinevates kasutusolukordades. Üks oluline oskus, millega sain
+                projekti käigus katsedada, oli mockupide loomine. Logo paigutamine Rosabella trennisärkidele ja pusadele
+                nõudis käsitsi kalibreerimist - fotomaterjal oli antud kliendi poolt, mis tähendas, et valmis .psd
+                formaadis mockupide kasutamine polnud võimalik ning Photoshopil polnud veel välja tulnud “mockup tool”.
+                Sain esmase kogemuse ka mini-CVI loomisel, kus lisaks logode variatsioonidele ja mockupidele tuli välja
+                tuua ka kasutatud värvikoodid ja fondid.
+
+                Nii suur oli rõõm kuulda, et minu loodud logo valiti Rosabella treenerite poolt lemmikuks ning seda
+                kasutatakse siiani iluvõimlemisrühma riietel ja sotsiaalmeedias profiilipildina. :)</p>
         </div>
         <div class="forwardBackButtons">
             <router-link to="/avasta-tartut">

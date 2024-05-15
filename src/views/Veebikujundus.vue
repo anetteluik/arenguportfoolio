@@ -1,9 +1,9 @@
 <script setup>
-import AvastaTartut from "@/components/ModuleViews/AvastaTartut.vue";
-import Rosabella from "@/components/ModuleViews/Rosabella.vue";
-import ClearMind from "@/components/ModuleViews/ClearMind.vue";
-import Illustrator from "@/components/ModuleViews/Illustrator.vue";
-import Advendihommik from "@/components/ModuleViews/Advendihommik.vue";
+import Animatsioonid from "@/components/ModuleViews/Animatsioonid.vue";
+import HTMLjaCSS from "@/components/ModuleViews/HTMLjaCSS.vue";
+import DisainKavandamine from "@/components/ModuleViews/DisainKavandamine.vue";
+import Veebitehnoloogiad from "@/components/ModuleViews/Veebitehnoloogiad.vue";
+import VisandiLoomine from "@/components/ModuleViews/VisandiLoomine.vue";
 import Fotoseeria from "@/components/ModuleViews/Fotoseeria.vue";
 import VOCOKaart from "@/components/ModuleViews/VOCOKaart.vue";
 import Visiitkaart from "@/components/ModuleViews/Visiitkaart.vue";
@@ -11,11 +11,11 @@ import OneBoxLayout from "@/components/OneBoxLayout.vue";
 import PopUp from "@/components/PopUp.vue";
 import { computed, ref, markRaw } from 'vue';
 let allModules = {
-    avastaTartut: markRaw(AvastaTartut),
-    rosabella: markRaw(Rosabella),
-    clearMind: markRaw(ClearMind),
-    illustrator: markRaw(Illustrator),
-    advendihommik: markRaw(Advendihommik),
+    animatsioonid: markRaw(Animatsioonid),
+    htmljacss: markRaw(HTMLjaCSS),
+    disainikavamdamine: markRaw(DisainKavandamine),
+    veebitehnoloogiad: markRaw(Veebitehnoloogiad),
+    visandiloomine: markRaw(VisandiLoomine),
     fotoseeria: markRaw(Fotoseeria),
     vocokaart: markRaw(VOCOKaart),
     visiitkaart: markRaw(Visiitkaart),
@@ -63,41 +63,41 @@ let currentlyOpenModule = ref(null);
                 </div>
                 <div class="descriptionWrapperMoodul">
                     <div class="descriptionMoodul">
-                        <p>Tutvusin Steve Krugi raamatuga "Don't Make Me Think", mis abistas mind mõistmaks UX
-                            põhimõtteid. Uurisin kasutajakogemusest leitavus, ligipääsetavus, kasutatavus jne. Kõige
-                            olulisemana omandasin teadmised veebilehe WCAG standarditest ja nende erinevatest
-                            tasetemetest, mis tagavad kõikidele infokeskkonda kaasatud inimestele võrdsed võimalused.
-                            Lisaks õppisin HTML-i, CSS-i ja Bootstrap 4-i kasutamist. Mooduli käigus tutvusin erinevate
-                            kasutajakogemuse analüüsi meetodite ning mõisteid nagu sketch, wireframe, mockup ja
-                            prototüüp. </p>
+                        <p>Tutvusin Steve Krugi raamatuga "Don't Make Me Think", kus tutvustati UX disaini põhimõtteid
+                            ja reegleid. Kõige olulisem teadmine, mille omandasin kogu mooduli vältel, oli veebilehe
+                            WCAG standardid ja nende erinevad tasemed, mis tagavad kõigile infokeskkonda kaasatud
+                            inimestele võrdsed võimalused. Sain parema arusaamise HTML-i, CSS-i ja Bootstrap 4-i
+                            kasutamisest erinevate ülesannete täitmisel. Mooduli raames tutvusin mitmete erinevate
+                            kasutajakogemuse analüüsi meetoditega ning õppisin kasutama mõisteid nagu sketch, wireframe,
+                            mockup ja prototüüp.</p>
                     </div>
                 </div>
                 <div class="moodulWrapper">
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.avastaTartut)" :title="'Avasta Tartut'"
-                            :text="'Mobiilirakenduse prototüüp, Figma, Illustrator'">
+                        <OneBoxLayout @click="toggleModule(allModules.animatsioonid)" :title="'Animatsioonid'"
+                            :text="'GIF, cinemagraph, 3D graafika animeerimine, Adobe After Effects'">
                             <img class="backg" src="../assets/img/avastatartut.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.rosabella)" :title="'Rosabella'"
-                            :text="'Logo kujundamine, mockup, Illustrator, Photoshop'">
+                        <OneBoxLayout @click="toggleModule(allModules.htmljacss)" :title="'HTML ja CSS'"
+                            :text="'Veebilehe koodimine nullist, HTML5, semantilised elemendid, Bootstrap 4'">
                             <img class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
-                    <OneBoxLayout @click="toggleModule(allModules.clearMind)" :title="'Clear Mind'"
-                        :text="'Logo kujundamine, prototüüp, mockup, kliendisuhtlus, Figma, Photoshop'">
+                    <OneBoxLayout @click="toggleModule(allModules.disainikavamdamine)" :title="'Disaini kavandamine ja prototüüpimine'"
+                        :text="'Figmaga tutvumine, WCAG standardid ja tasemed, kasutajakogemuse modelleerimise mudelid'">
                         <img class="backg" src="../assets/img/clearmind.webp"
                             alt="Clear Mind energiajoogi mockup purkidel">
                     </OneBoxLayout>
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.illustrator)" :title="'Illustrator ja Photoshop'"
-                            :text="'Kujundustööd, programmiga tutvumine'">
+                        <OneBoxLayout @click="toggleModule(allModules.veebitehnoloogiad)" :title="'Veebitehnoloogiad ja kujundusvahendid'"
+                            :text="'Kasutajakogemuse analüüsi meetodid, UX terminoloogia'">
                             <img class="backg" src="../assets/img/photoshop-luik.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
-                        <OneBoxLayout @click="toggleModule(allModules.advendihommik)"
-                            :title="'Advendihommik ja jõulukaart'"
-                            :text="'Animatsioonid, kujundustööd, Photoshop, After Effects'">
+                        <OneBoxLayout @click="toggleModule(allModules.visandiloomine)"
+                            :title="'Visandi loomine ja struktuurikavand'"
+                            :text="'Isotüübi meetod, piktogrammid, ligatuurid ja monogrammid'">
                             <img class="backg" src="../assets/img/tänukiri.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>

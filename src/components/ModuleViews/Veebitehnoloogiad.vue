@@ -1,22 +1,17 @@
 <template>
     <div class="popUpTextAndButtons">
         <div class="popUpTextAndButtonsWrapper">
-            <div class="text">NOPE Creative visiitkaart</div>
-            <p class="textP">Selle ülesande eesmärk oli tutvuda trükiste kujundamise nõuetega. Pidin looma Adobe
-                Illustratoris visiitkaardi eesmise ja tagumise poole disaini vabalt valitud ettevõttele. Visiitkaart
-                pidi sisaldama ettevõtte nime, tegevusala, asukohta ning kontaktandmeid. Otsustasin oma visiitkaardile
-                lisada ka QR-koodi, mis suunab skännija otse ettevõtte veebilehele.
-                Valisin ettevõtteks NOPE loovstuudio. Kasutasin DevTooli NOPE veebilehel kasutatud värvikoodide ja
-                tüpograafia valikute leidmiseks, et säilitada ettevõtte visiitkaardi disainis CVI järjepidevust.
-
-                Õppisin, et trükifailidel on väga oluline määrata täpsed mõõtmed, bleed ja värvirežiim. Lisaks peavad
-                kõik tähed olema curved või outlined, kuna trükikojal ei pruugi olla neid fonte, mida disainis kasutan,
-                ja vastasel juhul need asendatakse mingi muu fondiga. Kui neid nõudeid eirata, ei pruugi füüsiline toode
-                vastata digitaalselt ette nähtud disainile.
-            </p>
+            <div class="text">Veebitehnoloogiad ja kujundusvahendid</div>
+            <p class="textP">Õppisin tundma ja eristama termineid nagu sketch, wireframe, mockup ja prototüüp. Tutvusin
+                erinevate kasutajakogemuse analüüsi meetodite ja terminoloogiaga (fookusgrupid, kvalitatiivne ja
+                kvantitatiivne uuring, kaartide sorteerimine jms). Uurisin UX terminoloogiat ja kogusin kokku olulisemad
+                mõisted. Vormisin valitud UX mõisted sõnapilveks kasutades programmi WordCloud. Kasutasin Wappalyzer
+                Chrome'i brauserilaiendit, et tuvastada populaarseid veebitehnoloogiaid erinevatel veebisaitidel ning
+                analüüsisin igat tehnoloogiat, tuues välja nende tugevused ja nõrkused. Selle ülesande kaudu sain aimu,
+                milliseid vahendeid tulevikus ka ise kasutada/katsetada, kui tekib vajadus.</p>
         </div>
         <div class="forwardBackButtons">
-            <router-link to="">
+            <router-link to="/avasta-tartut">
                 <TextButtonBack :imgType="'back'" :alt="'Button Icon'" class="buttonRe">Eelmine</TextButtonBack>
             </router-link>
             <router-link to="">
@@ -25,7 +20,7 @@
         </div>
     </div>
     <div class="popUpImage">
-        <img src="/src/assets/img/visiitkaart.webp" alt="">
+        <img src="/src/assets/img/rosabella.webp" alt="">
     </div>
 </template>
 
