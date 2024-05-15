@@ -21,15 +21,12 @@
         </div>
         <div class="descriptionWrapper">
           <div class="description">
-            <p>Minu kodukoht asub pisikeses Keeni külas Valga maakonnas. Enne,
-              kui avastasin UX/UI disaini valdkonna, olin seadnud endale mitmeid
-              erinevaid tööalaseid eesmärke, alustades loomaarsti ja laulja ning
-              lõpetades automaalri erialaga. Ent nagu elu ikka, kulgeb see oma rada
-              pidi ning täiesti juhuslikult sattusin niimoodi tutvuma UX/UI disaini
-              valdkonnaga. Tagasi vaadates sain aru, et enamik seatud eesmärkidest
-              hõlmasid loovust ning nutikust, mis on olnud mulle südamelähedased alates
-              lapsepõlvest. Seega, kui avastasin praeguse eriala, mõtlesin endamisi:
-              "Juhhuu, see ongi ju see, mida olen terve elu otsinud".</p>
+            <p>Olen 21-aastane loomasõber, mootorrattur ja UX/UI noorem disainer. Oma senise elu jooksul on mind köitnud
+              kõik loominguline - alates kokandusest ja käsitööst kuni kunstiõpetustundideni. Uskumatu, aga mulle
+              meeldis (ja meeldib siiani) ka matemaatikaülesannete lahendamine. Arvan, et eriala, mille olen valinud,
+              hõlmab suuresti just neid teemasid, millega mulle on alati meeldinud tegeleda - loomingulisus, nutikus,
+              analüütiline mõtlemine ja seoste loomine. Seepärast armastan seda, mida teen, ning leian igapäevaselt
+              motivatsiooni ennast ja oma oskusi UX/UI valdkonnas täiustada.</p>
           </div>
           <router-link to="/minust">
             <TextButton :imgType="'upright'" :alt="'Button Icon'">Veel minust</TextButton>
@@ -129,36 +126,36 @@
               </div>
               <div class='card'>
                 <router-link to="/veebiarendus-ja-haldus">
-                <img class="backg" src="/src/assets/img/tarkvaraarendus.webp" alt="">
-                <div class="gradient"></div>
-                <div class="imgText">
-                  <h5>
-                    Veebiarendus ja haldus
-                  </h5>
-                </div>
-              </router-link>
+                  <img class="backg" src="/src/assets/img/tarkvaraarendus.webp" alt="">
+                  <div class="gradient"></div>
+                  <div class="imgText">
+                    <h5>
+                      Veebiarendus ja haldus
+                    </h5>
+                  </div>
+                </router-link>
               </div>
               <div class='card'>
                 <router-link to="/karjaariplaneerimine-ja-ettevotlus">
-                <img class="backg" src="/src/assets/img/hakaton.webp" alt="">
-                <div class="gradient"></div>
-                <div class="imgText">
-                  <h5>
-                    Karjääriplaneerimine ja ettevõtlus
-                  </h5>
-                </div>
-              </router-link>
+                  <img class="backg" src="/src/assets/img/hakaton.webp" alt="">
+                  <div class="gradient"></div>
+                  <div class="imgText">
+                    <h5>
+                      Karjääriplaneerimine ja ettevõtlus
+                    </h5>
+                  </div>
+                </router-link>
               </div>
               <div class='card'>
                 <router-link to="/koolitused">
-                <img class="backg" src="/src/assets/img/wud.webp" alt="">
-                <div class="gradient"></div>
-                <div class="imgText">
-                  <h5>
-                    Koolitused
-                  </h5>
-                </div>
-              </router-link>
+                  <img class="backg" src="/src/assets/img/wud.webp" alt="">
+                  <div class="gradient"></div>
+                  <div class="imgText">
+                    <h5>
+                      Koolitused
+                    </h5>
+                  </div>
+                </router-link>
               </div>
             </div>
           </div>
