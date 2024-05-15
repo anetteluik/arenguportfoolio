@@ -45,7 +45,9 @@ import Footer from "@/components/Footer.vue";
                     <h3>Haridustee ja kogemused</h3>
                 </div>
                 <div class="buttonWrapper">
-                    <TextButton class="highlight" :imgType="'upright'" :alt="'Button Icon'">Vaata CV-d</TextButton>
+                    <a href="https://drive.google.com/file/d/1eW8FRnc0NBVs9Vp23znZ0aVTvXfJx_SC/view?usp=sharing" target="_blank">
+                        <TextButton class="highlight" :imgType="'upright'" :alt="'Button Icon'">Vaata CV-d</TextButton>
+                    </a>
                 </div>
 
             </div>
