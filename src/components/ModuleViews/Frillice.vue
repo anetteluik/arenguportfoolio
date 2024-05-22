@@ -14,6 +14,9 @@
                 juhataja mind appi lõpuesitluse disainimises, mis esitati hiljem Frillice ettevõtte asutajale.
                 Kokkuvõttes õpetas Frillice projekt mulle meeskonnatöö olulisust, tähtaegadest kinnipidamist ning
                 arendas kasutajakogemuse analüütilist ja uurimuslikku poolt.
+                <br><br>
+                Kui on soovi, saab <a href="https://my.forms.app/vocokd22/frillicekysimustik"
+                    target="_blank">küsitlust täita siin</a>, tulemused ja muud materjalid on konfidentsiaalsed.
             </p>
         </div>
         <div class="forwardBackButtons">
@@ -35,15 +38,15 @@
 </template>
 
 <script setup>
-import { onMounted, render, markRaw, ref } from 'vue';
+import { render, ref } from 'vue';
 import TextButton from '../TextButton.vue';
-import imgAvastaTartut from '@/assets/img/frillice.webp';
-import imgClearMind from '@/assets/img/clearmind.webp';
-import imgFotoseeria from '@/assets/img/fotoseeria.webp';
+import TextButtonBack from '../TextButtonBack.vue';
+import Frillice from '@/assets/img/frillice.webp';
+import Frillice2 from '@/assets/img/frillice2.webp';
 
 const popUpImages = ref(null)
 
-const images = [imgAvastaTartut, imgClearMind, imgFotoseeria]
+const images = [Frillice, Frillice2]
 
 function navigateToImage(index) {
     popUpImages.value.scrollTo({ left: popUpImages.value.offsetWidth * index, behaviour: 'smooth' });
@@ -107,7 +110,6 @@ function navigateToImage(index) {
     aspect-ratio: 1;
     background: white;
     border-radius: 50%;
-    outline: 2px solid black;
 }
 
 .imagesNavigator .nav-dot:hover {
@@ -133,6 +135,12 @@ function navigateToImage(index) {
     margin: 96px 100px 56px 120px;
 }
 
+.forwardBackButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 @media only screen and (max-width: 1500px) {
     .popUpTextAndButtons {
@@ -140,11 +148,6 @@ function navigateToImage(index) {
         flex-direction: column;
         justify-content: space-between;
         width: 80%;
-        height: 100%;
-    }
-
-    .popUpImages img {
-        width: 100%;
         height: 100%;
     }
 
@@ -164,6 +167,32 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        position: static;
+        width: 80%;
+        height: 600px;
+        margin-bottom: 100px;
+    }
+
+    .popUpImages {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        height: 100%;
+        top: 0;
+        transition: all 1s ease;
+        scroll-behavior: smooth;
+    }
+
+    .popUpImages img {
+        object-fit: cover;
+    }
+
+    .popUpTextAndButtons {
+        overflow-y: hidden;
+        max-height: fit-content;
     }
 }
 
@@ -197,6 +226,12 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 0;
     }
 }
 </style>

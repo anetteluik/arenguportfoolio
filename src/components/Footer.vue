@@ -9,23 +9,14 @@
       <div class="infoWrapper">
         <div class="infoBox">
           <h6>Kontakt</h6>
-          <p>anetteluik.b@gmail.com</p>
-          <p>+372 5352 7343</p>
-        </div>
-        <div class="infoBox">
-          <h6>Menüü</h6>
-          <p>Akadeemiline areng</p>
-          <p>Praktika</p>
-          <p>Erialased tegevused</p>
-          <p>Minust</p>
-          <p>Eneserefleksioon</p>
+          <p><a href="mailto:anetteluik.b@gmail.com?subject=Saame sõpradeks!" target="_blank">anetteluik.b@gmail.com</a></p>
+          <p><a href="tel:+372-5352-7343" target="_blank">+372 5352 7343</a></p>
         </div>
         <div class="infoBox">
           <h6>Leiad mind ka</h6>
-          <p>Behance</p>
-          <p>Dribbble</p>
-          <p>Instagram</p>
-          <p>LinkedIn</p>
+          <p><a href="https://www.behance.net/luikanette" target="_blank">Behance</a></p>
+          <p><a href="https://dribbble.com/anetteluik" target="_blank">Dribbble</a></p>
+          <p><a href="https://www.linkedin.com/in/anette-luik/" target="_blank">LinkedIn</a></p>
         </div>
       </div>
     </div>
@@ -47,6 +38,10 @@
   color: #EFEDEB;
 }
 
+a {
+  color: #EFEDEB;
+}
+
 .info {
   display: flex;
   flex-direction: row;
@@ -57,7 +52,8 @@
 .infoWrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 180px;
   width: 100%;
 }
 
@@ -102,6 +98,9 @@
   justify-content: left;
   width: 70%;
   margin-bottom: 32px;
+}
+
+.rights p{
   font-size: 14px;
 }
 
@@ -118,6 +117,7 @@
   .infoWrapper {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 80%;
   }
 
@@ -155,6 +155,7 @@
   .infoWrapper {
     display: flex;
     flex-direction: column;
+    gap: 0;
   }
 
   .rights {
@@ -174,6 +175,7 @@
 .infoBoxMe {
   margin-right: 0;
   margin-left: 0;
+  margin-bottom: 80px;
   width: 100%;
 }
 

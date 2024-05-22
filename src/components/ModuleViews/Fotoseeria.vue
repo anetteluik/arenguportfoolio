@@ -18,6 +18,10 @@
                 osas jäädvustada palju-palju pilte, et hiljem valida parimad, vältides olukorda, kus kolmest fotost
                 kõige parem foto jääb näiteks uduseks. Lisaks tutvusin tehniliste aspektidega, nagu kaamera eraldusvõime
                 seadistamine ja formaadi (portree, maastik) valimine.
+                <br><br>
+                Siit leiad kogu <a
+                    href="https://drive.google.com/drive/folders/1I6P8Dsm3qNxA8zsbwdU8rZ372JjpeyYO?usp=sharing"
+                    target="_blank">fotoseeriat</a> hõlmavad materjalid.
             </p>
         </div>
         <div class="forwardBackButtons">
@@ -29,15 +33,34 @@
             </router-link>
         </div>
     </div>
-    <div class="popUpImage">
-        <img src="/src/assets/img/fotoseeria.webp" alt="">
+    <div class="popupImagesSectionWrapper">
+        <div class="popUpImages" ref="popUpImages">
+            <img v-for="image in images" :src="image" alt="Illustration">
+        </div>
+        <div class="imagesNavigator">
+            <div v-for="i, index in images" class="images-nav-dot-block" @click="navigateToImage(index)">
+                <div class="nav-dot"></div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
-import { render } from 'vue';
+import { render, ref } from 'vue';
 import TextButton from '../TextButton.vue';
 import TextButtonBack from '../TextButtonBack.vue';
+import Fotoseeria from '@/assets/img/fotoseeria.webp';
+import Fotoseeria2 from '@/assets/img/loodus1.webp';
+import Fotoseeria3 from '@/assets/img/loodus2.webp';
+import Fotoseeria4 from '@/assets/img/loodus3.webp';
+
+const popUpImages = ref(null)
+
+const images = [Fotoseeria, Fotoseeria2, Fotoseeria3, Fotoseeria4]
+
+function navigateToImage(index) {
+    popUpImages.value.scrollTo({ left: popUpImages.value.offsetWidth * index, behaviour: 'smooth' });
+}
 
 </script>
 
@@ -47,16 +70,60 @@ import TextButtonBack from '../TextButtonBack.vue';
     flex-direction: column;
     justify-content: space-between;
     width: 55%;
+    overflow-y: scroll;
+    max-height: 100vh;
 }
 
-.popUpImage {
+.popUpTextAndButtons::-webkit-scrollbar {
+    background: transparent;
+    width: 0;
+}
+
+.popupImagesSectionWrapper {
+    position: relative;
     width: 45%;
 }
 
-.popUpImage img {
-    width: 100%;
-    height: 100%;
+.popUpImages {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    height: 100vh;
+    top: 0;
+    transition: all 1s ease;
+    scroll-behavior: smooth;
+}
+
+.popUpImages ::-webkit-scrollbar {
+    display: none;
+}
+
+.popUpImages img {
     object-fit: cover;
+}
+
+.imagesNavigator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    margin-top: -100px;
+}
+
+.imagesNavigator .images-nav-dot-block {
+    padding: 12px;
+}
+
+.imagesNavigator .nav-dot {
+    width: 20px;
+    height: auto;
+    aspect-ratio: 1;
+    background: white;
+    border-radius: 50%;
+}
+
+.imagesNavigator .nav-dot:hover {
+    background: #60121c;
 }
 
 .popUpTextAndButtons .text {
@@ -94,11 +161,6 @@ import TextButtonBack from '../TextButtonBack.vue';
         height: 100%;
     }
 
-    .popUpImage {
-        width: 100%;
-        height: 100%;
-    }
-
     .popUpTextAndButtons .text {
         font-size: clamp(40px, 1.5vw, 48px);
         font-weight: 700;
@@ -115,6 +177,32 @@ import TextButtonBack from '../TextButtonBack.vue';
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        position: static;
+        width: 80%;
+        height: 600px;
+        margin-bottom: 100px;
+    }
+
+    .popUpImages {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        height: 100%;
+        top: 0;
+        transition: all 1s ease;
+        scroll-behavior: smooth;
+    }
+
+    .popUpImages img {
+        object-fit: cover;
+    }
+
+    .popUpTextAndButtons {
+        overflow-y: hidden;
+        max-height: fit-content;
     }
 }
 
@@ -127,7 +215,7 @@ import TextButtonBack from '../TextButtonBack.vue';
         height: 100%;
     }
 
-    .popUpImage {
+    .popUpImages {
         width: 100%;
         height: 100%;
     }
@@ -148,6 +236,12 @@ import TextButtonBack from '../TextButtonBack.vue';
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 0;
     }
 }
 </style>

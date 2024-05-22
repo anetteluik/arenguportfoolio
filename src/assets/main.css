@@ -1,6 +1,10 @@
 @import './base.css';
 
-
+.textP a {
+  background-color: #C2CFF2;
+  color: #221517;
+  text-decoration: none;
+}
 
 .navigation {
   position: fixed;
@@ -137,7 +141,6 @@ h3 {
   justify-content: space-between;
   align-items: center;
   width: 70%;
-  height: 100vh;
   margin-bottom: 190px;
 }
 
@@ -160,7 +163,8 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 80svh;
+  min-height: 500px;
   background-color: #61131D;
 }
 
@@ -388,7 +392,7 @@ h3 {
   }
 
   .moodulTitle h2 {
-    font-size: 48px;
+    font-size: 38px;
   }
 
   .moodulTitle {
@@ -430,5 +434,9 @@ h3 {
 
   .areng h3 {
     margin-bottom: 24px;
+  }
+
+  .mainInfo h3 {
+    font-size: 32px;
   }
 }

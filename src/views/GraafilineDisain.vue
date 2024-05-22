@@ -64,9 +64,9 @@ let currentlyOpenModule = ref(null);
         <div class="descriptionWrapperMoodul">
           <div class="descriptionMoodul">
             <p>Mooduli raames õppisin tundma ja kasutama erinevaid programme, nagu ArtRage, Krita, Adobe Photoshop ja
-              Illustrator. Põhilised omandatud oskused tarkvaradega katsetamisest olid erinevad maalimistehnikad,
+              Adobe Illustrator. Põhilised omandatud oskused tarkvaradega katsetamisest olid erinevad maalimistehnikad,
               pilditöötlus (peamiselt Photoshopis) ja vektorgraafika loomine. Lisaks õppisin trükidisaini ja
-              -ettevalmistuse põhimõtteid, brändingu loomist ja selle disainis kasutamise reegleid, värviteooriat,
+              -ettevalmistuse põhimõtteid, brändiloomet ja selle disainis kasutamise reegleid, värviteooriat,
               tüpograafia eripärasid ning vastavalt kontekstile nende korrektset rakendamist. Mõned projektid
               võimaldasid mul kogeda ka reaalset kliendisuhtlust - klientide vajaduste ja ootuste arvestamist
               disainiprotsessis, enda seisukohtade selgitamist ning selget ja konkreetset suhtlust kliendiga, et tagada

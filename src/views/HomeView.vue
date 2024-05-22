@@ -280,6 +280,7 @@ function sideScroll(event) {
 @media only screen and (max-width: 1080px) {
   .areng {
     margin-bottom: 0;
+    margin-top: 80px;
     height: auto;
   }
 

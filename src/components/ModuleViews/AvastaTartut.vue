@@ -15,10 +15,16 @@
                 lahedatele animatsioonidele, kuid jätsin tagaplaanile kasutajamugavuse ning märkamata jäid mõned
                 olulised loogikavead struktuuris. Tänu tagasisidele olen teadlikum ning olen proovinud edaspidi
                 keskenduda rohkem kasutajakesksele disainile.
-
+                <br><br>
                 Aasta Tegija võistlusel saavutasin kolmanda koha.
-
-                Allpool on link minu loodud prototüübile ja projekti dokumentatsioonile.</p>
+                <br><br>
+                Siit leiad <a
+                    href="https://www.figma.com/proto/ZSA93PInhOiwftN6NDKLzg/Avasta-Tartut?page-id=103%3A1031&node-id=103-1032&viewport=246%2C635%2C0.16&t=D4EI1Ew3LMyRbshz-1&scaling=scale-down&starting-point-node-id=103%3A1032"
+                    target="_blank">rakenduse prototüübi</a> ja <a
+                    href="https://docs.google.com/document/d/1G8dQK-3VcInhF31Ss4v-dD8Io6uRw68SXnTDLNo6-Yw/edit?usp=sharing"
+                    target="_blank">projekti
+                    dokumentatsiooni</a>.
+            </p>
         </div>
         <div class="forwardBackButtons">
             <router-link to="">
@@ -42,12 +48,12 @@
 import { onMounted, render, markRaw, ref } from 'vue';
 import TextButton from '../TextButton.vue';
 import imgAvastaTartut from '@/assets/img/avastatartut.webp';
-import imgClearMind from '@/assets/img/avastatartut2.webp';
-import imgFotoseeria from '@/assets/img/avastatartut3.webp';
+import imgAvastaTartut2 from '@/assets/img/avastatartut2.webp';
+import imgAvastaTartut3 from '@/assets/img/avastatartut3.webp';
 
 const popUpImages = ref(null)
 
-const images = [imgAvastaTartut, imgClearMind, imgFotoseeria]
+const images = [imgAvastaTartut, imgAvastaTartut2, imgAvastaTartut3]
 
 function navigateToImage(index) {
     popUpImages.value.scrollTo({ left: popUpImages.value.offsetWidth * index, behaviour: 'smooth' });
@@ -146,11 +152,6 @@ function navigateToImage(index) {
         height: 100%;
     }
 
-    .popUpImages img {
-        width: 100%;
-        height: 100%;
-    }
-
     .popUpTextAndButtons .text {
         font-size: clamp(40px, 1.5vw, 48px);
         font-weight: 700;
@@ -167,6 +168,32 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        position: static;
+        width: 80%;
+        height: 600px;
+        margin-bottom: 100px;
+    }
+
+    .popUpImages {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        height: 100%;
+        top: 0;
+        transition: all 1s ease;
+        scroll-behavior: smooth;
+    }
+
+    .popUpImages img {
+        object-fit: cover;
+    }
+
+    .popUpTextAndButtons {
+        overflow-y: hidden;
+        max-height: fit-content;
     }
 }
 
@@ -200,6 +227,12 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 0;
     }
 }
 </style>

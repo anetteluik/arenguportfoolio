@@ -159,6 +159,10 @@ ul {
     padding: 0;
 }
 
+p {
+    font-size: clamp(14px, 3vw, 17px);
+}
+
 .subsection {
     display: flex;
     flex-direction: column;
@@ -167,7 +171,7 @@ ul {
 
 li {
     padding: 0 28px 0 28px;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
 }
 
 li p {
@@ -231,6 +235,7 @@ li p:hover,
     padding: 32px;
     color: #EFEDEB;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .menu.active {
@@ -242,7 +247,7 @@ li p:hover,
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: clamp(24px, 3vw, 48px);
+    font-size: clamp(24px, 3vw, 32px);
 }
 
 .navOption img {
@@ -272,7 +277,8 @@ li p:hover,
     }
 
     li {
-        padding: 0 8px 0 8px;
+        padding: 0 12px 0 12px;
+        margin-bottom: 24px;
     }
 
     a {
