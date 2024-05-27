@@ -7,19 +7,18 @@
                 projektiga mis on ka Tutvumispraktika lehel välja toodud.
                 Õppisin, mida kujutab endast SEO ning kuidas parandada SEO tulemust veebilehel. Samuti sain analüüsida
                 kasutajalugusid ning kasutada saadud teadmisi reaalses projektis - praktiline kogemus on kõige
-                õpetlikum. Õppisin looma Wordpressis ülem- ja alamlehti ning lisama veebilehtedeöe erinevaid meedia
+                õpetlikum. Õppisin looma Wordpressis ülem- ja alamlehti ning lisama veebilehtedele erinevaid meedia
                 elemente (videod, ikoonid, videod). Kursuse üheks ülesandeks oli uurida domeeni ning veebimajutust
                 pakkuvaid ettevõtteid, nende eeliseid ja puudusi ning analüüsida, milline oleks kõige parem valik mulle
                 tulevikus. Näiteks ei pea mina valima WebFlows kõige kallimat Business paketti, mis võimaldab lisada 10
                 tuhat CMS objekti, muuta sisu 10 erineval inimesel ning külastada 300 tuhandel külastajal oma
                 veebisaiti.
                 Lisaks õppisin kasutama WooCommerce'i ning muude e-kaubanduse võimaluste integreerimisest veebilehele.
+                <br><br>
+                Siit leiad kõik kursuse raames <a
+                    href="https://drive.google.com/drive/folders/1bu91nwmKwzuzBpYbT8RVEtNANW2XvbR3?usp=sharing"
+                    target="_blank">tehtud tööd</a>.
             </p>
-        </div>
-        <div class="forwardBackButtons">
-            <router-link to="">
-                <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Järgmine</TextButton>
-            </router-link>
         </div>
     </div>
     <div class="popupImagesSectionWrapper">
@@ -37,13 +36,11 @@
 <script setup>
 import { onMounted, render, markRaw, ref } from 'vue';
 import TextButton from '../TextButton.vue';
-import imgAvastaTartut from '@/assets/img/ga4.webp';
-import imgClearMind from '@/assets/img/clearmind.webp';
-import imgFotoseeria from '@/assets/img/fotoseeria.webp';
+import Katana from '@/assets/img/katana.webp';
 
 const popUpImages = ref(null)
 
-const images = [imgAvastaTartut, imgClearMind, imgFotoseeria]
+const images = [Katana]
 
 function navigateToImage(index) {
     popUpImages.value.scrollTo({ left: popUpImages.value.offsetWidth * index, behaviour: 'smooth' });
@@ -87,10 +84,12 @@ function navigateToImage(index) {
 
 .popUpImages img {
     object-fit: cover;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .imagesNavigator {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     top: 0;
@@ -107,7 +106,6 @@ function navigateToImage(index) {
     aspect-ratio: 1;
     background: white;
     border-radius: 50%;
-    outline: 2px solid black;
 }
 
 .imagesNavigator .nav-dot:hover {
@@ -133,6 +131,12 @@ function navigateToImage(index) {
     margin: 96px 100px 56px 120px;
 }
 
+.forwardBackButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 @media only screen and (max-width: 1500px) {
     .popUpTextAndButtons {
@@ -141,11 +145,7 @@ function navigateToImage(index) {
         justify-content: space-between;
         width: 80%;
         height: 100%;
-    }
-
-    .popUpImages img {
-        width: 100%;
-        height: 100%;
+        margin-bottom: 80px;
     }
 
     .popUpTextAndButtons .text {
@@ -164,6 +164,32 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        position: static;
+        width: 80%;
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .popUpImages {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        height: 100%;
+        top: 0;
+        transition: all 1s ease;
+        scroll-behavior: smooth;
+    }
+
+    .popUpImages img {
+        object-fit: cover;
+    }
+
+    .popUpTextAndButtons {
+        overflow-y: hidden;
+        max-height: fit-content;
     }
 }
 
@@ -197,6 +223,12 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 0;
     }
 }
 </style>

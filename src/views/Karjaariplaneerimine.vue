@@ -83,7 +83,7 @@ let currentlyOpenModule = ref(null);
                         </OneBoxLayout>
                         <OneBoxLayout @click="toggleModule(allModules.asjaajamine)" :title="'Asjaajamise alused'"
                             :text="'Ametlikud dokumendid, CV, motivatsioonikiri, digiallkirjastamine'">
-                            <img class="backg" src="../assets/img/digidoc.webp" alt="Rosabella logo T-särgil">
+                            <img class="backg" src="../assets/img/asjaajamine.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
                     <OneBoxLayout @click="toggleModule(allModules.karjaariplaneerimine)" :title="'Karjääriplaneerimise alused'"

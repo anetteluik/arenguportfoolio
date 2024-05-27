@@ -7,30 +7,40 @@
                 juhtimisele ning nende mõju disainiprotsessidele lisaks üldisele projekti kulgemisele. Metoodikate
                 võrdlustabeli koostamine oli eriti kasulik, kuna see sundis mind kaaluma erinevate metoodikate eeliseid
                 ja puudusi ning nende mõjusid.
+                <br><br>
                 Õppisin koostama projektiplaani, kus defineerisin eesmärgid, ajakava ja ressursid. Lisaks sain teadmised
                 tarkvaraprojektide probleemide analüüsimiseks ja erinevate kasutajagruppide vaatepunktist sõnastamiseks.
                 Uurisin Riigikontrolli avaliku sektori auditit, mis andis selge ülevaate sellest, miks
                 tarkvaraarendusprojektid võivad ebaõnnestuda.
+                <br><br>
+                Siit leiad kõik kursuse jooksul <a href="https://drive.google.com/drive/folders/1ie8b7TbLHzczwZ9mrwSioMifExchJLxO?usp=sharing" target="_blank">valminud tööd</a>.
             </p>
         </div>
-        <div class="forwardBackButtons">
-            <router-link to="/avasta-tartut">
-                <TextButtonBack :imgType="'back'" :alt="'Button Icon'" class="buttonRe">Eelmine</TextButtonBack>
-            </router-link>
-            <router-link to="">
-                <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Järgmine</TextButton>
-            </router-link>
-        </div>
     </div>
-    <div class="popUpImage">
-        <img src="/src/assets/img/tarkvaraarendus.webp" alt="">
+    <div class="popupImagesSectionWrapper">
+        <div class="popUpImages" ref="popUpImages">
+            <img v-for="image in images" :src="image" alt="Illustration">
+        </div>
+        <div class="imagesNavigator">
+            <div v-for="i, index in images" class="images-nav-dot-block" @click="navigateToImage(index)">
+                <div class="nav-dot"></div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
-import { render } from 'vue';
+import { onMounted, render, markRaw, ref } from 'vue';
 import TextButton from '../TextButton.vue';
-import TextButtonBack from '../TextButtonBack.vue';
+import TA from '@/assets/img/tarkvaraarendus.webp';
+
+const popUpImages = ref(null)
+
+const images = [TA]
+
+function navigateToImage(index) {
+    popUpImages.value.scrollTo({ left: popUpImages.value.offsetWidth * index, behaviour: 'smooth' });
+}
 
 </script>
 
@@ -40,16 +50,62 @@ import TextButtonBack from '../TextButtonBack.vue';
     flex-direction: column;
     justify-content: space-between;
     width: 55%;
+    overflow-y: scroll;
+    max-height: 100vh;
 }
 
-.popUpImage {
+.popUpTextAndButtons::-webkit-scrollbar {
+    background: transparent;
+    width: 0;
+}
+
+.popupImagesSectionWrapper {
+    position: relative;
     width: 45%;
 }
 
-.popUpImage img {
-    width: 100%;
-    height: 100%;
+.popUpImages {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    height: 100vh;
+    top: 0;
+    transition: all 1s ease;
+    scroll-behavior: smooth;
+}
+
+.popUpImages ::-webkit-scrollbar {
+    display: none;
+}
+
+.popUpImages img {
     object-fit: cover;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.imagesNavigator {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    margin-top: -100px;
+}
+
+.imagesNavigator .images-nav-dot-block {
+    padding: 12px;
+}
+
+.imagesNavigator .nav-dot {
+    width: 20px;
+    height: auto;
+    aspect-ratio: 1;
+    background: white;
+    border-radius: 50%;
+}
+
+.imagesNavigator .nav-dot:hover {
+    background: #60121c;
 }
 
 .popUpTextAndButtons .text {
@@ -85,11 +141,7 @@ import TextButtonBack from '../TextButtonBack.vue';
         justify-content: space-between;
         width: 80%;
         height: 100%;
-    }
-
-    .popUpImage {
-        width: 100%;
-        height: 100%;
+        margin-bottom: 80px;
     }
 
     .popUpTextAndButtons .text {
@@ -108,6 +160,32 @@ import TextButtonBack from '../TextButtonBack.vue';
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        position: static;
+        width: 80%;
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .popUpImages {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        height: 100%;
+        top: 0;
+        transition: all 1s ease;
+        scroll-behavior: smooth;
+    }
+
+    .popUpImages img {
+        object-fit: cover;
+    }
+
+    .popUpTextAndButtons {
+        overflow-y: hidden;
+        max-height: fit-content;
     }
 }
 
@@ -120,7 +198,7 @@ import TextButtonBack from '../TextButtonBack.vue';
         height: 100%;
     }
 
-    .popUpImage {
+    .popUpImages {
         width: 100%;
         height: 100%;
     }
@@ -141,6 +219,12 @@ import TextButtonBack from '../TextButtonBack.vue';
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 0;
     }
 }
 </style>

@@ -3,18 +3,20 @@
         <div class="popUpTextAndButtonsWrapper">
             <div class="text">Animatsioonid</div>
             <p class="textP">Kuigi Animatsioonide kursuse maht kogu mooduli vältel oli pigem tagasihoidlik, oli see minu
-                absoluutne lemmik. Sain selgeks cinemagraphide olemuse, nende mitmekülgsed kasutusalad ning erinevused
-                GIF-idest. Tutvusin ka Microsoft Research Cliplets programmiga, kus pidin looma enda cinemagraphi.
-                Cinemagraph on omapärane kombinatsioon liikumatust pildist ja liikuvas vormis videost, kus suurem osa
+                absoluutne lemmik. Sain selgeks <i>cinemagraph</i>ide olemuse, nende mitmekülgsed kasutusalad ning erinevused
+                GIF-idest. Tutvusin ka Microsoft Research Cliplets programmiga, kus pidin looma enda <i>cinemagraph</i>i.
+                <i>Cinemagraph</i> on omapärane kombinatsioon liikumatust pildist ja liikuvas vormis videost, kus suurem osa
                 stseenist püsib paigal ning liigub ainult üksik element. Minu loomingus oli paigalseisev element veekogu
-                ääres seisev puma, ning liikuvaks osaks oli puma saba. Cinemagraphi pumast saab vaadata siit.
-                Lisaks avardus minu huvi Adobe After Effects programmi vastu, mida õppisin läbi erinevate õppevideote.
+                ääres seisev puuma, ning liikuvaks osaks oli puuma saba. <br><br>
+                Lisaks kasvas minu huvi Adobe After Effects programmi vastu, mida õppisin läbi erinevate õppevideote.
                 Õppisin, kuidas animeerida 3D-graafikat ning üheks ülesandeks oli leida YouTube'ist juhend, mis näitaks
                 samm-sammult animatsiooni loomist ning seda siis ise järele teha. Võtsin ette üsna keerulise video, kuid
                 animatsiooni loomise käigus sain aru, et see polegi tegelikult nii keeruline. Selle töö käigus leidsin
                 armastuse liikuva graafika vastu ning kui aeg ja võimalused lubavad, soovin selles vallas veelgi edasi
                 õppida.
-                Minu loodud animatsiooni saab vaadata siit.
+                <br><br>
+                Minu loodud animatsiooni ja <i>cinemagraph</i>iga saab tutvuda <a
+                    href="https://drive.google.com/drive/folders/1F-jRZDQY7Vu35jy-tEoHmK8Hfplwshg8?usp=sharing" target="_blank">siin</a>.
             </p>
         </div>
         <div class="forwardBackButtons">
@@ -38,13 +40,11 @@
 <script setup>
 import { onMounted, render, markRaw, ref } from 'vue';
 import TextButton from '../TextButton.vue';
-import imgAvastaTartut from '@/assets/img/puma.gif';
-import imgClearMind from '@/assets/img/clearmind.webp';
-import imgFotoseeria from '@/assets/img/fotoseeria.webp';
+import Puma from '@/assets/img/puma.gif';
 
 const popUpImages = ref(null)
 
-const images = [imgAvastaTartut, imgClearMind, imgFotoseeria]
+const images = [Puma]
 
 function navigateToImage(index) {
     popUpImages.value.scrollTo({ left: popUpImages.value.offsetWidth * index, behaviour: 'smooth' });
@@ -88,10 +88,12 @@ function navigateToImage(index) {
 
 .popUpImages img {
     object-fit: cover;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .imagesNavigator {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     top: 0;
@@ -133,6 +135,12 @@ function navigateToImage(index) {
     margin: 96px 100px 56px 120px;
 }
 
+.forwardBackButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 @media only screen and (max-width: 1500px) {
     .popUpTextAndButtons {
@@ -140,11 +148,6 @@ function navigateToImage(index) {
         flex-direction: column;
         justify-content: space-between;
         width: 80%;
-        height: 100%;
-    }
-
-    .popUpImages img {
-        width: 100%;
         height: 100%;
     }
 
@@ -164,6 +167,32 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        position: static;
+        width: 80%;
+        height: 600px;
+        margin-bottom: 100px;
+    }
+
+    .popUpImages {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        height: 100%;
+        top: 0;
+        transition: all 1s ease;
+        scroll-behavior: smooth;
+    }
+
+    .popUpImages img {
+        object-fit: cover;
+    }
+
+    .popUpTextAndButtons {
+        overflow-y: hidden;
+        max-height: fit-content;
     }
 }
 
@@ -197,6 +226,12 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 0;
     }
 }
 </style>

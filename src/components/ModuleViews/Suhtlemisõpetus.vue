@@ -9,13 +9,14 @@
                 lahendamise meetodeid, mis on olulised mitte ainult UX/UI valdkonnas, vaid ka minu igapäevaelus. Oluline
                 teema oli ka keerukate klientidega suhtlemine. Kuna sellised olukorrad võivad tulevikus sageli ette
                 tulla, on kasulik teada nippe ja käitumisviise, mis võimaldavad olukorrale professionaalselt läheneda.
-                Enesekehtestamine osutus minu jaoks väljakutseks. Kuigi olen loomult pigem people-pleaser, mõistsin, et
-                mõnikord on vajalik seista oma seisukohtade eest.</p>
-        </div>
-        <div class="forwardBackButtons">
-            <router-link to="">
-                <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Järgmine</TextButton>
-            </router-link>
+                Enesekehtestamine osutus minu jaoks väljakutseks. Kuigi olen loomult pigem <i>people-pleaser</i>,
+                mõistsin, et
+                mõnikord on vajalik seista oma seisukohtade eest.
+                <br><br>
+                Siit leiad kõik Suhtlemisõpetuse tundides <a
+                    href="https://drive.google.com/drive/folders/14VJ7MeInMSQeIypZXM9RX-yuogRzJCHr?usp=sharing"
+                    target="_blank">tehtud tööd</a>.
+            </p>
         </div>
     </div>
     <div class="popupImagesSectionWrapper">
@@ -33,13 +34,11 @@
 <script setup>
 import { onMounted, render, markRaw, ref } from 'vue';
 import TextButton from '../TextButton.vue';
-import imgAvastaTartut from '@/assets/img/brain.webp';
-import imgClearMind from '@/assets/img/clearmind.webp';
-import imgFotoseeria from '@/assets/img/fotoseeria.webp';
+import Brain from '@/assets/img/brain.webp';
 
 const popUpImages = ref(null)
 
-const images = [imgAvastaTartut, imgClearMind, imgFotoseeria]
+const images = [Brain]
 
 function navigateToImage(index) {
     popUpImages.value.scrollTo({ left: popUpImages.value.offsetWidth * index, behaviour: 'smooth' });
@@ -83,10 +82,12 @@ function navigateToImage(index) {
 
 .popUpImages img {
     object-fit: cover;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .imagesNavigator {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     top: 0;
@@ -103,7 +104,6 @@ function navigateToImage(index) {
     aspect-ratio: 1;
     background: white;
     border-radius: 50%;
-    outline: 2px solid black;
 }
 
 .imagesNavigator .nav-dot:hover {
@@ -129,6 +129,12 @@ function navigateToImage(index) {
     margin: 96px 100px 56px 120px;
 }
 
+.forwardBackButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 @media only screen and (max-width: 1500px) {
     .popUpTextAndButtons {
@@ -137,11 +143,7 @@ function navigateToImage(index) {
         justify-content: space-between;
         width: 80%;
         height: 100%;
-    }
-
-    .popUpImages img {
-        width: 100%;
-        height: 100%;
+        margin-bottom: 80px;
     }
 
     .popUpTextAndButtons .text {
@@ -160,6 +162,32 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        position: static;
+        width: 80%;
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .popUpImages {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        height: 100%;
+        top: 0;
+        transition: all 1s ease;
+        scroll-behavior: smooth;
+    }
+
+    .popUpImages img {
+        object-fit: cover;
+    }
+
+    .popUpTextAndButtons {
+        overflow-y: hidden;
+        max-height: fit-content;
     }
 }
 
@@ -193,6 +221,12 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 0;
     }
 }
 </style>

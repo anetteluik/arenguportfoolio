@@ -68,8 +68,8 @@ let currentlyOpenModule = ref(null);
                             WCAG standardid ja nende erinevad tasemed, mis tagavad kõigile infokeskkonda kaasatud
                             inimestele võrdsed võimalused. Sain parema arusaamise HTML-i, CSS-i ja Bootstrap 4-i
                             kasutamisest erinevate ülesannete täitmisel. Mooduli raames tutvusin mitmete erinevate
-                            kasutajakogemuse analüüsi meetoditega ning õppisin kasutama mõisteid nagu sketch, wireframe,
-                            mockup ja prototüüp.</p>
+                            kasutajakogemuse analüüsi meetoditega ning õppisin kasutama mõisteid nagu <i>sketch</i>, <i>wireframe</i>,
+                            <i>mockup</i> ja prototüüp.</p>
                     </div>
                 </div>
                 <div class="moodulWrapper">

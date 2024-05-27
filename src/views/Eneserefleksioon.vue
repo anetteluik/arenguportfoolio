@@ -83,7 +83,7 @@ import Footer from "@/components/Footer.vue";
                             </div>
                         </div>
                         <div class="imgWrap">
-                            <img class="smaller" src="/src/assets/img/hopp.webp" alt="">
+                            <img class="smaller" src="/src/assets/img/hopp1.webp" alt="">
                             <img class="smaller" src="/src/assets/img/starter.webp" alt="">
                         </div>
                     </div>

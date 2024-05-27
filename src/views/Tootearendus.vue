@@ -71,6 +71,12 @@ let currentlyOpenModule = ref(null);
                             ja aitas mind failide korrigeerimisel. Praegu on meie küünlaprojekt pausil, kuna keskendume
                             projektidele, mis on otseselt seotud UX/UI valdkonnaga. Allpool on näha infograafik, mis
                             annab kokkuvõtte Tootearendusekursusel läbitud protsessist.
+                            <br><br>
+                            Siit saab näha kogu tootearenduse tunni raames valminud <a
+                                href="https://drive.google.com/drive/folders/1JhfAwHgEZcmhl-LS8iTvvXhoF5JtLn7Y?usp=sharing"
+                                target="_blank">materjale</a> ning <a
+                                href="https://drive.google.com/drive/folders/1iMCv_jd4JPpE_JPhFJK-TZhoUJjHMkyN?usp=sharing"
+                                target="_blank">küünlaprojekti fotosid</a>.
                         </p>
                     </div>
                 </div>
@@ -85,6 +91,12 @@ let currentlyOpenModule = ref(null);
 </template>
 
 <style>
+.descriptionMoodul a {
+  background-color: #C2CFF2;
+  color: #221517;
+  text-decoration: none;
+}
+
 .backdrop {
     position: fixed;
     width: 100%;
@@ -112,9 +124,9 @@ let currentlyOpenModule = ref(null);
 }
 
 .moodulWrapperToode {
-  margin-top: 80px;
-  margin-bottom: 208px;
-  height: fit-content;
+    margin-top: 80px;
+    margin-bottom: 208px;
+    height: fit-content;
 }
 
 @media only screen and (max-width: 600px) {

@@ -41,7 +41,7 @@ import TextButton from "../components/TextButton.vue"
                 </div>
                 <div class="aboutSectionPhotos">
                     <div class="aboutPhoto">
-                        <img src="../assets/img/hopp.webp" alt="Profile Picture">
+                        <img src="../assets/img/hopp1.webp" alt="Profile Picture">
                     </div>
                     <div class="aboutPhoto">
                         <img src="../assets/img/hopp2.webp" alt="Profile Picture">
@@ -50,11 +50,21 @@ import TextButton from "../components/TextButton.vue"
                 <div class="kohtWrapper">
                     <div class="koht">
                         <h3>Praktikakoht</h3>
-                        <p>Praktika sooritasin ettevõttes Loomemajanduskeskus (edaspidi LMK). LMK eesmärk on elavdada
+                        <p>Praktika sooritasin ettevõttes <a href="https://lmk.ee/"
+                                target="_blank">Loomemajanduskeskus</a> (edaspidi LMK) alates 08.12.2022 kuni
+                            11.05.2023. LMK eesmärk on elavdada
                             loomemajanduslikku teadlikkust, kiirendada ettevõtluskasvu ning toetada innovaatiliste ja
                             kõrge lisandväärtusega loomemajandusettevõtete teket Tartus ja Lõuna-Eestis. Ettevõte on
                             pühendunud looma keskkonda, kus loomingulised ideed saavad õitseda ning ettevõtjad saavad
                             vajalikku toetust oma ettevõtmiste arendamiseks</p>
+                    </div>
+                </div>
+                <div class="aboutSectionPhotos">
+                    <div class="aboutPhoto">
+                        <img src="../assets/img/hopp4.webp" alt="Profile Picture">
+                    </div>
+                    <div class="aboutPhoto">
+                        <img src="../assets/img/hopp3.webp" alt="Profile Picture">
                     </div>
                 </div>
                 <div class="tegevused">
@@ -63,20 +73,39 @@ import TextButton from "../components/TextButton.vue"
                     </div>
                     <div class="tegevusedDescWrapper">
                         <div class="tegevusedDesc">
-                            <p>Praktikal osalesid mina, Kerli Pajusaar ning Ursula Muts. Üks esimesi ülesandeid oli läbi
-                                viia ärianalüüs koos Loomemajanduskeskuse tegevjuhi ja füüsilise poe töötajatega. Selle
+                            <p>Praktikal osalesime mina, Kerli Pajusaar ning Ursula Muts. Üks esimesi ülesandeid oli
+                                läbi
+                                viia ärianalüüs koos LMK tegevjuhi ja füüsilise poe töötajatega. Selle
                                 protsessi käigus koostasin põhjaliku küsimustiku, viisin läbi struktureeritud intervjuud
                                 ning analüüsisin kogutud andmeid ettevõtte eesmärkide, olemuse ja vajaduste paremaks
-                                mõistmiseks. Teostasime nii kvalitatiivseid kui ka kvantitatiivseid uuringuid,
-                                sealhulgas küsitlusi, intervjuusid, hallway-teste, card sorting ning fookusgrupi
-                                uuringuid. Need uurimismeetodid olid olulised, et mõista kasutajate käitumist, eelistusi
-                                ja murekohti.Minu kanda oli veebisaidi wireframe'i loomine, visuaalse identiteedi
-                                tagamine ning navigatsiooni kujundamine. See protsess aitas mul arendada oskusi, kuidas
-                                muuta uurimistulemused visuaalseteks ja funktsionaalseteks elementideks.</p>
+                                mõistmiseks. Samuti koostasime <a
+                                    href="https://docs.google.com/document/d/1w4Ee8gtkgvgECDaKr44dORmVN44t3T_S/edit?usp=sharing&ouid=101487927772805438248&rtpof=true&sd=true"
+                                    target="_blank">SWOT analüüsi</a>, mille kaudu kaardistasime tiimisisesed
+                                ning projektiga seotud tugevused, nõrkused, võimalused ja ohud. Sellega valmis ka
+                                <a href="https://docs.google.com/spreadsheets/d/1F9wJog3F-qMKn8WNAzbIiWcK_oH3IZIOv7H7dR1K-Ao/edit?usp=sharing"
+                                    target="_blank">riskianalüüs</a>. Teostasime projekti käigus nii kvalitatiivseid kui
+                                ka kvantitatiivseid
+                                uuringuid,
+                                sealhulgas <a
+                                    href="https://docs.google.com/spreadsheets/d/1gIbAYm7SK0-PEXYdWhUMZ2wGsm40EpYYUuO5keqYwLI/edit#gid=0"
+                                    target="_blank">intervjuusid</a>, <a
+                                    href="https://www.figma.com/design/6pTW8quknumfXXqcOOZQj6/K%C3%BCsitlus?node-id=0-1&t=cBR0eiQCqK0i0XCf-1"
+                                    target="_blank"><i>card sorting</i> teste</a> ning <a
+                                    href="https://www.figma.com/design/AD9ZYgKYikyUUzLZ9UYaCC/Loomeka-f%C3%BC%C3%BCsilise-poe-kliendiuuring?node-id=0-1&t=6yione57J3m6Enb9-1"
+                                    target="_blank">A/B teste</a>. Kui on soovi, saab siit ka kõikidest uuringutest <a
+                                    href="https://docs.google.com/document/d/1xjE656xrW6bBol_b9em3p0dS0j0teg6Z/edit?usp=sharing&ouid=101487927772805438248&rtpof=true&sd=true">kokkuvõtlikku
+                                    dokumenti</a> vaadata. Need uurimismeetodid olid olulised, et mõista
+                                kasutajate käitumist, eelistusi
+                                ja murekohti. Suuresti minu kanda oli veebisaidi <a
+                                    href="https://www.figma.com/design/lMUQQ1p0buQJjixVSmGIZy/E-pood-ja-koduleht?node-id=229-700&t=2VH4ByTPAQx2HSUH-1"><i>wireframe</i>'i</a>
+                                loomine, visuaalse identiteedi
+                                tagamine ning navigatsiooni kujundamine.
+                            </p>
                         </div>
                         <div class="tegevusedDesc">
-                            <p>Koostasime
-                                low-fi, mid-fi ning hi-fi prototüübid veebipoest. Selle protsessi õppisin
+                            <p>See protsess aitas mul arendada oskusi, kuidas
+                                muuta uurimistulemused visuaalseteks ja funktsionaalseteks elementideks.Koostasime
+                                <i>low-fi</i>, <i>mid-fi</i> ning <i>hi-fi</i> prototüübid veebipoest. Selle protsessi õppisin
                                 rakendama disainimõtlemist, kasutajasõbralike liideste loomist ja visuaalset hierarhiat.
                                 Uuringutulemuste ja disainilahenduste esitamine kliendile parandas minu suhtlemisoskust
                                 ja esinemisjulgust. Õppisin efektiivselt suhtlema, kuulama tagasisidet ning reageerima
@@ -130,6 +159,12 @@ import TextButton from "../components/TextButton.vue"
 </template>
 
 <style>
+p a {
+    background-color: #C2CFF2;
+    color: #221517;
+    text-decoration: none;
+}
+
 .tegevused {
     margin-bottom: 100px;
 }

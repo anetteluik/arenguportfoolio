@@ -65,7 +65,8 @@ let currentlyOpenModule = ref(null);
                     <div class="descriptionMoodul">
                         <p>Veebiarenduse ja halduse moodulis arendasin teadmisi veebisaidi haldamisest, SEO-dest ja
                             pistikprogrammidest ning e-kaubanduse integreerimisest veebilehele. Versioonihalduse ja
-                            GitHubiga tutvumisel õppisin repositooriumide loomise kohta, koodi branchidest ning nende
+                            GitHubiga tutvumisel õppisin repositooriumide loomise kohta, koodi <i>branch</i>idest ning
+                            nende
                             olulisusest. Samuti uurisin tarkvaraarenduse põhimõtteid, metoodikaid, projektiplaani
                             koostamist, ning erinevaid sisuhaldusüsteeme (näiteks WordPress, WebFlow, Wix ning
                             SquareSpace).</p>
@@ -75,8 +76,7 @@ let currentlyOpenModule = ref(null);
                     <div class="moodulSection">
                         <OneBoxLayout @click="toggleModule(allModules.sisuhaldus)" :title="'Sisuhaldussüsteemid'"
                             :text="'GA4, SEO, Wordpressis veebilehtede loomine'">
-                            <img class="backg" src="../assets/img/ga4.webp"
-                                alt="Avasta Tartut mobiilirakenduse mockup">
+                            <img class="backg" src="../assets/img/katana.webp" alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
                         <OneBoxLayout @click="toggleModule(allModules.versioonihaldus)" :title="'Versioonihaldus'"
                             :text="'Github, repositooriumid, koodiharud'">
@@ -85,14 +85,13 @@ let currentlyOpenModule = ref(null);
                     </div>
                     <OneBoxLayout @click="toggleModule(allModules.abtestimine)" :title="'A/B testimine'"
                         :text="'GA4, A/B testimine, Wordpress'">
-                        <img class="backg" src="../assets/img/ab.webp"
-                            alt="Clear Mind energiajoogi mockup purkidel">
+                        <img class="backg" src="../assets/img/ab.webp" alt="Clear Mind energiajoogi mockup purkidel">
                     </OneBoxLayout>
                     <div class="moodulSection">
-                        <OneBoxLayout @click="toggleModule(allModules.vahenditekasutaminep)" :title="'Vahendite kasutamine prototüüpimiseks, arendusraamistikud'"
+                        <OneBoxLayout @click="toggleModule(allModules.vahenditekasutaminep)"
+                            :title="'Vahendite kasutamine prototüüpimiseks, arendusraamistikud'"
                             :text="'Vue, prototüüpimine'">
-                            <img class="backg" src="../assets/img/vue.webp"
-                                alt="Avasta Tartut mobiilirakenduse mockup">
+                            <img class="backg" src="../assets/img/vue.webp" alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
                         <OneBoxLayout @click="toggleModule(allModules.sissejuhatus)"
                             :title="'Sissejuhatus tarkvaraarendusse'"
@@ -102,8 +101,7 @@ let currentlyOpenModule = ref(null);
                     </div>
                     <OneBoxLayout @click="toggleModule(allModules.veebihaldus)" :title="'Veebihaldus'"
                         :text="'LAMP stack, serverite tüübid'">
-                        <img class="backg" src="../assets/img/linux.webp"
-                            alt="Clear Mind energiajoogi mockup purkidel">
+                        <img class="backg" src="../assets/img/linux.webp" alt="Clear Mind energiajoogi mockup purkidel">
                     </OneBoxLayout>
                 </div>
             </div>

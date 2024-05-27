@@ -95,6 +95,8 @@ function navigateToImage(index) {
 
 .popUpImages img {
     object-fit: cover;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .imagesNavigator {

@@ -7,8 +7,13 @@
                 arendas mu oskusi kontseptsioonide ja ideede visuaalseks esitamiseks.
                 Õppisin kahe tähe ligatuuride loomist ja erinevate monogrammide visandamist. Kuna aine oli lõimitud nii
                 sisuhaldusüsteemide kui projektihalduse kursusega, tegelesime e-portfoolioga seoses ka kavandite,
-                wireframeide ja projekti kavandamisega. Harjutasin struktureeritud ja visuaalselt esitlust oma tulevase
+                <i>wireframe</i>'ide ja projekti kavandamisega. Harjutasin struktureeritud ja visuaalselt esitlust oma
+                tulevase
                 e-portfoolio jaoks looma.
+                <br><br>
+                Kõiki visandeid ja muid kurusuega seotud töid saab vaadata <a
+                    href="https://drive.google.com/drive/folders/1PO6Xo711jJnT2XrnR-7Pi-b_dsGkcOlv?usp=drive_link"
+                    target="_blank">siit</a>.
             </p>
         </div>
         <div class="forwardBackButtons">
@@ -20,15 +25,36 @@
             </router-link>
         </div>
     </div>
-    <div class="popUpImage">
-        <img src="/src/assets/img/visand.webp" alt="">
+    <div class="popupImagesSectionWrapper">
+        <div class="popUpImages" ref="popUpImages">
+            <img v-for="image in images" :src="image" alt="Illustration">
+        </div>
+        <div class="imagesNavigator">
+            <div v-for="i, index in images" class="images-nav-dot-block" @click="navigateToImage(index)">
+                <div class="nav-dot"></div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
-import { render } from 'vue';
+import { render, ref } from 'vue';
 import TextButton from '../TextButton.vue';
 import TextButtonBack from '../TextButtonBack.vue';
+import Kavandamine from '@/assets/img/visand.webp';
+import Bikablo from '@/assets/img/bikablo.webp';
+import Monogram from '@/assets/img/mono.webp';
+import Moose from '@/assets/img/moose.webp';
+import Frog from '@/assets/img/frog.webp';
+import Dog from '@/assets/img/dog.webp';
+
+const popUpImages = ref(null)
+
+const images = [Kavandamine, Bikablo, Monogram, Moose, Frog, Dog]
+
+function navigateToImage(index) {
+    popUpImages.value.scrollTo({ left: popUpImages.value.offsetWidth * index, behaviour: 'smooth' });
+}
 
 </script>
 
@@ -38,16 +64,62 @@ import TextButtonBack from '../TextButtonBack.vue';
     flex-direction: column;
     justify-content: space-between;
     width: 55%;
+    overflow-y: scroll;
+    max-height: 100vh;
 }
 
-.popUpImage {
+.popUpTextAndButtons::-webkit-scrollbar {
+    background: transparent;
+    width: 0;
+}
+
+.popupImagesSectionWrapper {
+    position: relative;
     width: 45%;
 }
 
-.popUpImage img {
-    width: 100%;
-    height: 100%;
+.popUpImages {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    height: 100vh;
+    top: 0;
+    transition: all 1s ease;
+    scroll-behavior: smooth;
+}
+
+.popUpImages ::-webkit-scrollbar {
+    display: none;
+}
+
+.popUpImages img {
     object-fit: cover;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.imagesNavigator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    margin-top: -100px;
+}
+
+.imagesNavigator .images-nav-dot-block {
+    padding: 12px;
+}
+
+.imagesNavigator .nav-dot {
+    width: 20px;
+    height: auto;
+    aspect-ratio: 1;
+    background: white;
+    border-radius: 50%;
+}
+
+.imagesNavigator .nav-dot:hover {
+    background: #60121c;
 }
 
 .popUpTextAndButtons .text {
@@ -83,11 +155,7 @@ import TextButtonBack from '../TextButtonBack.vue';
         justify-content: space-between;
         width: 80%;
         height: 100%;
-    }
-
-    .popUpImage {
-        width: 100%;
-        height: 100%;
+        margin-bottom: 80px;
     }
 
     .popUpTextAndButtons .text {
@@ -106,6 +174,32 @@ import TextButtonBack from '../TextButtonBack.vue';
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        position: static;
+        width: 80%;
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .popUpImages {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        height: 100%;
+        top: 0;
+        transition: all 1s ease;
+        scroll-behavior: smooth;
+    }
+
+    .popUpImages img {
+        object-fit: cover;
+    }
+
+    .popUpTextAndButtons {
+        overflow-y: hidden;
+        max-height: fit-content;
     }
 }
 
@@ -118,7 +212,7 @@ import TextButtonBack from '../TextButtonBack.vue';
         height: 100%;
     }
 
-    .popUpImage {
+    .popUpImages {
         width: 100%;
         height: 100%;
     }
@@ -139,6 +233,12 @@ import TextButtonBack from '../TextButtonBack.vue';
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 0;
     }
 }
 </style>

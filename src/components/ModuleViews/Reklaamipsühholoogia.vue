@@ -5,14 +5,14 @@
             <p class="textP">Õppisin reklaamitegevuse õiguslikke ja eetilisi nõudeid, sealhulgas reklaamiseadust ja
                 meediaseadust. Uurisin kultuuriliste tegurite mõju reklaami tajumisele ja sellest, kuidas meedia võib
                 kujundada avalikku arvamust (läbi K. Birch'i näidetele meedia mõjust). Sain teada, kuidas tarbija taju,
-                tähelepanu, mälu ning reklaami üldised eesmärgid mõjutavad lõpptulemuse effektiivsust. Kursuse
+                tähelepanu, mälu ning reklaami üldised eesmärgid mõjutavad lõpptulemuse efektiivsust. Kursuse
                 praktilised ülesanded hõlmasid erinevate veebireklaamide analüüsimist ning tulemuste esitlemist
-                kursusekaaslastele ja -juhendajale. Sellega arendasin lisaks analüüsimisvõimele ka esitlusoskust.</p>
-        </div>
-        <div class="forwardBackButtons">
-            <router-link to="">
-                <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Järgmine</TextButton>
-            </router-link>
+                kursusekaaslastele ja -juhendajale. Sellega arendasin lisaks analüüsimisvõimele ka esitlusoskust.
+                <br><br>
+                Reklaamipsühholoogia tundide jooksul <a
+                    href="https://drive.google.com/drive/folders/1zP5xa4SKJ53TkkMNpxwGqsQnIyWBSGkd?usp=drive_link"
+                    target="_blank">tehtud tööd leiad siit</a>.
+            </p>
         </div>
     </div>
     <div class="popupImagesSectionWrapper">
@@ -30,13 +30,11 @@
 <script setup>
 import { onMounted, render, markRaw, ref } from 'vue';
 import TextButton from '../TextButton.vue';
-import imgAvastaTartut from '@/assets/img/Spotify.webp';
-import imgClearMind from '@/assets/img/clearmind.webp';
-import imgFotoseeria from '@/assets/img/fotoseeria.webp';
+import Spotify from '@/assets/img/Spotify.webp';
 
 const popUpImages = ref(null)
 
-const images = [imgAvastaTartut, imgClearMind, imgFotoseeria]
+const images = [Spotify]
 
 function navigateToImage(index) {
     popUpImages.value.scrollTo({ left: popUpImages.value.offsetWidth * index, behaviour: 'smooth' });
@@ -80,10 +78,12 @@ function navigateToImage(index) {
 
 .popUpImages img {
     object-fit: cover;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .imagesNavigator {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     top: 0;
@@ -100,7 +100,6 @@ function navigateToImage(index) {
     aspect-ratio: 1;
     background: white;
     border-radius: 50%;
-    outline: 2px solid black;
 }
 
 .imagesNavigator .nav-dot:hover {
@@ -126,6 +125,12 @@ function navigateToImage(index) {
     margin: 96px 100px 56px 120px;
 }
 
+.forwardBackButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 @media only screen and (max-width: 1500px) {
     .popUpTextAndButtons {
@@ -134,11 +139,7 @@ function navigateToImage(index) {
         justify-content: space-between;
         width: 80%;
         height: 100%;
-    }
-
-    .popUpImages img {
-        width: 100%;
-        height: 100%;
+        margin-bottom: 80px;
     }
 
     .popUpTextAndButtons .text {
@@ -157,6 +158,32 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        position: static;
+        width: 80%;
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .popUpImages {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        height: 100%;
+        top: 0;
+        transition: all 1s ease;
+        scroll-behavior: smooth;
+    }
+
+    .popUpImages img {
+        object-fit: cover;
+    }
+
+    .popUpTextAndButtons {
+        overflow-y: hidden;
+        max-height: fit-content;
     }
 }
 
@@ -190,6 +217,12 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 0;
     }
 }
 </style>
