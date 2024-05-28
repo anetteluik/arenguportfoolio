@@ -5,37 +5,10 @@
         <slot></slot>
       </p>
       <!-- Use the img prop if provided, otherwise use a default image -->
-      <img src="/src/assets/img/upright-arrow.svg" alt="">
+      <img src="/src/assets/img/arrow.png" alt="">
     </div>
   </div>
 </template>
-
-
-
-<script setup>
-// Import the defineProps function from 'vue'
-import { defineProps } from 'vue';
-
-// Define the props for the component
-const props = defineProps({
-  imgType: 'upright' | 'right' | 'back', // Declare img prop
-  alt: String, // Declare alt prop
-  customImgProp: String // Declare customImgProp prop
-});
-
-function getImageSource(imgType) {
-  switch (imgType) {
-    case 'upright':
-      return "upright-arrow.svg";
-    case 'right':
-      return "right-arrow.svg";
-    case 'back':
-      return "arrow-back.svg";
-    default:
-      return "arrow.svg";
-  }
-}
-</script>
 
 <style scoped>
 .buttonWrapper {
