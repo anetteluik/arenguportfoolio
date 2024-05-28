@@ -5,7 +5,7 @@
         <slot></slot>
       </p>
       <!-- Use the img prop if provided, otherwise use a default image -->
-      <img :src="'/arenguportfoolio/src/assets/img/' + getImageSource(imgType)" :alt="alt">
+      <img :src="'/arenguportfoolio/src/assets/img/upright-arrow.svg'" :alt="alt">
     </div>
   </div>
 </template>
