@@ -3,9 +3,12 @@
         <div class="popUpTextAndButtonsWrapper">
             <div class="text">Animatsioonid</div>
             <p class="textP">Kuigi Animatsioonide kursuse maht kogu mooduli vältel oli pigem tagasihoidlik, oli see minu
-                absoluutne lemmik. Sain selgeks <i>cinemagraph</i>ide olemuse, nende mitmekülgsed kasutusalad ning erinevused
-                GIF-idest. Tutvusin ka Microsoft Research Cliplets programmiga, kus pidin looma enda <i>cinemagraph</i>i.
-                <i>Cinemagraph</i> on omapärane kombinatsioon liikumatust pildist ja liikuvas vormis videost, kus suurem osa
+                absoluutne lemmik. Sain selgeks <i>cinemagraph</i>ide olemuse, nende mitmekülgsed kasutusalad ning
+                erinevused
+                GIF-idest. Tutvusin ka Microsoft Research Cliplets programmiga, kus pidin looma enda
+                <i>cinemagraph</i>i.
+                <i>Cinemagraph</i> on omapärane kombinatsioon liikumatust pildist ja liikuvas vormis videost, kus suurem
+                osa
                 stseenist püsib paigal ning liigub ainult üksik element. Minu loomingus oli paigalseisev element veekogu
                 ääres seisev puuma, ning liikuvaks osaks oli puuma saba. <br><br>
                 Lisaks kasvas minu huvi Adobe After Effects programmi vastu, mida õppisin läbi erinevate õppevideote.
@@ -16,13 +19,9 @@
                 õppida.
                 <br><br>
                 Minu loodud animatsiooni ja <i>cinemagraph</i>iga saab tutvuda <a
-                    href="https://drive.google.com/drive/folders/1F-jRZDQY7Vu35jy-tEoHmK8Hfplwshg8?usp=sharing" target="_blank">siin</a>.
+                    href="https://drive.google.com/drive/folders/1F-jRZDQY7Vu35jy-tEoHmK8Hfplwshg8?usp=sharing"
+                    target="_blank">siin</a>.
             </p>
-        </div>
-        <div class="forwardBackButtons">
-            <router-link to="">
-                <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Järgmine</TextButton>
-            </router-link>
         </div>
     </div>
     <div class="popupImagesSectionWrapper">

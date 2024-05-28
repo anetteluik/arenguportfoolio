@@ -34,10 +34,10 @@
         </div>
         <div class="aboutSectionPhotos">
           <div class="aboutPhoto">
-            <img src="../assets/img/profile.jpg" alt="Profile Picture">
+            <img src="../assets/img/profile2.webp" alt="Profile Picture">
           </div>
           <div class="aboutPhoto">
-            <img src="../assets/img/profile.jpg" alt="Profile Picture">
+            <img src="../assets/img/profile.webp" alt="Profile Picture">
           </div>
         </div>
       </div>

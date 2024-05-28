@@ -26,11 +26,6 @@
                     dokumentatsiooni</a>.
             </p>
         </div>
-        <div class="forwardBackButtons">
-            <router-link to="">
-                <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Järgmine</TextButton>
-            </router-link>
-        </div>
     </div>
     <div class="popupImagesSectionWrapper">
         <div class="popUpImages" ref="popUpImages">

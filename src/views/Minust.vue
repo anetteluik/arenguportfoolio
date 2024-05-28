@@ -26,7 +26,7 @@ import Footer from "@/components/Footer.vue";
                 </div>
                 <div class="lisainfoWrapper">
                     <div class="roomud">
-                        <h4>Minu Rõõmud</h4>
+                        <h4>Minu rõõmud</h4>
                         <p>Mootorrattasõit</p>
                         <p>Heegeldamine</p>
                         <p>Videograafia</p>
@@ -45,7 +45,7 @@ import Footer from "@/components/Footer.vue";
                     <h3>Haridustee ja kogemused</h3>
                 </div>
                 <div class="buttonWrapper">
-                    <a href="https://drive.google.com/file/d/1eW8FRnc0NBVs9Vp23znZ0aVTvXfJx_SC/view?usp=sharing" target="_blank">
+                    <a href="https://drive.google.com/file/d/1nrpx4FAGYG8TyeO_ZFB9DyhAmyvE8gxH/view?usp=sharing" target="_blank">
                         <TextButton class="highlight" :imgType="'upright'" :alt="'Button Icon'">Vaata CV-d</TextButton>
                     </a>
                 </div>
@@ -66,8 +66,8 @@ import Footer from "@/components/Footer.vue";
                 <div class="descriptionWrapper">
                     <div id="hindamine" class="description">
                         <p>Disainivaldkond areneb pidevalt ja sellega koos ka minu oskused. Nagu Albert Einstein ütles,
-                            õppimine on elukestev teekond, mis tähenadb, et minu oskused pidevalt täienevad ja
-                            kohanduvad valkonna nõuete kohaselt. Selle asemel, et hinnata oma teadmisi
+                            õppimine on elukestev teekond, mis tähendab, et minu oskused pidevalt täienevad ja
+                            kohanduvad valdkonna nõuete kohaselt. Selle asemel, et hinnata oma teadmisi
                             traditsiooniliselt 5-palli süsteemis või sarnasel skaalal, toon välja programmid ja
                             vahendid, mida ma hetkel igapäevatöös kasutan ning kui sageli neid rakendan.</p>
                     </div>

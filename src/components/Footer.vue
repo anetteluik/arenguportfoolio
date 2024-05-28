@@ -73,7 +73,6 @@ a {
   margin-bottom: 8px;
   text-decoration: underline;
   text-underline-offset: 2px;
-  text-decoration-color: #96A8D7;
 }
 
 .infoBoxMe {

@@ -24,15 +24,20 @@ import TextButton from "../components/TextButton.vue"
                 </div>
                 <div class="descriptionWrapper">
                     <div class="description">
-                        <p>Minu kodukoht asub pisikeses Keeni külas Valga maakonnas. Enne,
-                            kui avastasin UX/UI disaini valdkonna, olin seadnud endale mitmeid
-                            erinevaid tööalaseid eesmärke, alustades loomaarsti ja laulja ning
-                            lõpetades automaalri erialaga. Ent nagu elu ikka, kulgeb see oma rada
-                            pidi ning täiesti juhuslikult sattusin niimoodi tutvuma UX/UI disaini
-                            valdkonnaga. Tagasi vaadates sain aru, et enamik seatud eesmärkidest
-                            hõlmasid loovust ning nutikust, mis on olnud mulle südamelähedased alates
-                            lapsepõlvest. Seega, kui avastasin praeguse eriala, mõtlesin endamisi:
-                            "Juhhuu, see ongi ju see, mida olen terve elu otsinud".</p>
+                        <p>Spetsialiseerumispraktika eesmärgiks seadsin endale disainioskuste arendamise ning
+                            kasutajakeskse disaini rakendamise kujundustes. Kuna tutvumispraktika kaldus pigem
+                            analüütilisele ja uurimuslikule poolele, tahtsin sel korral rõhku panna just disaini
+                            poolele. Kahjuks või õnneks jäi siiski disain teisejärguliseks, kuid sain disainitöid teha
+                            oma isiklikust ajast.
+                            Samuti tahtsin arendada ajaplaneerimist ning dokumenteerimist, sest eelmisel praktikal
+                            osutus väga oluliseks korrektne (KUUPÄEVALINE!!) dokumenteerimine ning ajaraamidest kinni
+                            pidamine. Hakkasin kasutama sellist platvormi nagu TogglTrack ning see on muutnud ka minu
+                            igapäeva elu korrastajaks. Kasutan seda, et jälgida lisaks tööle ka kõrvalisi projekte ning
+                            näiteks majapidamistöid. Hiljem kokkuvõtlikus vaates on mõnikord üllatuseks tulnud, kui
+                            palju aega ma teatud projektidele kulutan ja mida ma ise oleksin arvanud, et võttis palju
+                            vähem aega. Kokkuvõttes olen projektide kaardistamisel palju teadlikum, kui palju aega mingi
+                            etapp võtta võib ning oskan ka struktuursemalt seetõttu oma aega planeerida.
+                        </p>
                     </div>
                 </div>
                 <div class="aboutSectionPhotos">
@@ -46,11 +51,19 @@ import TextButton from "../components/TextButton.vue"
                 <div class="kohtWrapper">
                     <div class="koht">
                         <h3>Praktikakoht</h3>
-                        <p>Minu kodukoht asub pisikeses Keeni külas Valga maakonnas. Enne, kui avastasin UX/UI disaini
-                            valdkonna, olin seadnud endale mitmeid erinevaid tööalaseid eesmärke, alustades loomaarsti
-                            ja
-                            laulja ning lõpetades automaalri erialaga. Ent nagu elu ikka, kulgeb see oma rada pidi ning
-                            täiesti juhuslikult sattusin niimoodi tutvuma UX/UI disaini valdkonnaga.</p>
+                        <p>Spetsialiseerumispraktika sooritasin kolmes ettevõttes - <a href="https://food-filter.com/et"
+                                target="_blank">FoodFilter</a> (05.05.2023 -
+                            31.09.2023), <a href="https://www.saluc.io/" target="_blank">Saluc</a> (22.01.2024 –
+                            26.01.2024) ning <a href="https://www.twn.ee/" target="_blank">Trinidad
+                                Wiseman</a> (21.09.2023 - 22.04.2024). FoodFilter on ettevõte, mis pakub toitumise
+                            jälgimist
+                            lihtsustavat rakendust. Saluc
+                            on suures osas arendusettevõte, kuid nad pakuvad ka veebilehtede täislahendusi. Trinidad
+                            Wiseman on disainiettevõte, kes keskendub süvitsi kasutajakesksele lähenemisele ning
+                            disainile. Trinidad Wisemanis ma otseselt praktikal polnud, kuid praktikajuhendaja Hegle
+                            Sarapuu-Johanson vaatas üle ning hindas tõid ja projekte, mida me enda ettevõtte Kolm Punkti
+                            siseselt läbisime.
+                        </p>
                     </div>
                 </div>
                 <div class="aboutSectionPhotos">
@@ -70,66 +83,112 @@ import TextButton from "../components/TextButton.vue"
                         <div class="tegevusedDesc">
                             <p><b>Tasuta Veebilehe analüüs. </b><br>
                                 Tegevused hõlmasid mitmeid samme, mille eesmärk oli mõõta ja hinnata veebilehtede
-                                jõudlust ning kasutuskogemust. Mina analüüsisin ning eistlesin tulemused lehtedele
-                                Hiking Baltnorth ning Ehitus24. Kontrollisin veebilehe reageerivust erinevates
+                                jõudlust ning kasutuskogemust. Mina analüüsisin ning esitlesin tulemused lehtedele
+                                <a href="https://app.pitch.com/app/player/902c83f7-5a69-4b77-88fb-03a812139a6e/ae22920a-3df5-4869-a342-bef4a2ced358/934acfd5-9eb7-4bb1-a26c-5a95e77bb599"
+                                    target="_blank">Ehitus24</a> ning <a
+                                    href="https://docs.google.com/document/d/1lBFZGvqtRC0zacFmwRjnVb6wQgDGCMqU/edit?usp=sharing&ouid=101487927772805438248&rtpof=true&sd=true"
+                                    target="_blank">Hiking Baltnorth</a>. Kontrollisin veebilehe
+                                reageerivust erinevates
                                 seadmetes, sealhulgas sülearvutites, tahvelarvutites ja mobiiltelefonides, tagamaks
                                 optimaalse kuvamise igal platvormil. Laadimiskiiruse testimiseks kasutasin tööriistu
                                 nagu Google'i PageSpeed Insights, et hinnata veebilehe laadimiskiirust ja tuvastada
-                                võimalikud takistused või viivitused. Analüüsisin veebilehe ligipääsetavust, sealhulgas
-                                kontrasti, teksti suurust ja muid olulisi kasutajaliidese elemente, kasutades platvorme
+                                võimalikud takistused või viivitused. Analüüsisin veebilehe ligipääsetavust,
+                                sealhulgas
+                                kontrasti, teksti suurust ja muid olulisi kasutajaliidese elemente, kasutades
+                                platvorme
                                 nagu AccessiBe ja WCAG Color contrast checker. Hindamisel oli ka veebilehe üldine
                                 visuaalne disain, nagu värvid, pildid, ikoonid ja üldine esteetika. Uue avalehe
                                 kujundamiseks kasutasin Figma platvormi, mis arvestas eelnevalt tehtud analüüsi
-                                tulemusi. <br> <br>
+                                tulemusi. Siit saad näha <a
+                                    href="https://www.figma.com/proto/hQYWl8pKrXsND9vF40ZkrP/Hiking-Baltnorth?page-id=0%3A1&node-id=1-2&viewport=238%2C629%2C0.26&t=fN4imabl0mAhV0iQ-1&scaling=min-zoom"
+                                    target="_blank">Hiking Baltnorthi</a> ning <a
+                                    href="https://www.figma.com/proto/MQG7uZZxJBBTcfrjFViArL/Ehitus24?page-id=0%3A1&node-id=1-5&viewport=472%2C604%2C0.1&t=tXaysQT9lIYVGPIQ-1&scaling=scale-down"
+                                    target="_blank">Ehitus24</a> uut lehe visuaali. Siin saad tutvuda kogu projekti
+                                etappe hõlmava<a
+                                    href="https://docs.google.com/document/d/1dieckWc0Cgej3LDGKa9ndAGxzAsv1s1_wyI9MAVTLR0/edit?usp=sharing"
+                                    target="_blank">kokkuvõtliku dokumendiga</a>.<br><br>
                                 <b>HOPP disaini kodulehe ümberdisainimise ja sotsiaalmeedia haldamine</b><br>
-                                Sotsiaalmeedia haldamine on suures osas minu ja Kerli Pajusaare kanda. Meie ülesanneteks
+                                <a href="https://www.instagram.com/hoppdisain/" target="_blank">Sotsiaalmeedia</a>
+                                haldamine on suures osas minu ja Kerli Pajusaare kanda. Meie
+                                ülesanneteks
                                 on luua sobivad sotsiaalmeedia postitused järgides HOPP brändi eeskirju ning neile
-                                lisaks kaasahaarav sisuteks, millega toimetab peamiselt Kerli. Kujundustöödeks kasutan
-                                Figma platvormi ja elementide või ikoonide leidmiseks SVG Repo keskkonda. Sotsiaalmeedia
+                                lisaks kaasahaarav sisuteks, millega toimetab peamiselt Kerli. Kujundustöödeks
+                                kasutan
+                                Figma platvormi ja elementide või ikoonide leidmiseks SVG Repo keskkonda.
+                                Sotsiaalmeedia
                                 postitused avaldan Facebook Meta keskkonnas. Tehniliselt kehtestati kliendi poolt
                                 postituste avaldamisel
-                                mitmeid tingimusi, sealhulgas toote disaineri mainimine, postitamise kellaaeg, vastavad
-                                hashtagid ning ajajoone struktuur. Projekti käigus ilmnesid mitmed probleemid seoses
+                                mitmeid tingimusi, sealhulgas toote disaineri mainimine, postitamise kellaaeg,
+                                vastavad
+                                <i>hashtag</i>id ning ajajoone struktuur. Projekti käigus ilmnesid mitmed probleemid
+                                seoses
                                 HOPP disaini ettevõtte visuaalse identiteedi ja brändi tõlgendamisega. Alguses anti
-                                disainiprotsessis vabad käed, kuid kriitika ja negatiivne tagasiside sundisid lähenemist
-                                muutma. Erinevate osapoolte maitsete kokkusobitamine tekitas ebaühtlase tulemuse. Pärast
+                                disainiprotsessis vabad käed, kuid kriitika ja negatiivne tagasiside sundisid
+                                lähenemist
+                                muutma. Erinevate osapoolte maitsete kokkusobitamine tekitas ebaühtlase tulemuse.
+                                Pärast
                                 olukorra arutamist otsustasime kasutada mallide süsteemi postituste jaoks, mis tagas
-                                stabiilsema (aga mõnes mõttes ka igavama) disaini.
-                                Kodulehe loomisel oli algselt põhiroll kõikide tegevuste puhul Ursula Mutsil. Nüüdseks
+                                stabiilsema disaini.
+                                Kodulehe loomisel oli algselt põhiroll kõikide tegevuste puhul Ursula Mutsil.
+                                Nüüdseks
                                 oleme Kerliga rohkem kaasatud kodulehe
                                 disaini ja testimisse ning projekt on jõudmas lõpusirgele. HOPP veebilehe loomiseks
                                 plaanime kasutada Voog keskkonda.
-                                Testimise faasis olin mina testitava rollis, kus Ursula oli välja töötanud card-sorting
+                                Testimise faasis olin mina testitava rollis, kus Ursula oli välja töötanud
+                                <i>card-sorting</i>
                                 testi ning intervjuu küsimused HOPP disainipoe konkurentide lehtede eeliste ja
-                                probleemide väljaselgitamiseks. E-poe filtrisüsteemi osas tegin ettepaneku keskenduda
-                                vähematele, kuid üldisematele filtritele, võttes arvesse "paradox of choice" põhimõtet.
+                                probleemide väljaselgitamiseks. E-poe filtrisüsteemi osas tegin ettepaneku
+                                keskenduda
+                                vähematele, kuid üldisematele filtritele, võttes arvesse "<i>paradox of choice</i>"
+                                põhimõtet.
                                 Minu vastutada oli ka visuaalse poole loomine HOPP veebilehe avalehele, arvestades
-                                sealjuures Voog platvormi võimalusi ja eripärasid.
+                                sealjuures Voog platvormi võimalusi ja eripärasid. Siit
+                                saab vaadata ka <a
+                                    href="https://docs.google.com/document/d/1dieckWc0Cgej3LDGKa9ndAGxzAsv1s1_wyI9MAVTLR0/edit?usp=sharing"
+                                    target="_blank">kokkuvõtlikku dokumenti</a> kogu projektist.
                             </p>
                         </div>
                         <div class="tegevusedDesc">
-                            <p><b>Küünlaprojekt</b><br>
+                            <p><br><b>Küünlaprojekt</b><br>
                                 Projekti idee oli pisut ebatavaline - IT-kiiksuga küünlad. See mõte hakkas idanema Kerli
-                                peas seoses Tootearenduse mooduliga. Algul oli see lihtsalt kontseptsioon ning jäi
+                                peas seoses Tootearenduse ainega. Algul oli see lihtsalt kontseptsioon ning jäi
                                 prototüübi staadiumisse, kuid kui saime sellele palju positiivset tagasisidet,
-                                otsustasime idee realiseerida ning minna tootega turula. Algne kujundus käidi
+                                otsustasime idee realiseerida ning minna tootega turule. Algse kujunduse käisime
                                 põhjalikult üle läbi meeskonnasiseste arutelude, mis aitas täiustada lõplikku versiooni.
-                                Lisaks prototüüpide loomisele, sealhulgas oma kätega valmistatud karbile, tegelesin ka
-                                trükiettevalmistuse ja trükikojaga suhtlemisega.Minu panus kokkupanemisprotsessis oli
+                                Lisaks <a
+                                    href="https://drive.google.com/drive/folders/1awUQy-az2JUjhVcsC8Z071ZIQ8GOKAWT?usp=sharing"
+                                    target="_blank">prototüüpide
+                                    loomisele</a>, sealhulgas oma kätega valmistatud karbile, tegelesin ka
+                                trükiettevalmistuse ja trükikojaga suhtlemisega. Minu panus kokkupanemisprotsessis oli
                                 suur, kuna vajalikud materjalid (näiteks kleepsud, karbi toorikud ja küünlad) saadeti
                                 otse minu koju, mistõttu lasus toote valmistamise vastutus suures osas minu õlgadel.
                                 Lisaks osalesin aktiivselt müügiüritustel, nagu Lõunakeskuse Disaini Ala, Pärnu
                                 disainipäev ja VOCO jõululaat.
                                 Lõpptulemusena valmis kvaliteetne toode, mis oli meeskonnatöö ja minu individuaalse
-                                panuse tulemus igas etapis, alustades kujundusest ja lõpetades müügiga.
+                                panuse tulemus igas etapis, alustades kujundusest ja lõpetades müügiga. Siit saab näha
+                                fotosid <a
+                                    href="https://drive.google.com/drive/folders/1L3en40ISzpTy-iuY3W5KpI64QKNNx1e_?usp=sharing"
+                                    target="_blank">Pärnu disainipäeva</a>, <a
+                                    href="https://drive.google.com/drive/folders/1qfGVZTjMWs8fGbvVGjOU5Vtmn4o5omex?usp=drive_link"
+                                    target="_blank">VOCO
+                                    jõululaada</a> ning <a
+                                    href="https://drive.google.com/drive/folders/1nW5gWX07D791N54H9n3kAb3eZ-0WzikO?usp=drive_link"
+                                    target="_blank">Lõunakeskuse
+                                    Eesti Disaini Ala</a>
+                                müügiüritustest. Siit saab vaadata ka <a
+                                    href="https://docs.google.com/document/d/18y-rM3j6j7MKsL4CYrQGlAzR9pSFg7igOJfxpIsW0YM/edit?usp=sharing"
+                                    target="_blank">kokkuvõtlikku dokumenti</a> kogu projektist.
                                 <br><br>
                                 <b>FoodFilter</b><br>
                                 FoodFilter oli esimene praktikaprojekt peale eelmise aasta tutvumispraktikat. Alguses
                                 olime veidi ebakindlad oma võimetes iseseisvalt projektiga tegutseda, seega tegime palju
                                 koostööd, vahetades ideid ja täiendades üksteist. Minu konkreetseteks ülesanneteks olid
-                                otseste konkurentide leidmine, kvantitatiivsete küsitluste jagamine erinevates Facebooki
+                                otseste konkurentide leidmine, <a href="https://forms.gle/iovwnb99fn1XCMvHA"
+                                    target="_blank">kvantitatiivsete küsitluste</a> jagamine erinevates Facebooki
                                 gruppides, osaline esitlemine kliendile (me jagasime meeskonnas esitluse kolmeks osaks,
-                                kus igaüks vastutas oma osa eest), ning fookusgrupi uuringu läbiviimine samal põhimõttel
+                                kus igaüks vastutas oma osa eest), ning <a
+                                    href="https://docs.google.com/document/d/1IaY0pOcBW7H0uj2mifABrT-JRLn5BdDg-AFkBpnhGLE/edit?usp=sharing"
+                                    target="_blank">fookusgrupi uuringu</a> läbiviimine samal põhimõttel
                                 kui kliendile esitlemine (kolm osa, millest ühte juhtisin mina, teistes osades toimisin
                                 protokollitäitja rollis). Tulemuste analüüsi tegime koos, kus üks meeskonnaliige esitas
                                 oma hüpoteesi või mõtte ning teised täiendasid või esitasid vastuargumente. Lisaks oli
@@ -140,8 +199,11 @@ import TextButton from "../components/TextButton.vue"
                                 Praktika ülesanne oli kõigil tiimiliikmetel sama, kuid nende täitmine toimus
                                 iseseisvalt. Ülesandesse kuulus ligipääsetavuse kriteeriumide uurimine arenduses,
                                 veebilehtede otsimine, mis neid rakendavad, ning nende tuvastamine, mis nõudeid ei
-                                täida. Lisaks oli ülesande osa luua veebileht konverentsile registreerimiseks, kasutades
-                                ainult HTML-i. Registreerimisvorm pidi sisaldama kohustuslikke välju nagu eesnimi,
+                                täida. Lisaks oli ülesande osa luua <a
+                                    href="https://github.com/anetteluik/Saluc_praktilineylesanne"
+                                    target="_blank">veebileht konverentsile registreerimiseks</a>, kasutades
+                                ainult HTML-i ja CSS-i. Registreerimisvorm pidi sisaldama kohustuslikke välju nagu
+                                eesnimi,
                                 perenimi ja e-posti aadress ning valikulist välja telefoninumber. Lisaks pidin lisama
                                 vähemalt ühe pildi, millele oli lisatud alt-tekst vastavalt ligipääsetavuse nõuetele
                                 ning tagama lehe struktuuri hierarhilise korrektsuse, eriti pealkirjade osas. Valminud
@@ -151,12 +213,18 @@ import TextButton from "../components/TextButton.vue"
                                 Minu roll StarterTartu projektis hõlmas intervjuude läbiviimist valitud
                                 disainiettevõtete töötajate ja disaineritega. Meeskonnas jaotati vastutus, kes kellega
                                 intervjuud teeb, ning koostöös koostati intervjuu küsimused. Üks olulisemaid ülesandeid
-                                oli lõpuesitluse loomine videovormis. Otsustasime kasutada visuaalseid elemente nagu
+                                oli <a
+                                    href="https://drive.google.com/file/d/1pUCF4Y5xfDkqoJUwrcz7-9TgpcLrx9E1/view?usp=sharing"
+                                    target="_blank">lõpuesitluse loomine videovormis</a>. Otsustasime kasutada
+                                visuaalseid elemente nagu
                                 animatsioonid, ikoonid ja teksti-ilmumised, vältides traditsioonilist filmimist ja
                                 monteerimist. Minu vastutusel oli kõikide visuaalsete elementide ja materjalide leidmine
                                 ning animeerimine/kokkupanek. Lisaks võtsin osa üritusest "Mentorite tagasiside
                                 karusell", kus suhtlesin videokõne vahendusel erinevate inimestega, et koguda juhiseid
                                 ja teadmisi. Näiteks suhtlesin Triin Kasega, kellega hiljem viisime läbi ka intervjuu.
+                                Siit saab vaadata ka <a
+                                    href="https://docs.google.com/document/d/1ImSW3O07nqdhhS5Xydaew5geO74h-Ue9BRAXuc2j6ow/edit?usp=sharing"
+                                    target="_blank">kokkuvõtlikku dokumenti</a> kogu projektist.
                             </p>
                         </div>
                     </div>

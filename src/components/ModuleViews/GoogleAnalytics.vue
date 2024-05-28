@@ -14,14 +14,6 @@
                 Siin on võimalik tutvuda <a href="https://drive.google.com/file/d/1R7R_wNK2S3yOKaePWNabyyHEV0hE98A4/view?usp=sharing" target="_blank">GA4 seminari materjalidega</a>.
             </p>
         </div>
-        <div class="forwardBackButtons">
-            <router-link to="/avasta-tartut">
-                <TextButtonBack :imgType="'back'" :alt="'Button Icon'" class="buttonRe">Eelmine</TextButtonBack>
-            </router-link>
-            <router-link to="">
-                <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Järgmine</TextButton>
-            </router-link>
-        </div>
     </div>
     <div class="popupImagesSectionWrapper">
         <div class="popUpImages" ref="popUpImages">

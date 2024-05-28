@@ -6,9 +6,9 @@
                 <br>
                 Õppisin kasutama HTMLi ja CSSi ja nende põhirolli veebilehtede loomisel. Samuti sain teada, kuidas
                 HTMLis lisada pilte, muuta komponentide värve ja koostada loendeid. CSSis õppisime veebilehe
-                kujundamist, kuidas muuta fonte, nende värvi, suurusi ja kuidas lisada content box’i.
+                kujundamist, kuidas muuta fonte, nende värvi, suurusi ja kuidas lisada <i>content box</i>i.
                 Õppisin, kuidas luua veebilehele navigeerimisriba, mis on kõigil lehtedel ühesugune. Samuti sain teada,
-                kuidas luua footer’it, mis on samuti kõigil lehtedel ühesugune.
+                kuidas luua <i>footer</i>it, mis on samuti kõigil lehtedel ühesugune.
                 <br><br>
                 <b>Udemy - How to Create a Website using Bootstrap 4</b>
                 <br>
@@ -18,11 +18,6 @@
                 <br>
                 Õppisin põgusalt kasutama javascripti ning sain ülevaate põhiteemadest Vue 3 kasutamisel.
             </p>
-        </div>
-        <div class="forwardBackButtons">
-            <router-link to="">
-                <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Järgmine</TextButton>
-            </router-link>
         </div>
     </div>
     <div class="popupImagesSectionWrapper">
@@ -40,13 +35,11 @@
 <script setup>
 import { onMounted, render, markRaw, ref } from 'vue';
 import TextButton from '../TextButton.vue';
-import imgAvastaTartut from '@/assets/img/avastatartut.webp';
-import imgClearMind from '@/assets/img/clearmind.webp';
-import imgFotoseeria from '@/assets/img/fotoseeria.webp';
+import Udemy from '@/assets/img/udemy.webp';
 
 const popUpImages = ref(null)
 
-const images = [imgAvastaTartut, imgClearMind, imgFotoseeria]
+const images = [Udemy]
 
 function navigateToImage(index) {
     popUpImages.value.scrollTo({ left: popUpImages.value.offsetWidth * index, behaviour: 'smooth' });
@@ -90,10 +83,12 @@ function navigateToImage(index) {
 
 .popUpImages img {
     object-fit: cover;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .imagesNavigator {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     top: 0;
@@ -110,7 +105,6 @@ function navigateToImage(index) {
     aspect-ratio: 1;
     background: white;
     border-radius: 50%;
-    outline: 2px solid black;
 }
 
 .imagesNavigator .nav-dot:hover {
@@ -136,6 +130,12 @@ function navigateToImage(index) {
     margin: 96px 100px 56px 120px;
 }
 
+.forwardBackButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 @media only screen and (max-width: 1500px) {
     .popUpTextAndButtons {
@@ -144,11 +144,7 @@ function navigateToImage(index) {
         justify-content: space-between;
         width: 80%;
         height: 100%;
-    }
-
-    .popUpImages img {
-        width: 100%;
-        height: 100%;
+        margin-bottom: 80px;
     }
 
     .popUpTextAndButtons .text {
@@ -167,6 +163,32 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        position: static;
+        width: 80%;
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .popUpImages {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        height: 100%;
+        top: 0;
+        transition: all 1s ease;
+        scroll-behavior: smooth;
+    }
+
+    .popUpImages img {
+        object-fit: cover;
+    }
+
+    .popUpTextAndButtons {
+        overflow-y: hidden;
+        max-height: fit-content;
     }
 }
 
@@ -200,6 +222,12 @@ function navigateToImage(index) {
     .buttonRe {
         font-size: 16px;
         margin: 56px 0 56px 0;
+    }
+
+    .popupImagesSectionWrapper {
+        width: 100%;
+        height: 600px;
+        margin-bottom: 0;
     }
 }
 </style>

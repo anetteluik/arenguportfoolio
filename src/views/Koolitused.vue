@@ -59,24 +59,24 @@ let currentlyOpenModule = ref(null);
                     <div class="moodulSection">
                         <OneBoxLayout @click="toggleModule(allModules.veebikoolitused)" :title="'Veebikoolitused'"
                             :text="''">
-                            <img class="backg" src="../assets/img/avastatartut.webp"
+                            <img class="backg" src="../assets/img/udemy.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
                         <OneBoxLayout @click="toggleModule(allModules.oppekaigud)" :title="'Õppekäigud'"
                             :text="''">
-                            <img class="backg" src="../assets/img/rosabella.webp" alt="Rosabella logo T-särgil">
+                            <img class="backg" src="../assets/img/bitweb.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
                     <div class="moodulSection">
                         <OneBoxLayout @click="toggleModule(allModules.lektorid)" :title="'Külalislektorite loengud'"
                             :text="''">
-                            <img class="backg" src="../assets/img/photoshop-luik.webp"
+                            <img class="backg" src="../assets/img/loeng.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
                         <OneBoxLayout @click="toggleModule(allModules.konverents)"
                             :title="'Üritused ja konverentsid'"
                             :text="''">
-                            <img class="backg" src="../assets/img/tänukiri.webp" alt="Rosabella logo T-särgil">
+                            <img class="backg" src="../assets/img/wud.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
                 </div>

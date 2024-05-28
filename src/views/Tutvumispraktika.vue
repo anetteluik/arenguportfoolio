@@ -64,7 +64,7 @@ import TextButton from "../components/TextButton.vue"
                         <img src="../assets/img/hopp4.webp" alt="Profile Picture">
                     </div>
                     <div class="aboutPhoto">
-                        <img src="../assets/img/hopp3.webp" alt="Profile Picture">
+                        <img src="../assets/img/hoppp.webp" alt="Profile Picture">
                     </div>
                 </div>
                 <div class="tegevused">
@@ -159,7 +159,13 @@ import TextButton from "../components/TextButton.vue"
 </template>
 
 <style>
-p a {
+.tegevusedDesc a {
+    background-color: #C2CFF2;
+    color: #221517;
+    text-decoration: none;
+}
+
+.koht a {
     background-color: #C2CFF2;
     color: #221517;
     text-decoration: none;

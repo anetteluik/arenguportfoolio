@@ -69,7 +69,7 @@ import Footer from "@/components/Footer.vue";
                                     iseseisvalt. See tähendas, et me polnud praktikantidena ettevõtte all tööl, vaid
                                     leidsime juhendaja, kes vaatas üle ja hindas meie iseseisvalt leitud töid. Seega
                                     vastutasime enda poolt leitud, tehtud, analüüsitud ja esitletud projektide eest ning
-                                    mõtlesime ja analüüsisime iga protsessi hoolekalt läbi. Seisime silmitsi reaalsete
+                                    mõtlesime ja analüüsisime iga protsessi hoolikalt läbi. Seisime silmitsi reaalsete
                                     väljakutsetega, mitte õpikustsenaariumitega, ja enamiku ajast pidime tegutsema oma
                                     teadmiste põhjal. Kui teadmistest jäi puudu, otsisime välja spetsialistid, kes need
                                     teadmised on omandanud ja palusime abi ning juhendamist.
@@ -111,15 +111,15 @@ import Footer from "@/components/Footer.vue";
                             organiseerimisoskust ja kannatlikkust, kuid samas pakkunud väärtuslikke kogemusi, õppetunde
                             ja tutvusi.
                             <br><br>
-                            Olen tänulik, et minu töökaalsasteks on kõige rõõmsameelsemad, arusaajamad ja kompetentsemad
+                            Olen tänulik, et minu töökaaslasteks on kõige rõõmsameelsemad, arusaajamad ja kompetentsemad
                             inimesed. Meie meeskonnas valitsev koostöö ja sõbralik õhkkond on mitte ainult rikastanud
                             minu professionaalset arengut, vaid on loonud ka sügavad sõprussuhted. Olen ääretult õnnelik
                             võimaluse eest õppida igapäevaselt oma kursusekaaslastelt ja kolleegidelt ning ühiselt
-                            pakkua suurepäraseid tulemusi klientide heaks. Aitäh!
+                            pakkuda suurepäraseid tulemusi klientide heaks. Aitäh!
                         </p>
                         <div class="imgWrapKolm">
-                            <img class="smaller" src="/src/assets/img/avastatartut.webp" alt="">
-                            <img class="smaller" src="/src/assets/img/avastatartut.webp" alt="">
+                            <img class="smaller" src="/src/assets/img/kolm1.webp" alt="">
+                            <img class="smaller" src="/src/assets/img/kolm2.webp" alt="">
                         </div>
                     </div>
                 </div>

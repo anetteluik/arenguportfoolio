@@ -15,14 +15,6 @@
                 eelistada märkmete tegemiseks pigem märkmikku (või veelgi parem, salvestada vestlus).
             </p>
         </div>
-        <div class="forwardBackButtons">
-            <router-link to="/avasta-tartut">
-                <TextButtonBack :imgType="'back'" :alt="'Button Icon'" class="buttonRe">Eelmine</TextButtonBack>
-            </router-link>
-            <router-link to="">
-                <TextButton :imgType="'right'" :alt="'Button Icon'" class="buttonRe">Järgmine</TextButton>
-            </router-link>
-        </div>
     </div>
     <div class="popupImagesSectionWrapper">
         <div class="popUpImages" ref="popUpImages">

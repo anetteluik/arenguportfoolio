@@ -81,18 +81,18 @@ let currentlyOpenModule = ref(null);
                     </div>
                     <OneBoxLayout :title="'R-Heroic'"
                         :text="'Veebilehe responsive prototüüp, Figma'">
-                        <img class="backg" src="../assets/img/tulekuls.webp"
+                        <img class="backg" src="../assets/img/rheroic.webp"
                             alt="Clear Mind energiajoogi mockup purkidel">
                     </OneBoxLayout>
                     <div class="moodulSection">
                         <OneBoxLayout :title="'RumVessel'"
                             :text="'Logo kujundamine, kliendisuhtlus, Figma'">
-                            <img class="backg" src="../assets/img/tulekulv.webp"
+                            <img class="backg" src="../assets/img/rumvessel.webp"
                                 alt="Avasta Tartut mobiilirakenduse mockup">
                         </OneBoxLayout>
                         <OneBoxLayout :title="'Petcity Grooming'"
                             :text="'Ühe lehe re-design, Figma, personaalne projekt'">
-                            <img class="backg" src="../assets/img/tulekulv.webp" alt="Rosabella logo T-särgil">
+                            <img class="backg" src="../assets/img/petcity.webp" alt="Rosabella logo T-särgil">
                         </OneBoxLayout>
                     </div>
                 </div>

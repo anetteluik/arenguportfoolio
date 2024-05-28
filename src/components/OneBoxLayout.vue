@@ -25,7 +25,7 @@ const props = defineProps(['title', 'text']);
 <style scoped>
 .imgText {
     position: absolute;
-    bottom: 40px;
+    bottom: 24px;
     /* Adjust vertical position */
     left: 40px;
     /* Adjust horizontal position */
